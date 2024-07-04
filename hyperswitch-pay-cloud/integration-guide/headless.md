@@ -15,7 +15,7 @@ This section guides you through the integration of Hyperswitch Headless for both
 
 #### 1. Initialize the Hyperswitch SDK
 
-Initialize  Hyperswitch Headless SDK onto your app with your publishable key. To get a Publishable Key please find it [here](https://app.hyperswitch.io/developers).
+Initialize  Hyperswitch Headless SDK onto your app with your publishable key. To get a Publishable Key please find it [here](https://app.hyperswitchpay.com/developers).
 
 {% tabs %}
 {% tab title="HTML + JavaScript" %}

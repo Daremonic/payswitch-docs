@@ -60,7 +60,7 @@ This section gives you an overview of how to enable buy now pay later payments w
 
 ## Klarna - In app flow
 
-![Klarna Logo](https://hyperswitch.io/icons/homePageIcons/logos/klarnaLogo.svg)
+![Klarna Logo](https://hyperswitchpay.com/icons/homePageIcons/logos/klarnaLogo.svg)
 
 Klarna In app flow in Hyperswitch is available if you configure Klarna as a payment processor. It provides a superior checkout flow for the customers compared to redirection flow.
 

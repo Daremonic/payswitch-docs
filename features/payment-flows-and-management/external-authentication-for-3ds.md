@@ -13,11 +13,11 @@ Simplify 3DS authentication, stay compliant, offer latest authentication methods
 
 ## How to get started?
 
-We will be using HyperSwitch's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.hyperswitch.io/api-reference/payments/payments--external-3ds-authentication).
+We will be using HyperSwitch's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--external-3ds-authentication).
 
-Backend API endpoint - https://sandbox.hyperswitch.io
+Backend API endpoint - https://sandbox.hyperswitchpay.com
 
-Dashboard - [https://app.hyperswitch.io](https://app.hyperswitch.io)
+Dashboard - [https://app.hyperswitchpay.com](https://app.hyperswitchpay.com)
 
 ### Pre-requisites
 
@@ -48,7 +48,7 @@ You are done with the setup!
 Do a create payment call to initiate the transaction. The status of the response should be 'requres\_customer\_action" and should contain the "next\_action" object.
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/payments' \
+curl --location 'https://sandbox.hyperswitchpay.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: {{api_key}}' \
@@ -137,7 +137,7 @@ curl --location 'https://sandbox.hyperswitch.io/payments' \
 Initiate the authentication with the client\_secret generated
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/payments/pay_xXr8btC2depRWfVYKmNt/3ds/authentication' \
+curl --location 'https://sandbox.hyperswitchpay.com/payments/pay_xXr8btC2depRWfVYKmNt/3ds/authentication' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: {{api_key}}' \

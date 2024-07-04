@@ -12,7 +12,7 @@ Hyperswitch Cloud is hosted on the AWS platform and served out of the **US (N.Vi
 
 We support deployments in more geographies for merchants who wish to restrict data transfer across geographies. Each deployment is supported with at least two redundant Availability Zones for ensuring reliability.
 
-<table><thead><tr><th width="180"></th><th width="304">Global Server (US)</th><th>EU Residency Server</th></tr></thead><tbody><tr><td>Live endpoints</td><td><code>api.hyperswitch.io</code></td><td>Available on request</td></tr></tbody></table>
+<table><thead><tr><th width="180"></th><th width="304">Global Server (US)</th><th>EU Residency Server</th></tr></thead><tbody><tr><td>Live endpoints</td><td><code>api.hyperswitchpay.com</code></td><td>Available on request</td></tr></tbody></table>
 
 {% hint style="success" %}
 **Note:** Hyperswitch is a super lightweight payment switch with Infrastructure-as-Code capability. So we can quickly deploy in new geographies (AWS regions) as data residency requirements emerge across countries around the world.
@@ -20,7 +20,7 @@ We support deployments in more geographies for merchants who wish to restrict da
 
 ## Latency
 
-The application latency of Hyperswitch is optimized to `sub-30 milliseconds` (90 percentile) to ensure that the application by itself does not add any latency cost. [Read here](https://docs.hyperswitch.io/learn-more/hyperswitch-architecture/a-payments-switch-with-virtually-zero-overhead) to know more about it.
+The application latency of Hyperswitch is optimized to `sub-30 milliseconds` (90 percentile) to ensure that the application by itself does not add any latency cost. [Read here](https://docs.hyperswitchpay.com/learn-more/hyperswitch-architecture/a-payments-switch-with-virtually-zero-overhead) to know more about it.
 
 Inter-regional network latency is optimized by fronting the API endpoints with Cloud Delivery Network (AWS Cloudfront).
 

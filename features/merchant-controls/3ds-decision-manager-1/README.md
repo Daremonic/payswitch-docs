@@ -22,7 +22,7 @@ Hyperswitch supports surcharge for most payment processors and you can configure
 
 **i) Sending the Surcharge details during payments/create request**
 
-Surcharge can be applied to a payment using `surcharge_details` field in [payments/create API request](https://api-reference.hyperswitch.io/api-reference/payments/payments--create)
+Surcharge can be applied to a payment using `surcharge_details` field in [payments/create API request](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--create)
 
 **ii) Configuring Surcharge rules using Hyperswitch Control Center**
 
@@ -34,7 +34,7 @@ Surcharge can be applied to a payment using `surcharge_details` field in [paymen
 
 ## Next step
 
-To test the Surcharge Manager, after activating the rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.hyperswitch.io/sdk)
+To test the Surcharge Manager, after activating the rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.hyperswitchpay.com/sdk)
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)

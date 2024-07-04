@@ -22,15 +22,15 @@ Exporting your payments data to Amazon Redshift enhances analytics by leveraging
 
     <figure><img src="https://lh7-us.googleusercontent.com/r4vnr22w42Pz2k5V7O7TsVBrlVhDrfjYveoH-CWMnJW9XNR95k0XmJBlC9Q7lb1mpJa7aFyf9fRDDf6SHBoSLs-BP-TriQfwG57j3XhsdeJEW417zi0UO2069oDcxPEdzifYm_alen5GJsCGWhYOL2g" alt=""><figcaption><p>Example image of an IAM role created</p></figcaption></figure>
 3. After sharing the ARN with Hyperswitch, We will share the S3 bucket & path that is to be synced for data along with providing access to the IAM role from where you will be able to get files from the S3
-4.  Once the above step is done, you need to [create the table schema on Redshift](https://opensource.hyperswitch.io/features/account-management/exporting-payments-data#table-creation-schema)
+4.  Once the above step is done, you need to [create the table schema on Redshift](https://opensource.hyperswitchpay.com/features/account-management/exporting-payments-data#table-creation-schema)
 
     Post which you can proceed with the below
 
-    1. [Handle the ingestion & post processing of data](https://opensource.hyperswitch.io/features/account-management/exporting-payments-data#table-creation-schema) using scripts
+    1. [Handle the ingestion & post processing of data](https://opensource.hyperswitchpay.com/features/account-management/exporting-payments-data#table-creation-schema) using scripts
 
     (OR)
 
-    2. [Auto-ingestion using Redshift](https://opensource.hyperswitch.io/features/account-management/exporting-payments-data#table-creation-schema)
+    2. [Auto-ingestion using Redshift](https://opensource.hyperswitchpay.com/features/account-management/exporting-payments-data#table-creation-schema)
 
 ## File format and paths specifications
 
@@ -44,7 +44,7 @@ Exporting your payments data to Amazon Redshift enhances analytics by leveraging
 | Data update schedule        | 6 hours frequency up to 7 days                                                                                                        |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Data retention on S3 folder | 7 days                                                                                                                                |
-| Type of data exposed        | payments as per [schema](https://opensource.hyperswitch.io/features/account-management/exporting-payments-data#table-creation-schema) |
+| Type of data exposed        | payments as per [schema](https://opensource.hyperswitchpay.com/features/account-management/exporting-payments-data#table-creation-schema) |
 | Data storage location       | us-east-1                                                                                                                             |
 
 ## Auto ingestion using Redshift

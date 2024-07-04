@@ -21,7 +21,7 @@ The 'capture\_method' field determines the type of capture for a particular paym
 **Sample curl:**
 
 ```bash
-curl --location 'https://sandbox.hyperswitch.io/payments' \
+curl --location 'https://sandbox.hyperswitchpay.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: <your_api_key>' \
@@ -54,7 +54,7 @@ Confirm the payment after collecting the payment\_method details from your custo
 **Sample curl:**
 
 ```bash
-curl --location 'https://sandbox.hyperswitch.io/payments/<original_payment_id>/confirm' \
+curl --location 'https://sandbox.hyperswitchpay.com/payments/<original_payment_id>/confirm' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: <your_publishable_key>' \
@@ -80,7 +80,7 @@ After delivering the goods and services, capture the payment by passing the `pay
 **Sample curl:**
 
 ```bash
-curl --location 'https://sandbox.hyperswitch.io/payments/pay_At7O43TJJZyP7OmrcdQD/capture' \
+curl --location 'https://sandbox.hyperswitchpay.com/payments/pay_At7O43TJJZyP7OmrcdQD/capture' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: <your_api_key>' \

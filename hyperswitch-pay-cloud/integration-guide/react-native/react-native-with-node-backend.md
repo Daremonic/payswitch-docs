@@ -38,7 +38,7 @@ $ npm install @juspay-tech/hyperswitch-node
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.hyperswitch.io/developers?tabIndex=1).
+Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.hyperswitchpay.com/developers?tabIndex=1).
 
 ```js
 const hyper = require("@juspay-tech/hyperswitch-node")(‘YOUR_API_KEY’);

@@ -30,7 +30,7 @@ The code from your Stripe integration to be removed and replaced is explained be
   $ npm install @juspay-tech/hyperswitch-node
 ```
 
-**Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitch.io/developers) page on the dashboard.
+**Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitchpay.com/developers) page on the dashboard.
 
 ```js
 // from
@@ -115,13 +115,13 @@ const paymentIntent = await stripe.paymentIntents.create({
 const paymentIntent = await hyper.paymentIntents.create({
 ```
 
-**Step 3:** Load the Hyperswitch directly from beta.hyperswitch.io to remain PCI compliant while collecting the customer's payment details
+**Step 3:** Load the Hyperswitch directly from beta.hyperswitchpay.com to remain PCI compliant while collecting the customer's payment details
 
 ```js
 // from
 <script src="https://js.stripe.com/v3/"></script>
 // to
-<script src="https://beta.hyperswitch.io/v1/HyperLoader.js"></script>
+<script src="https://beta.hyperswitchpay.com/v1/HyperLoader.js"></script>
 ```
 
 **Step 4:** Initiate the SDK with your Hyperswitch publishable key from your website

@@ -12,7 +12,7 @@ This section guides you through the integration of Hyperswitch Payment Methods M
 
 #### 1.1 Create an ephemeral key
 
-Get your API key from [Hyperswitch dashboard](https://app.hyperswitch.io/developers?tabIndex=1).
+Get your API key from [Hyperswitch dashboard](https://app.hyperswitchpay.com/developers?tabIndex=1).
 
 Add an endpoint on your server that creates an Ephemeral Key. An **ephemeral key** is a temporary, short-lived key used to securely manage sensitive operations, such as updating or deleting payment methods, without exposing full access credentials. It has a limited validity period and restricted capabilities, ensuring that it can only be used for specific tasks and not for initiating payments. This enhances security by minimizing the risk of unauthorized access and reducing the exposure of sensitive data. Return the `secret` obtained in the response to setup Payment Methods Management on client.
 
@@ -22,7 +22,7 @@ const app = express();
 
 app.post("/create-ephemeral-key", async (req, res) => {
   try {
-    const response = await fetch(`https://sandbox.hyperswitch.io/ephemeral_keys`,
+    const response = await fetch(`https://sandbox.hyperswitchpay.com/ephemeral_keys`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "api-key": "YOUR_API_KEY" },
@@ -66,7 +66,7 @@ import { HyperManagementElements } from "@juspay-tech/react-hyper-js";
 
 #### 2.3 Load `hyper-js`
 
-Call `loadHyper` with your publishable API keys to configure the library. To get an publishable Key please find it [here](https://app.hyperswitch.io/developers).
+Call `loadHyper` with your publishable API keys to configure the library. To get an publishable Key please find it [here](https://app.hyperswitchpay.com/developers).
 
 ```js
 const hyperPromise = loadHyper("YOUR_PUBLISHABLE_KEY");
@@ -91,7 +91,7 @@ useEffect(() => {
 
 #### 2.5 Initialise `HyperManagementElements`
 
-Pass the promise from `loadHyper` to the `HyperManagementElements` component. This allows the child components to access the Hyper service via the `HyperManagementElements` parent component. Additionally, pass the `ephemeralKey` in [options](https://hyperswitch.io/docs/sdkIntegrations/unifiedCheckoutWeb/customization) to the `HyperManagementElements` component.
+Pass the promise from `loadHyper` to the `HyperManagementElements` component. This allows the child components to access the Hyper service via the `HyperManagementElements` parent component. Additionally, pass the `ephemeralKey` in [options](https://hyperswitchpay.com/docs/sdkIntegrations/unifiedCheckoutWeb/customization) to the `HyperManagementElements` component.
 
 ```js
 <div className="App">
@@ -146,7 +146,7 @@ async function initialize() {
   // Initialise Hyperloader.js
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = "https://beta.hyperswitch.io/v1/HyperLoader.js";
+  script.src = "https://beta.hyperswitchpay.com/v1/HyperLoader.js";
  
   let hyper; 
   script.onload = () => {

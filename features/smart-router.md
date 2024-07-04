@@ -8,7 +8,7 @@ description: Infinite control over managing your payments
 With this section, understand how the Hyperswitch Smart Router works to improve your conversion rates and reduces processing costs by intelligently routing payments across various processors
 {% endhint %}
 
-{% embed url="https://hyperswitch.io/video/edit_conf.mp4" %}
+{% embed url="https://hyperswitchpay.com/video/edit_conf.mp4" %}
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ Hyperswitch Smart Router Engine evaluates every payment request against your pre
 
 ## How to configure the Smart Router?
 
-[Hyperswitch dashboard](https://app.hyperswitch.io/routing) provides a simple, intuitive UI to configure multiple Routing rules on your dashboard under the **Routing** tab. There are three routing rule formats that Hyperswitch currently supports.\
+[Hyperswitch dashboard](https://app.hyperswitchpay.com/routing) provides a simple, intuitive UI to configure multiple Routing rules on your dashboard under the **Routing** tab. There are three routing rule formats that Hyperswitch currently supports.\
 \
 
 
@@ -44,7 +44,7 @@ Hyperswitch Smart Router Engine evaluates every payment request against your pre
 
 ## Next step&#x20;
 
-To test the Smart Router, after activating one rule, we can make a Test Payment using the [Hyperswitch Dashboard ](https://app.hyperswitch.io/sdk)
+To test the Smart Router, after activating one rule, we can make a Test Payment using the [Hyperswitch Dashboard ](https://app.hyperswitchpay.com/sdk)
 
 {% content-ref url="../hyperswitch-open-source/testing/test-a-payment.md" %}
 [test-a-payment.md](../hyperswitch-open-source/testing/test-a-payment.md)

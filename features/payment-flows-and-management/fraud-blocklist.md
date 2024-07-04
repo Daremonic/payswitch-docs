@@ -127,10 +127,10 @@ curl --location --request POST '{{base_url}}/blocklist/toggle?status=true' \
 }
 ```
 
-3. Block a fingerprint using the [Blocklist endpoint](https://api-reference.hyperswitch.io/api-reference/blocklist/post-blocklist):
+3. Block a fingerprint using the [Blocklist endpoint](https://api-reference.hyperswitchpay.com/api-reference/blocklist/post-blocklist):
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/blocklist' \
+curl --location 'https://sandbox.hyperswitchpay.com/blocklist' \
 --header 'Content-Type: application/json' \
 --header 'api-key: YOUR_API_KEY' \
 --data '{
@@ -139,10 +139,10 @@ curl --location 'https://sandbox.hyperswitch.io/blocklist' \
 }
 ```
 
-4. [Show Blocked fingerprints](https://api-reference.hyperswitch.io/api-reference/blocklist/get-blocklist)
+4. [Show Blocked fingerprints](https://api-reference.hyperswitchpay.com/api-reference/blocklist/get-blocklist)
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/blocklist?data_kind=payment_method' \
+curl --location 'https://sandbox.hyperswitchpay.com/blocklist?data_kind=payment_method' \
 --header 'api-key: YOUR_API_KEY'
 ```
 
@@ -156,10 +156,10 @@ curl --location 'https://sandbox.hyperswitch.io/blocklist?data_kind=payment_meth
    }
 ```
 
-6. [Unblock a fingerprint](https://api-reference.hyperswitch.io/api-reference/blocklist/delete-blocklist)
+6. [Unblock a fingerprint](https://api-reference.hyperswitchpay.com/api-reference/blocklist/delete-blocklist)
 
 ```
-curl --location --request DELETE 'https://sandbox.hyperswitch.io/blocklist' \
+curl --location --request DELETE 'https://sandbox.hyperswitchpay.com/blocklist' \
 --header 'Content-Type: application/json' \
 --header 'api-key: YOUR_API_KEY' \
 --data '{
@@ -171,7 +171,7 @@ curl --location --request DELETE 'https://sandbox.hyperswitch.io/blocklist' \
 7. Block a Card BIN/ISIN (First 6 digits)
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/blocklist' \
+curl --location 'https://sandbox.hyperswitchpay.com/blocklist' \
 --header 'Content-Type: application/json' \
 --header 'api-key: YOUR_API_KEY' \
 --data '{
@@ -183,7 +183,7 @@ curl --location 'https://sandbox.hyperswitch.io/blocklist' \
 8. Block an ExtendedCardBin (First 8 digits)
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/blocklist' \
+curl --location 'https://sandbox.hyperswitchpay.com/blocklist' \
 --header 'Content-Type: application/json' \
 --header 'api-key: YOUR_API_KEY' \
 --data '{

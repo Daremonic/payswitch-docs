@@ -1,6 +1,6 @@
 # 🛣️ Route your payout transactions using Smart Router
 
-_Before continuing further, refer to_ [_this_](https://docs.hyperswitch.io/features/merchant-controls/smart-router) _comprehensive guide on Smart Router._
+_Before continuing further, refer to_ [_this_](https://docs.hyperswitchpay.com/features/merchant-controls/smart-router) _comprehensive guide on Smart Router._
 
 **Note: routing rules are distinct for payment and payout operations. Configuring one does not affect the other and vice-versa.**
 
@@ -8,11 +8,11 @@ _Before continuing further, refer to_ [_this_](https://docs.hyperswitch.io/featu
 
 Routing rules can be configured using Hyperswitch's dashboard _(beta feature)_ or via APIs. We will be using Hyperswitch's dashboard as it provides a simple, intuitive UI for configuring these rules.
 
-Dashboard - [https://app.hyperswitch.io](https://app.hyperswitch.io)
+Dashboard - [https://app.hyperswitchpay.com](https://app.hyperswitchpay.com)
 
 #### Pre-requisites
 
-Make sure there are at least two or more payout processors integrated with your account. You can follow [this](https://docs.hyperswitch.io/features/payment-flows-and-management/payouts/get-started-with-payouts#how-to-get-started) guide for integrating a payout connector of your choice.
+Make sure there are at least two or more payout processors integrated with your account. You can follow [this](https://docs.hyperswitchpay.com/features/payment-flows-and-management/payouts/get-started-with-payouts#how-to-get-started) guide for integrating a payout connector of your choice.
 
 #### Steps for configuring routing rules for payouts
 

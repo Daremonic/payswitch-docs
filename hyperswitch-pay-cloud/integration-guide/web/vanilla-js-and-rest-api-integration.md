@@ -8,7 +8,7 @@ description: Integrate hyper SDK to any Web App using hyperswitch-node
 In this section, you will get details to Integrate Hyperswitch SDK using Node Backend and Vanilla JS
 {% endhint %}
 
-**Before following these steps, please configure your payment methods** [here](https://hyperswitch.io/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to you app with any framework. If you are using React framework please go through [React ](node-and-react.md)Integration to use a dedicated wrapper.\\
+**Before following these steps, please configure your payment methods** [here](https://hyperswitchpay.com/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to you app with any framework. If you are using React framework please go through [React ](node-and-react.md)Integration to use a dedicated wrapper.\\
 
 ## [<mark style="color:blue;">Demo App</mark>](https://github.com/aashu331998/hyperswitch-html-demo-app/archive/refs/heads/main.zip)
 
@@ -16,7 +16,7 @@ In this section, you will get details to Integrate Hyperswitch SDK using Node Ba
 
 ### 1.1 Create a payment
 
-Get your API key from [Hyperswitch dashboard](https://app.hyperswitch.io/developers?tabIndex=1).
+Get your API key from [Hyperswitch dashboard](https://app.hyperswitchpay.com/developers?tabIndex=1).
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the `client_secret` obtained in the response to securely complete the payment on the client.
 
@@ -26,7 +26,7 @@ const app = express();
 
 app.post("/create-payment", async (req, res) => {
   try {
-    const response = await fetch(`https://sandbox.hyperswitch.io/payments`,
+    const response = await fetch(`https://sandbox.hyperswitchpay.com/payments`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "api-key": "YOUR_API_KEY" },
@@ -48,7 +48,7 @@ app.post("/create-payment", async (req, res) => {
 ```
 
 {% hint style="info" %}
-In case your integrating the ExpressCheckout (mentioned later below), instead of creating multiple paymentIntents for the same customer session, you can also use [paymentsUpdate API](https://api-reference.hyperswitch.io/api-reference/payments/payments--update) for better analytics.
+In case your integrating the ExpressCheckout (mentioned later below), instead of creating multiple paymentIntents for the same customer session, you can also use [paymentsUpdate API](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--update) for better analytics.
 {% endhint %}
 
 ## 2. Build checkout page on the client
@@ -99,7 +99,7 @@ async function initialize() {
   // Initialise Hyperloader.js
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = "https://beta.hyperswitch.io/v1/HyperLoader.js";
+  script.src = "https://beta.hyperswitchpay.com/v1/HyperLoader.js";
  
   let hyper; 
   script.onload = () => {
@@ -149,7 +149,7 @@ async function initialize() {
   // Initialise Hyperloader.js
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = "https://beta.hyperswitch.io/v1/HyperLoader.js";
+  script.src = "https://beta.hyperswitchpay.com/v1/HyperLoader.js";
  
   let hyper; 
   script.onload = () => {

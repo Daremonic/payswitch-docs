@@ -26,7 +26,7 @@ Install peer dependencies:
  $ npm install react-native-code-push react-native-gesture-handler react-native-inappbrowser-reborn react-native-pager-view react-native-safe-area-context react-native-screens react-native-svg
 ```
 
-**Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitch.io/developers) page on the dashboard.
+**Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitchpay.com/developers) page on the dashboard.
 
 ```js
 // from

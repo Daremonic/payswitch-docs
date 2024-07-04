@@ -45,7 +45,7 @@ hyperswitch.paymentIntents.create(
     phone_country_code: "+65",
     description: "Its my first payment request",
     authentication_type: "no_three_ds",
-    return_url: "https://app.hyperswitch.io",
+    return_url: "https://app.hyperswitchpay.com",
     shipping: {
       address: {
         line1: "1467",
@@ -112,7 +112,7 @@ const payments_response = await hyperswitch.paymentIntents.create(
     phone_country_code: "+65",
     description: "Its my first payment request",
     authentication_type: "no_three_ds",
-    return_url: "https://app.hyperswitch.io",
+    return_url: "https://app.hyperswitchpay.com",
     shipping: {
       address: {
         line1: "1467",

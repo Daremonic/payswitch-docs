@@ -23,7 +23,7 @@ Crypto payments are a new way to pay using digital currencies like Bitcoin, Ethe
 You can configure Crypto on Hyperswitch by following the steps mentioned below -
 
 1. Configure Crypto on the processor
-2. Login to [Hyperswitch dashboard](https://app.hyperswitch.io/)
+2. Login to [Hyperswitch dashboard](https://app.hyperswitchpay.com/)
 3. In the Connectors tab, select your processor
 4. Enable currency as Crypto
 

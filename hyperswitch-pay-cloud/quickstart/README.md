@@ -16,13 +16,13 @@ This section gives you the steps to get started with Hyperswitch, configure your
 
 If you have not created a sandbox account, please create one
 
-[Sign Up for Hyperswitch](https://app.hyperswitch.io/register)
+[Sign Up for Hyperswitch](https://app.hyperswitchpay.com/register)
 
-If you have already created a sandbox account, your api key could be fetched from [settings section](https://app.hyperswitch.io/developers).
+If you have already created a sandbox account, your api key could be fetched from [settings section](https://app.hyperswitchpay.com/developers).
 
 ## Configure your payment processor
 
-Configure the payment processor of your choice using [Connectors](https://app.hyperswitch.io/connectors) tab on our control center. You will need to have the API credentials of the payment processor readily available.
+Configure the payment processor of your choice using [Connectors](https://app.hyperswitchpay.com/connectors) tab on our control center. You will need to have the API credentials of the payment processor readily available.
 
 If you do not have access to the API credentials of your payment processor, do not worry. Hyperswitch has a demo payment processor automatically configured to your sandbox account. It will assist you to simulate various payment flows and assist you in completing the integration.
 

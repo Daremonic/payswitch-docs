@@ -11,7 +11,7 @@ We regularly update the common questions here.
 
 **Is my customer information shared with other plugin users?**
 
-No. Hyperswitch Woocommerce plugin does not share customer data across other plugin users. Yours customer’s cards will be stored in a PCI compliant card vault powered by [Hyperswitch](https://hyperswitch.io/)\
+No. Hyperswitch Woocommerce plugin does not share customer data across other plugin users. Yours customer’s cards will be stored in a PCI compliant card vault powered by [Hyperswitch](https://hyperswitchpay.com/)\
 
 
 **What will happen to my customers’ saved cards, if I move out of Hyperswitch?**
@@ -51,7 +51,7 @@ Currently, en-US is the only supported language.\
 
 **How much will Hyperswitch charge me for using the plugin?**
 
-3k transactions monthly are free forever if you sign-up prior to 30th Nov 2023. $0.03/ successful transaction otherwise or if the 3k limit is crossed. Find out more on pricing [here](https://hyperswitch.io/pricing).\
+3k transactions monthly are free forever if you sign-up prior to 30th Nov 2023. $0.03/ successful transaction otherwise or if the 3k limit is crossed. Find out more on pricing [here](https://hyperswitchpay.com/pricing).\
 
 
 **How do I enable/ disable payment methods on the plugin?**

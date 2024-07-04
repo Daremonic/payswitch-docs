@@ -11,7 +11,7 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         maven {
-            url "https://maven.hyperswitch.io/release/production/android/maven/${version}"
+            url "https://maven.hyperswitchpay.com/release/production/android/maven/${version}"
         }
     }
 }

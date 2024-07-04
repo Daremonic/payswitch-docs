@@ -77,7 +77,7 @@ This final step is specific to the processor being used and is not necessary in 
 
 You can configure Apple Pay on Hyperswitch by following the steps mentioned below -
 
-* Login to [Hyperswitch dashboard](https://app.hyperswitch.io/)
+* Login to [Hyperswitch dashboard](https://app.hyperswitchpay.com/)
 * In the Connectors tab, select your processor
 * While selecting Payment Methods, click on Apple Pay in the Wallet section
 * Select the iOS Certificate option

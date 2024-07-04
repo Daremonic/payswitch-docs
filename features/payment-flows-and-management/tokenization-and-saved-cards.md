@@ -14,7 +14,7 @@ Hyperswitch provides you with the capability to store your customers cards secur
 
 For a returning customer, our Unified Checkout automatically shows the list of their saved cards from previous sessions if the same `customer_id` is passed during payments/create API call from your server.
 
-The list customer payment methods API is used here which retrieve the list of cards saved against that customer in a tokenized form. These payment\_tokens can then be used to confirm a payment. ([API Reference](https://api-reference.hyperswitch.io/api-reference/payment-methods/list-payment-methods-for-a-customer-1))
+The list customer payment methods API is used here which retrieve the list of cards saved against that customer in a tokenized form. These payment\_tokens can then be used to confirm a payment. ([API Reference](https://api-reference.hyperswitchpay.com/api-reference/payment-methods/list-payment-methods-for-a-customer-1))
 
 <figure><img src="../../.gitbook/assets/savedCards2.png" alt="" width="300"><figcaption></figcaption></figure>
 
@@ -26,7 +26,7 @@ To save the customer's payment method during account onboarding or in the billin
 
 ```bash
 curl --request POST \
-  --url https://sandbox.hyperswitch.io/payment_methods \
+  --url https://sandbox.hyperswitchpay.com/payment_methods \
   --header 'Content-Type: application/json' \
   --header 'api-key: <api-key>' \
   --data '{
@@ -49,7 +49,7 @@ Cards saved using this API will be listed under saved payment methods for future
 
 ## Migrating your customers’ saved cards from your processors to Hyperswitch
 
-Hyperswitch also supports migrating your customers’ saved cards from your processors’ vaults to Hyperswitch. This process typically involves requesting your processor’s support team to share your customers’ saved cards data to Hyperswitch in a secure file transfer format and may involve sharing Hyperswitch’s PCI DSS certificate with them. Please write to <mark style="color:blue;">biz@hyperswitch.io</mark> to know more and kickstart your card migration process.
+Hyperswitch also supports migrating your customers’ saved cards from your processors’ vaults to Hyperswitch. This process typically involves requesting your processor’s support team to share your customers’ saved cards data to Hyperswitch in a secure file transfer format and may involve sharing Hyperswitch’s PCI DSS certificate with them. Please write to <mark style="color:blue;">biz@hyperswitchpay.com</mark> to know more and kickstart your card migration process.
 
 ## Network Tokenization
 
@@ -61,6 +61,6 @@ This features is current not present in Hyperswitch. Submit a feature request [h
 
 1. How can I tokenize and add a card to my existing customer?
 
-You can use the payment method API to add a card to against any of your customers. You can find the API reference [here](https://api-reference.hyperswitch.io/api-reference/payment-methods/paymentmethods--create).
+You can use the payment method API to add a card to against any of your customers. You can find the API reference [here](https://api-reference.hyperswitchpay.com/api-reference/payment-methods/paymentmethods--create).
 
 </details>

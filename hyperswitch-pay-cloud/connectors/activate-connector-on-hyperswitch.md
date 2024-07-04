@@ -11,7 +11,7 @@ This section gives you an overview of how to activate connector on Hyperswitch
 ### Steps to activate Connector on the Hyperswitch Control center
 
 1. **Access Connectors Section**
-   * Navigate to the [Connectors](https://app.hyperswitch.io/connectors) section on the Control Center.
+   * Navigate to the [Connectors](https://app.hyperswitchpay.com/connectors) section on the Control Center.
    * Select the desired connector using the '+ Connect' button.
 2. **Configure Profile**
    * Choose a Profile Name and Profile Id.

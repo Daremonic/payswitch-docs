@@ -28,7 +28,7 @@ Hyperswitch is engineered with a meticulous focus on safeguarding sensitive data
 * Secure software development practices
 * SOC Type I and Type II certification
 
-[Read more](https://docs.hyperswitch.io/security-and-compliance/security) about Data security at Hyperswitch.
+[Read more](https://docs.hyperswitchpay.com/security-and-compliance/security) about Data security at Hyperswitch.
 
 ### Data Retention and Deletion
 

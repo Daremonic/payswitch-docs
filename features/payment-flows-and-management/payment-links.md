@@ -22,14 +22,14 @@ Introducing Payment Links – Seamlessly integrate into Hyperswitch without writ
 
 #### Prerequisites
 
-* Create a Hyperswitch account via the [dashboard](https://app.hyperswitch.io/register) and create a profile ([read more](../account-management/multiple-accounts-and-profiles.md))
+* Create a Hyperswitch account via the [dashboard](https://app.hyperswitchpay.com/register) and create a profile ([read more](../account-management/multiple-accounts-and-profiles.md))
 * Add a payment processor to you account
 
 #### Using Payment links
 
 > > Note: Domain name might vary based on the testing and production environment.
 
-#### 1. Update [business profile ](https://api-reference.hyperswitch.io/api-reference/business-profile/business-profile--update)with a default payment\_link\_config by passing the below object in the request body
+#### 1. Update [business profile ](https://api-reference.hyperswitchpay.com/api-reference/business-profile/business-profile--update)with a default payment\_link\_config by passing the below object in the request body
 
 {% code fullWidth="true" %}
 ```
@@ -43,14 +43,14 @@ Introducing Payment Links – Seamlessly integrate into Hyperswitch without writ
 ```
 {% endcode %}
 
-#### 2. [Create a payment link ](https://api-reference.hyperswitch.io/api-reference/payments/payments--create)by using the same payments/create endpoint
+#### 2. [Create a payment link ](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--create)by using the same payments/create endpoint
 
 \- Set "payment\_link" = "true" to create a payment link with default **payment\_link\_configs** configs set in business profile update mentioned in Step 1
 
 \- You can also pass the "session\_expiry" field in seconds to indicate the expiry of the payment link. By default it is 900 seconds (15 minutes)
 
 ```
-curl --location 'https://sandbox.hyperswitch.io/payments' \
+curl --location 'https://sandbox.hyperswitchpay.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: YOUR_API_KEY' \
@@ -59,7 +59,7 @@ curl --location 'https://sandbox.hyperswitch.io/payments' \
     "currency": "USD",
     "confirm": false,
     "customer_id": "cus_123",
-    "return_url": "https://hyperswitch.io",
+    "return_url": "https://hyperswitchpay.com",
     "description": "For selling Tshirt",
     "payment_link": true,
     "session_expiry": 2592000
@@ -68,9 +68,9 @@ curl --location 'https://sandbox.hyperswitch.io/payments' \
 
 #### 3. Customizing a Payment link during creation:
 
-You can also customize a specific payment link by including the **payment\_link\_config object** while creating a link during [payments/create](https://api-reference.hyperswitch.io/api-reference/payments/payments--create) call as well. Except for domain\_name field from the same object in business\_profile/update, you could customize the remaining fields.
+You can also customize a specific payment link by including the **payment\_link\_config object** while creating a link during [payments/create](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--create) call as well. Except for domain\_name field from the same object in business\_profile/update, you could customize the remaining fields.
 
-<pre class="language-markup"><code class="lang-markup">curl --location 'https://sandbox.hyperswitch.io/payments' \
+<pre class="language-markup"><code class="lang-markup">curl --location 'https://sandbox.hyperswitchpay.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: YOUR_API_KEY' \
@@ -79,7 +79,7 @@ You can also customize a specific payment link by including the **payment\_link\
     "currency": "USD",
     "confirm": false,
     "customer_id": "cus_123",
-    "return_url": "https://hyperswitch.io",
+    "return_url": "https://hyperswitchpay.com",
     "description": "For selling Tshirt",
     "payment_link": true,
     "session_expiry": 2592000,
@@ -134,7 +134,7 @@ Step 3: Create CNAME record
 
 Enter the following values and save the new DNS record.
 
-> \| FIELD | INSTRUCTIONS | DESCRIPTION | |----------|----------|----------| | Type | Select `CNAME` from the dropdown | What kind of DNS record this is. | | Name | if your custom domain is `paymentlink.xyz.com`, enter `paymentlink`| For CNAME records, this field is the first part of your subdomain (the part leading up to the first period).| | Value |Enter `sandbox.hyperswitch.io` | This is what the new subdomain record points to–in this case, Hyperswitch .Some providers may expect a trailing period (.) after the CNAME value. Make sure to verify that your CNAME value matches the format your provider expects. | | TTL/Expiry | Enter `300` | An expiration of 5 minutes (300 seconds) is OK. Your DNS provider might not allow you to change the TTL value. If this field is missing or you can’t change it, it’s safe to ignore this part of the configuration. |
+> \| FIELD | INSTRUCTIONS | DESCRIPTION | |----------|----------|----------| | Type | Select `CNAME` from the dropdown | What kind of DNS record this is. | | Name | if your custom domain is `paymentlink.xyz.com`, enter `paymentlink`| For CNAME records, this field is the first part of your subdomain (the part leading up to the first period).| | Value |Enter `sandbox.hyperswitchpay.com` | This is what the new subdomain record points to–in this case, Hyperswitch .Some providers may expect a trailing period (.) after the CNAME value. Make sure to verify that your CNAME value matches the format your provider expects. | | TTL/Expiry | Enter `300` | An expiration of 5 minutes (300 seconds) is OK. Your DNS provider might not allow you to change the TTL value. If this field is missing or you can’t change it, it’s safe to ignore this part of the configuration. |
 
 Step 4: Create your TXT record
 
@@ -159,7 +159,7 @@ $ nslookup -querytype=CNAME paymentlink.xyz.com
 your should get a output like this
 
 ```shell
-<your subdomain> 	canonical name = sandbox.hyperswitch.io.
+<your subdomain> 	canonical name = sandbox.hyperswitchpay.com.
 ```
 
 Once you observe the output, proceed to the next step.

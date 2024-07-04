@@ -8,7 +8,7 @@ description: Accept debit and credit card payments on your application
 This section gives you an overview of how to enable debit and credit cards on Hyperswitch along with how to configure the web client to securely save your customers' card details for future payments
 {% endhint %}
 
-![logo\_discord](https://hyperswitch.io/logos/logo\_diners.svg)![logo\_discord](https://hyperswitch.io/logos/logo\_visa.svg)![logo\_discord](https://hyperswitch.io/logos/logo\_mastercard.svg)![logo\_discord](https://hyperswitch.io/logos/logo\_amex.svg)
+![logo\_discord](https://hyperswitchpay.com/logos/logo\_diners.svg)![logo\_discord](https://hyperswitchpay.com/logos/logo\_visa.svg)![logo\_discord](https://hyperswitchpay.com/logos/logo\_mastercard.svg)![logo\_discord](https://hyperswitchpay.com/logos/logo\_amex.svg)
 
 Hyperswitch supports credit and debit card payments through all our payment processor connectors**.** \
 We accept cards from all major global and local card networks, such as Visa, Mastercard, American Express, Diners, Discover, JCB, Union Pay, etc. While Hyperswitch supports card payments in 135+ currencies and 150+ countries, each of these connectors and networks has limitations in terms of the number of countries and currencies they support.
@@ -17,7 +17,7 @@ Apart from regular one-time payments, Hyperswitch supports saving a card, recurr
 
 ## Integration Steps
 
-1. Go to Hyperswitch dashboard and to connectors tab [here](https://app.hyperswitch.io/) and enable card.
+1. Go to Hyperswitch dashboard and to connectors tab [here](https://app.hyperswitchpay.com/) and enable card.
 
 ## Saved Cards
 

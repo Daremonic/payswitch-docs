@@ -20,7 +20,7 @@ The code from your Stripe integration to be removed and replaced is explained be
  $ npm install @juspay-tech/hyperswitch-node
 ```
 
-**Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitch.io/developers) page on the dashboard.
+**Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitchpay.com/developers) page on the dashboard.
 
 ```js
 // from
@@ -39,7 +39,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url "https://maven.hyperswitch.io/release/production/android/maven/1.0.1"
+            url "https://maven.hyperswitchpay.com/release/production/android/maven/1.0.1"
         }
     }
 }

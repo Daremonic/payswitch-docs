@@ -10,7 +10,7 @@ This section gives you an overview of how to make test payments via Hyperswitch.
 
 ## Test the Configuration using Dashboard
 
-1. Upon configuration of the Connector, navigate to the dashboard [home page](https://app.hyperswitch.io/home)
+1. Upon configuration of the Connector, navigate to the dashboard [home page](https://app.hyperswitchpay.com/home)
 2. Proceed with the "Try a test payment" option on the home page of the dashboard
 3. Setup your demo checkout page by providing Business profile, Profile Id, Currency and Amount
 4. Click on Show Preview, Your demo checkout page will be visible at preview section

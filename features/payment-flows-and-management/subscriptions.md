@@ -16,7 +16,7 @@ Hyperswitch allows you to work with your preferred subscription provider while h
 
 * Flexibility to work with any payment processor of your choice based on better costs or auth rates
 * Expand to local payment methods across global markets
-* Smart route recurring payments across multiple payment processors to improve the success rate ([part of Q1 roadmap](https://docs.hyperswitch.io/about-hyperswitch/roadmap))
+* Smart route recurring payments across multiple payment processors to improve the success rate ([part of Q1 roadmap](https://docs.hyperswitchpay.com/about-hyperswitch/roadmap))
 * Unified solution to manage one-time payments use cases (e-commerce use case) and recurring payments use cases (subscription payments)
 
 ### What subscription providers do we support?
@@ -40,9 +40,9 @@ User selects a plan followed by selecting the payment method and adding the paym
 
 * Integration and set up - Merchants will setup their account and generate API keys with the subscription provider and Hyperswitch as well as integrate with both of them. Merchants will set up their plans with the subscription provider and set up their payment providers with Hyperswitch.
 * Retrieve plans and create subscription - Merchants will retrieve the eligible plans and display them on their website. The customer will select one of the plans shown to them. Merchant will use the selected plan to create a customer and a subscription with the subscription provider. &#x20;
-* Collect payment method details - Once the subscription is created and the key fields are received by the merchant, they'll initiate a Payments create call with Hyperswitch and load the payment SDK on their website ([more on SDK integration](https://docs.hyperswitch.io/hyperswitch-cloud/integration-guide)) to collect payment details from the customer&#x20;
-* Make payment and return invoice - Using the payment details entered by the user the merchant will make a payment with Hyperswitch and create a mandate ([more details](https://docs.hyperswitch.io/features/payment-flows-and-management/mandates-and-recurring-payments)). The subscription is marked as active upon successful payment and the invoice with the customer.
-  * In case the subscription start date is in future and the customer need not be charged immediately then the merchant should initiate a $0 mandate with Hyperswitch ([more details](https://docs.hyperswitch.io/features/payment-flows-and-management/zero-amount-authorization)).  &#x20;
+* Collect payment method details - Once the subscription is created and the key fields are received by the merchant, they'll initiate a Payments create call with Hyperswitch and load the payment SDK on their website ([more on SDK integration](https://docs.hyperswitchpay.com/hyperswitch-cloud/integration-guide)) to collect payment details from the customer&#x20;
+* Make payment and return invoice - Using the payment details entered by the user the merchant will make a payment with Hyperswitch and create a mandate ([more details](https://docs.hyperswitchpay.com/features/payment-flows-and-management/mandates-and-recurring-payments)). The subscription is marked as active upon successful payment and the invoice with the customer.
+  * In case the subscription start date is in future and the customer need not be charged immediately then the merchant should initiate a $0 mandate with Hyperswitch ([more details](https://docs.hyperswitchpay.com/features/payment-flows-and-management/zero-amount-authorization)).  &#x20;
 * Make MIT transactions - The subscription provider will trigger a webhook to the merchant on the date of the scheduled payment for subscription. Upon receiving the webhook, the merchant should initiate a payment with Hyperswitch using the customer ID and mandate ID. The merchant will share the invoice with the customer upon successful payment
 
 <figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
@@ -52,9 +52,9 @@ User selects a plan followed by selecting the payment method and adding the paym
 User selects a payment method and adds the payment method details which are saved. User finally selects the plan to start the subscription. This flow can be broken into 5 parts
 
 * Integration and set up - Merchants will setup their account and generate API keys with the subscription provider and Hyperswitch as well as integrate with both of them. Merchants will set up their plans with the subscription provider and set up their payment providers with Hyperswitch. &#x20;
-* Collect and store payment method details - Merchant will initiate a Payments create call with Hyperswitch and load the payment SDK on their website ([more on SDK integration](https://docs.hyperswitch.io/hyperswitch-cloud/integration-guide)) to collect payment details from the customer.
+* Collect and store payment method details - Merchant will initiate a Payments create call with Hyperswitch and load the payment SDK on their website ([more on SDK integration](https://docs.hyperswitchpay.com/hyperswitch-cloud/integration-guide)) to collect payment details from the customer.
   * Merchant will create a customer with the subscription provider
-  * Merchant will initiate a $0 mandate with Hyperswitch ([more details](https://docs.hyperswitch.io/features/payment-flows-and-management/zero-amount-authorization)) to validate and store the payment details and create a mandate with Hyperswitch (using the same customer ID).  &#x20;
+  * Merchant will initiate a $0 mandate with Hyperswitch ([more details](https://docs.hyperswitchpay.com/features/payment-flows-and-management/zero-amount-authorization)) to validate and store the payment details and create a mandate with Hyperswitch (using the same customer ID).  &#x20;
 * Retrieve plans and create subscription - Merchants will retrieve the eligible plans and display them on their website. The customer will select one of the plans shown to them. Merchant will use the selected plan to create a subscription with the subscription provider.
 * Make payment and return invoice - Using the mandate ID created earlier the merchant will make a payment with Hyperswitch. The subscription is marked as active upon successful payment and the invoice with the customer.
   * In case the subscription start date is in future and the customer need not be charged immediately then no payment is inittaed with Hyperswitch

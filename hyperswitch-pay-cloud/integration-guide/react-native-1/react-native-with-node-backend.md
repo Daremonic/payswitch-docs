@@ -34,7 +34,7 @@ $ npm install @juspay-tech/hyperswitch-node
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.hyperswitch.io/developers?tabIndex=1).
+Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.hyperswitchpay.com/developers?tabIndex=1).
 
 ```js
 const hyper = require("@juspay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
@@ -85,7 +85,7 @@ flutter pub get
 
 ### 3.1 Initialise the Hyperswitch SDK
 
-Initialise `Hyper` onto your app with your publishable key with the `Hyper` constructor. To get a PublishableKey please find it [here](https://app.hyperswitch.io/developers).
+Initialise `Hyper` onto your app with your publishable key with the `Hyper` constructor. To get a PublishableKey please find it [here](https://app.hyperswitchpay.com/developers).
 
 ```dart
 import 'package:flutter_hyperswitch/flutter_hyperswitch.dart';

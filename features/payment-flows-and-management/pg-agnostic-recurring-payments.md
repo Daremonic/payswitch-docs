@@ -29,7 +29,7 @@ In case you wish more processors to be covered for PG Agnostic Recurring Payment
 To start routing MIT payments across all supported connectors in addition to the connector through which the recurring payment was set up, use the below API to enable it for a business profile
 
 ```bash
-curl --location 'http://sandbox.hyperswitch.io/account/:merchant_id/business_profile/:profile_id/toggle_connector_agnostic_mit' \
+curl --location 'http://sandbox.hyperswitchpay.com/account/:merchant_id/business_profile/:profile_id/toggle_connector_agnostic_mit' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: api_key' \
@@ -50,7 +50,7 @@ So the internal precedence would be to try the payment with Network Transaction 
 
 #### 2. How do I configure a routing rule so that all CITs are routed through one connector and all MITs through another?
 
-The [Hyperswitch dashboard](https://app.hyperswitch.io/dashboard/routing/rule) provides UI to configure routing rules for PG Agnostic Recurring Payments. You can choose the profile for which you wish to configure the rule in the Smart Routing Configuration.
+The [Hyperswitch dashboard](https://app.hyperswitchpay.com/dashboard/routing/rule) provides UI to configure routing rules for PG Agnostic Recurring Payments. You can choose the profile for which you wish to configure the rule in the Smart Routing Configuration.
 
 Then, you can configure the rule as shown below using the metadata field in the Rule-Based Configuration.
 

@@ -44,6 +44,6 @@ _**Step 5:**_ In the popup, select the appropriate action based on whether you w
 
 <figure><img src="../../../.gitbook/assets/Astep5-smartrouter.png" alt=""><figcaption></figcaption></figure>
 
-_**Step 6:**_ You can view your active routing algorithm as well as all previously configured algorithms on the [Hyperswitch Dashboard](https://app.hyperswitch.io/routing)
+_**Step 6:**_ You can view your active routing algorithm as well as all previously configured algorithms on the [Hyperswitch Dashboard](https://app.hyperswitchpay.com/routing)
 
 <figure><img src="../../../.gitbook/assets/Astep6-smartrouter.png" alt=""><figcaption></figcaption></figure>
