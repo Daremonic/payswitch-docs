@@ -194,7 +194,7 @@ _acme-challenge.<your domain>   text = "<your unique TXT record value>"
 
 Yes. Your custom domain can be included in the default payment\_link\_config object as part of the business profile update.
 
-This involves adding CNAME records and TLS certificates which ends up being a slightly complex process. Please reach out to our [Support](https://join.slack.com/t/hyperswitch-io/shared\_invite/zt-1k6cz4lee-SAJzhz6bjmpp4jZCDOtOIg) to test this feature out with your custom domain.
+This involves adding CNAME records and TLS certificates which ends up being a slightly complex process. Please reach out to our Support to test this feature out with your custom domain.
 
 </details>
 
@@ -210,7 +210,7 @@ Currently, the Control centre's capability to create payment links is under deve
 
 <summary>Can I create a static payment link which can be used across users?</summary>
 
-No, at the moment we do not support creation of static payment links ([request for feature](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests))
+No, at the moment we do not support creation of static payment links (request for feature)
 
 </details>
 

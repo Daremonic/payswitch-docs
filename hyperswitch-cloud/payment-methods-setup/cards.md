@@ -8,9 +8,7 @@ description: Accept debit and credit card payments on your application
 This section gives you an overview of how to enable debit and credit cards on Hyperswitch along with how to configure the web client to securely save your customers' card details for future payments
 {% endhint %}
 
-![logo\_discord](https://hyperswitchpay.com/logos/logo\_diners.svg)![logo\_discord](https://hyperswitchpay.com/logos/logo\_visa.svg)![logo\_discord](https://hyperswitchpay.com/logos/logo\_mastercard.svg)![logo\_discord](https://hyperswitchpay.com/logos/logo\_amex.svg)
-
-Hyperswitch supports credit and debit card payments through all our payment processor connectors**.** \
+Hyperswitch supports credit and debit card payments through all our payment processor connectors\*\*.\*\*\
 We accept cards from all major global and local card networks, such as Visa, Mastercard, American Express, Diners, Discover, JCB, Union Pay, etc. While Hyperswitch supports card payments in 135+ currencies and 150+ countries, each of these connectors and networks has limitations in terms of the number of countries and currencies they support.
 
 Apart from regular one-time payments, Hyperswitch supports saving a card, recurring payments, and placing a hold for later capture.
@@ -33,7 +31,7 @@ Follow the below guide to learn how to make a saved card payment using Hyperswit
 
 ## Recurring Payments - Mandate through cards
 
-Hyperswitch supports the creation of mandates for card transactions through various payment processors to collect card information from the customer and authorize a mandate. The mandate can then be charged against at specific intervals and specific amounts based on the mandate setup.&#x20;
+Hyperswitch supports the creation of mandates for card transactions through various payment processors to collect card information from the customer and authorize a mandate. The mandate can then be charged against at specific intervals and specific amounts based on the mandate setup.
 
 Follow the below guide to learn how to make a recurring payment with Hyperswitch
 

@@ -141,7 +141,6 @@
 * [🛍️ E-commerce platform plugins](features/e-commerce-platform-plugins/README.md)
   * [WooCommerce Plugin](features/e-commerce-platform-plugins/woocommerce-plugin/README.md)
     * [Setup](features/e-commerce-platform-plugins/woocommerce-plugin/setup.md)
-    * [Roadmap](features/e-commerce-platform-plugins/woocommerce-plugin/roadmap.md)
     * [Compatibility](features/e-commerce-platform-plugins/woocommerce-plugin/compatibility.md)
     * [FAQs](features/e-commerce-platform-plugins/woocommerce-plugin/faqs.md)
 

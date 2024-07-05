@@ -18,11 +18,11 @@ In the following MIT payments basis the enablement of the feature and the availa
 
 Hyperswitch supports the following processors for PG Agnostic Recurring Payments.
 
-- Stripe
-- Adyen
-- Cybersource
+* Stripe
+* Adyen
+* Cybersource
 
-In case you wish more processors to be covered for PG Agnostic Recurring Payments, please submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).
+In case you wish more processors to be covered for PG Agnostic Recurring Payments, please submit a feature request.
 
 ### How to enable PG agnostic MITs?
 
@@ -44,7 +44,7 @@ All the payment methods saved with `setup_future_usage : off_session` after enab
 
 #### 1. How are authentication rates affected in PG agnostic MITs?
 
-Network Transaction ID which is provided by the card network itself is a reference to the original payment authenticated by the customer and authorized for recurring payments. Hence the MIT exemption is expected to have better auth rates with this. &#x20;
+Network Transaction ID which is provided by the card network itself is a reference to the original payment authenticated by the customer and authorized for recurring payments. Hence the MIT exemption is expected to have better auth rates with this.
 
 So the internal precedence would be to try the payment with Network Transaction ID if present else the corresponding PG token would be used.
 
@@ -54,13 +54,13 @@ The [Hyperswitch dashboard](https://app.hyperswitchpay.com/dashboard/routing/rul
 
 Then, you can configure the rule as shown below using the metadata field in the Rule-Based Configuration.
 
-<figure><img src="../../.gitbook/assets/Routing rule for pg agnostic recurring payments.png" alt=""></figure>
+<figure><img src="../../.gitbook/assets/Routing rule for pg agnostic recurring payments.png" alt=""><figcaption></figcaption></figure>
 
 This rule would be used in conjunction with the other active routing rules that you have configured.
 
 Once the rule is configured, you would need to send the following metadata as per the payment request:
 
--> Metadata to be sent in CITs
+\-> Metadata to be sent in CITs
 
 ```
 "metadata": {
@@ -68,11 +68,12 @@ Once the rule is configured, you would need to send the following metadata as pe
 }
 ```
 
--> Metadata to be sent in MITs
+\-> Metadata to be sent in MITs
 
 ```
 "metadata": {
     "is_mit": "true"
 }
 ```
+
 According to the above configured rule all the CITs for the specific business profile should be routed through Stripe and MITs through Adyen.

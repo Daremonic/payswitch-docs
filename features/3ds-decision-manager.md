@@ -31,7 +31,3 @@ Follow the [setup guide](merchant-controls/3ds-decision-manager/setup-guide.md) 
 ## Next step
 
 To test the 3DS Decision Manager, after activating the rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.hyperswitchpay.com/sdk)
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}

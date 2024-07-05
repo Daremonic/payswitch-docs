@@ -27,7 +27,7 @@ Hyperswitch supports the following processors for 3DS Step-up retries.
 * Bluesnap
 * Stripe
 
-In case you wish more processors to be covered for 3DS Step-up retry, please submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).
+In case you wish more processors to be covered for 3DS Step-up retry, please submit a feature request.
 
 ## How to enable 3DS Step-up retries?
 
@@ -45,7 +45,4 @@ While Smart Retry attempts both to retry all the eligible business and technical
 
 ### What if the failure is eligible for both 3DS Step-up retry and Smart retry?
 
-If a non-3DS payment failure is eligible for both types of retries, we choose to proceed with 3DS Step-up Retry. We attempt the payment by enforcing 3DS authentication with the same processor, as this reduces chargeback cases and ensures the transaction is not fraudulent.&#x20;
-
-
-
+If a non-3DS payment failure is eligible for both types of retries, we choose to proceed with 3DS Step-up Retry. We attempt the payment by enforcing 3DS authentication with the same processor, as this reduces chargeback cases and ensures the transaction is not fraudulent.

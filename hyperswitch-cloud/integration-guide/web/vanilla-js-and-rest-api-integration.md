@@ -10,8 +10,6 @@ In this section, you will get details to Integrate Hyperswitch SDK using Node Ba
 
 **Before following these steps, please configure your payment methods** [here](https://hyperswitchpay.com/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to you app with any framework. If you are using React framework please go through [React ](node-and-react.md)Integration to use a dedicated wrapper.\\
 
-## [<mark style="color:blue;">Demo App</mark>](https://github.com/aashu331998/hyperswitch-html-demo-app/archive/refs/heads/main.zip)
-
 ## 1. Setup the server
 
 ### 1.1 Create a payment
@@ -76,7 +74,7 @@ Add one empty placeholder `div` to your checkout form for each Widget that youâ€
 
 {% tabs %}
 {% tab title="UnifiedCheckout" %}
-#### 2.2 Fetch the Payment and create the Unified Checkout
+**2.2 Fetch the Payment and create the Unified Checkout**
 
 <figure><img src="../../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
@@ -124,7 +122,7 @@ async function initialize() {
 {% endtab %}
 
 {% tab title="ExpressCheckout" %}
-#### 2.2 Fetch the Payment and create the Express Checkout
+**2.2 Fetch the Payment and create the Express Checkout**
 
 <figure><img src="../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 

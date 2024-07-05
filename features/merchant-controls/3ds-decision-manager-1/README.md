@@ -35,7 +35,3 @@ Surcharge can be applied to a payment using `surcharge_details` field in [paymen
 ## Next step
 
 To test the Surcharge Manager, after activating the rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.hyperswitchpay.com/sdk)
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}

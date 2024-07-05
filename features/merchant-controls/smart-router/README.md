@@ -43,10 +43,6 @@ Hyperswitch Smart Router Engine evaluates every payment request against your pre
 
 To test the Smart Router, after activating one rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.hyperswitchpay.com/sdk)
 
-{% content-ref url="broken-reference/" %}
-[broken-reference](broken-reference/)
-{% endcontent-ref %}
-
 <details>
 
 <summary>FAQs</summary>

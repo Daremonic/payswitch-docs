@@ -9,7 +9,7 @@ Payment method details of users are stored in a secure PCI-compliant locker, for
 There are two entry points to storing payment methods for a given customer.
 
 * Persisting payment methods prior to processing transactions
-  * &#x20;Payment methods can be created for a given customer using `/payment_methods` API.
+  * Payment methods can be created for a given customer using `/payment_methods` API.
   * This basically stores the passed payment method details in secure PCI-compliant locker.
 * Persisting payment methods post a successful transaction
   * If a payment request was created with `"setup_future_usage": "off_session"` or if a payout request was created with `"recurring": true`, the payment method details will be stored in the secure locker once the transaction completes with a successful status.
@@ -38,7 +38,7 @@ Dashboard - [https://app.hyperswitchpay.com](https://app.hyperswitchpay.com)
 
 #### Steps
 
-**Step 1 -** Import Postman collection from [here](https://api.postman.com/collections/9906252-c718fec5-b0ef-4fdb-b617-58e2dcb99a7b?access\_key=PMAT-01HP15F4SQTYT15XYETDWFP3DZ).
+**Step 1 -** Import Postman collection.
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Import Postman collection</p></figcaption></figure>
 

@@ -12,8 +12,6 @@ In this section, you will get detailed instructions for integrating the Hyperswi
 Use this guide to integrate hyper SDK to your Android app. You can use this as a reference with your Hyperswitch credentials to test the setup. You can also checkout the [App on Google Play Store](https://play.google.com/store/apps/details?id=io.hyperswitch.hyperecom) to test the payment flow.
 {% endhint %}
 
-## [Demo App](https://github.com/aashu331998/Hyperswitch-Android-Demo-App/archive/refs/heads/main.zip)
-
 ## Requirements
 
 * Android 5.0 (API level 21) and above

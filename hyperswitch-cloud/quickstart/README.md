@@ -28,10 +28,6 @@ If you do not have access to the API credentials of your payment processor, do n
 
 ## Integrate Hyperswitch
 
-Don't want to write code? Check out the [Hyperswitch Postman Collection](https://www.postman.com/hyperswitch/workspace/hyperswitch/request/25176183-9b4ad6a8-fbdd-4919-8505-c75c83bdf9d6) for a no-code way to get started with Hyperswitch's API.
-
-You will be using both a server and a client-side component of Hyperswitch to complete the integration.
-
 The payment flow begins once your user has added products to a shopping cart and now wishes to make a payment.
 
 **Step 1:** Your server will create a payment with Hyperswitch server, to get a client\_secret.
@@ -58,19 +54,19 @@ The control center provides complete control on your payment operations.
 
 <summary>FAQs</summary>
 
-#### What is a connector?
+**What is a connector?**
 
 Hyperswitch refers to payment processors, fraud / risk engines and other payment integrations as connectors. Hyperswitch currently supports 50+ global payment processors that you can use to process payments on your application
 
-#### How can I decide the best payment methods for my business?
+**How can I decide the best payment methods for my business?**
 
 Hyperswitch supports 100+ payment methods across various payment processors. There is no one size fits all payment methods but you can learn more about how you can decide the best payment methods for you business [here](../payment-methods-setup/).
 
-#### What will the completed integration look like?
+**What will the completed integration look like?**
 
 Hyperswitch offers various customization options but you can try out our demo store [here](https://demo-hyperswitch.netlify.app/checkout) to test the checkout experience
 
-#### Are there any sample integrations for reference?
+**Are there any sample integrations for reference?**
 
 Here are a few demo integrations for various tech stacks:
 
@@ -78,7 +74,5 @@ Here are a few demo integrations for various tech stacks:
 * [Hyperswitch HTML-Node](https://github.com/hyperswitchpay/hyperswitch-html-node)
 * [Hyperswitch React-Java](https://github.com/hyperswitchpay/hyperswitch-react-java)
 * [Hyperswitch Next-Node](https://github.com/hyperswitchpay/hyperswitch-next-node)
-
-
 
 </details>

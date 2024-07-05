@@ -4,13 +4,11 @@ description: Integrate hyper SDK to your Flutter App using hyperswitch-node
 
 # Flutter with Node Backend
 
-
-
 {% hint style="info" %}
-Use this guide to integrate `hyper` SDK to your Flutter app.&#x20;
+Use this guide to integrate `hyper` SDK to your Flutter app.
 {% endhint %}
 
-**Before following these steps, please configure your payment methods** [here](../../payment-methods-setup/cards.md).
+**Before following these steps, please configure your payment methods.**
 
 ## Requirements
 
@@ -97,7 +95,7 @@ _hyper.init(HyperConfig(publishableKey: 'YOUR_PUBLISHABLE_KEY', customBackendUrl
 When utilising a custom backend or logging system, you can add the customBackendUrl to HyperConfig
 {% endhint %}
 
-### 3.2  Create a Payment Intent
+### 3.2 Create a Payment Intent
 
 Make a network request to the backend endpoint you created in the [previous step](react-native-with-node-backend.md#id-1.2-create-a-payment). The clientSecret returned by your endpoint is used to complete the payment.
 
@@ -147,7 +145,7 @@ Future<void> _presentPaymentSheet() async {
 ```
 {% endcode %}
 
-Congratulations! Now that you have integrated the  Flutter SDK, you can [**customize**](customization.md) the payment sheet to blend with the rest of your app.&#x20;
+Congratulations! Now that you have integrated the Flutter SDK, you can [**customize**](customization.md) the payment sheet to blend with the rest of your app.
 
 ## Next step:
 

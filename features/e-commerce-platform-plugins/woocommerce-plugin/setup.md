@@ -17,8 +17,6 @@ This section covers the steps to setup woocommerce plugin on your website and ma
 
 #### 1.1 Download the Plugin
 
-## [Download the Plugin](https://hyperswitchpay.com/zip/hyperswitch-checkout.zip)
-
 #### 1.2 Installing the Plugin
 
 Head to your WordPress Admin Dashboard, and navigate to Plugins > Add New
@@ -77,7 +75,7 @@ The payment status will be accurately reflected, whether the payment is processi
 
 #### 2.4 Order Updates via Webhooks:
 
-Hyperswitch facilitates seamless order updates through webhooks, allowing you to automate various order management processes. By setting up webhooks within your Hyperswitch Plugin Settings and configuring the necessary endpoints in your Hyperswitch Dashboard, you can receive real-time notifications about order status changes, payment confirmations, and more. &#x20;
+Hyperswitch facilitates seamless order updates through webhooks, allowing you to automate various order management processes. By setting up webhooks within your Hyperswitch Plugin Settings and configuring the necessary endpoints in your Hyperswitch Dashboard, you can receive real-time notifications about order status changes, payment confirmations, and more.
 
 <figure><img src="https://hyperswitchpay.com/img/site/wordpress_webhook.png" alt=""><figcaption></figcaption></figure>
 

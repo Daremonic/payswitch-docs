@@ -66,7 +66,7 @@ In the PostAuth flow, the FRM solution is called into action after the authoriza
 | -------------------- | ------------------------------------------ | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Signifyd / Riskified | <ul><li>PreAuth</li><li>PostAuth</li></ul> | <ul><li>Cancel Transactions</li><li>Flag for Manual Review</li></ul> | <ul><li>Guaranteed Fraud Protection</li><li>Complete Chargeback Protection</li><li>Auth Rate Conversions</li></ul> |
 
-If your FRM processor of choice is not available in the above list, please put a new features request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).
+If your FRM processor of choice is not available in the above list, please put a new features request.
 
 ## FRM status and decisions
 
@@ -101,10 +101,6 @@ Currently, HyperSwitch offers only a single way of integrating with the underlyi
 <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 **Step 5:** Once set up, head to the [API Docs](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--create) to integrate the FRM API and start testing payments with fraud checks.
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
 
 ## FAQs
 

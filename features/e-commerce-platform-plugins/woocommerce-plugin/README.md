@@ -1,5 +1,5 @@
 ---
-description: Hyperswitch Checkout for WooCommerce by hyperswitchpay.com
+description: Hyperswitch Checkout for WooCommerce by HyperSwitchPay
 ---
 
 # WooCommerce Plugin
