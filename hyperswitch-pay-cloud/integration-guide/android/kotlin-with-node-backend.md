@@ -28,7 +28,7 @@ Use this guide to integrate hyper SDK to your Android app. You can use this as a
 Install the package and import it in your code
 
 ```js
-$ npm install @juspay-tech/hyperswitch-node
+$ npm install @hyperswitchpay-tech/hyperswitch-node
 ```
 
 ### 1.2 Create a payment
@@ -36,7 +36,7 @@ $ npm install @juspay-tech/hyperswitch-node
 Before creating a payment, import the `hyperswitch-node` dependencies and initialize it with your API key.
 
 ```js
-const hyper = require("@juspay-tech/hyperwitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@hyperswitchpay-tech/hyperwitch-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the `client_secret` obtained in the response to securely complete the payment on the client.

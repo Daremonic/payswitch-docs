@@ -17,7 +17,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 **Step 1:** Install Hyperswitch’s SDK and server side dependencies from npm
 
 ```js
- $ npm install @juspay-tech/react-native-hyperswitch $ npm install @juspay-tech/hyper-node --save-dev
+ $ npm install @hyperswitchpay-tech/react-native-hyperswitch $ npm install @hyperswitchpay-tech/hyper-node --save-dev
 ```
 
 Install peer dependencies:
@@ -32,13 +32,13 @@ Install peer dependencies:
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const stripe = require("@juspay-tech/hyper-node")("your_hyperswitch_api_key");
+const stripe = require("@hyperswitchpay-tech/hyper-node")("your_hyperswitch_api_key");
 ```
 
 **Step 3:** Add these sources at the beginning of you podfile
 
 ```ruby
-source 'https://github.com/juspay/hyperswitch-pods.git'
+source 'https://github.com/hyperswitchpay/hyperswitch-pods.git'
 source 'https://cdn.cocoapods.org/'
 ```
 

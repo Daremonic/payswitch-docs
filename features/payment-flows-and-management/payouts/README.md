@@ -24,11 +24,11 @@ A way of paying out third parties combined with Hyperswitch's payments processin
     _Hyperswitch currently supports Adyen and Wise_
 * **Simplify Operations**
   * All-in-One View: Monitor all payouts across partners in a single dashboard view
-  * Bulk Payouts (submit a feature request [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests)): Manage large-scale payouts via simple file (.xlsx/.csv) uploads
-  * Recurring Payouts (submit a feature request [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests)): Set up scheduled fixed-value payouts.
+  * Bulk Payouts (submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests)): Manage large-scale payouts via simple file (.xlsx/.csv) uploads
+  * Recurring Payouts (submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests)): Set up scheduled fixed-value payouts.
 * **Stay Secure**
   * Secure Card Handling: PCI-compliant methods to accept, authenticate, and safely store card details. Plus, independent tokenization, irrespective of your payment processor.
-  * Tokenize Bank Details (submit a feature request [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests)): Checkout page to accept and verify bank account verification for Stripe, along with processor-agnostic tokenization of bank details.
+  * Tokenize Bank Details (submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests)): Checkout page to accept and verify bank account verification for Stripe, along with processor-agnostic tokenization of bank details.
 
 ## Supported Processors and Payment Methods
 

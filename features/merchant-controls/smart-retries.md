@@ -31,7 +31,7 @@ Hyperswitch supports the following primary processors for automatic retries.
 * Checkout.com
 * Trustpay
 
-In case you wish more primary processors to be covered for automatic retry, please submit a feature request [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests).
+In case you wish more primary processors to be covered for automatic retry, please submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).
 
 ## How does it work?
 
@@ -62,7 +62,7 @@ Primary processor is the first choice of processor for the particular transactio
 
 ### Why can I not enable Automatic Retry from the Hyperswitch dashboard?
 
-For reconciliation purposes, some merchants prefer having the same payment\_id being passed to both Hyperswitch and the Payment Processors. Smart retry would not be feasible if such a use case exists. Hence, Smart retry is as an additional configuration that can be enabled only by contacting our support (hyperswitch@juspay.in).
+For reconciliation purposes, some merchants prefer having the same payment\_id being passed to both Hyperswitch and the Payment Processors. Smart retry would not be feasible if such a use case exists. Hence, Smart retry is as an additional configuration that can be enabled only by contacting our support (hyperswitch@hyperswitchpay.in).
 
 Since Smart retry involves multiple payment attempts for a single payment\_id, Hyperswitch appends the attempt number to the payment\_id that the merchant sends to Hyperswitch before passing it on to the processors.
 

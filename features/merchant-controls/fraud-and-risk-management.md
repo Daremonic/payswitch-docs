@@ -66,7 +66,7 @@ In the PostAuth flow, the FRM solution is called into action after the authoriza
 | -------------------- | ------------------------------------------ | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Signifyd / Riskified | <ul><li>PreAuth</li><li>PostAuth</li></ul> | <ul><li>Cancel Transactions</li><li>Flag for Manual Review</li></ul> | <ul><li>Guaranteed Fraud Protection</li><li>Complete Chargeback Protection</li><li>Auth Rate Conversions</li></ul> |
 
-If your FRM processor of choice is not available in the above list, please put a new features request [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests).
+If your FRM processor of choice is not available in the above list, please put a new features request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).
 
 ## FRM status and decisions
 

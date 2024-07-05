@@ -32,7 +32,7 @@ In this chapter, you will deploy Hyperswitch control center on AWS cloud. You ca
 
 > #### Note
 >
-> You can directly start from [Step 3](https://hyperswitch-juspay.stoplight.io/studio/installation-guide:main?source=8jifq2qd#step-3---setup-hyperswitch) if you have installed and configured AWS CLI
+> You can directly start from [Step 3](https://hyperswitch-hyperswitchpay.stoplight.io/studio/installation-guide:main?source=8jifq2qd#step-3---setup-hyperswitch) if you have installed and configured AWS CLI
 
 #### Step 1 - Install or Update the AWS CLI
 
@@ -128,7 +128,7 @@ Takes around 10-15 min to execute successfully
 {% endhint %}
 
 ```json
-curl https://raw.githubusercontent.com/juspay/hyperswitch-control-center/main/aws/hyperswitch_control_control_aws_setup.sh | bash
+curl https://raw.githubusercontent.com/hyperswitchpay/hyperswitch-control-center/main/aws/hyperswitch_control_control_aws_setup.sh | bash
 ```
 
 {% hint style="warning" %}
@@ -146,6 +146,6 @@ You need JQ installed for this. For more information, [click here](https://jqlan
 {% endhint %}
 
 ```json
-curl https://raw.githubusercontent.com/juspay/hyperswitch-control-center/main/aws/hyperswitch_control_center_cleanup_setup.sh | bash
+curl https://raw.githubusercontent.com/hyperswitchpay/hyperswitch-control-center/main/aws/hyperswitch_control_center_cleanup_setup.sh | bash
 ```
 

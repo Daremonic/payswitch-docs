@@ -19,7 +19,7 @@ Hyperswitch recommends using the PaymentSheet instead of the Card Widget. Using 
 Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to Hyperswitch server.
 
 ```js
-import { HyperProvider } from "@juspay-tech/react-native-hyperswitch";
+import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch";
 ```
 
 ### 1.2 Use `HyperProvider`
@@ -27,7 +27,7 @@ import { HyperProvider } from "@juspay-tech/react-native-hyperswitch";
 To initialize Hyperswitch in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize Hyperswitch using the HyperProvider component.
 
 ```js
-import { HyperProvider } from "@juspay-tech/react-native-hyperswitch ";
+import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch ";
 
 function App() {
   return (

@@ -17,7 +17,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 **Step 1:** Install Hyperswitch’s SDK and server side dependencies from npm
 
 ```js
- $ npm install @juspay-tech/hyperswitch-node
+ $ npm install @hyperswitchpay-tech/hyperswitch-node
 ```
 
 **Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitchpay.com/developers) page on the dashboard.
@@ -26,7 +26,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 // from
 const stripe = require("stripe")(your_stripe_api_key);
 // to
-const stripe = require("@juspay-tech/hyperswitch-node")(
+const stripe = require("@hyperswitchpay-tech/hyperswitch-node")(
   "your_hyperswitch_api_key"
 );
 ```

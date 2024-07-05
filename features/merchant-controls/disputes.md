@@ -72,4 +72,4 @@ Clicking one of the dispute will take you to a page where you can see further in
 
 ### 4. Accepting/Challenging a Dispute
 
-This feature is currently not present in Hyperswitch. Request for this feature [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests).
+This feature is currently not present in Hyperswitch. Request for this feature [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).

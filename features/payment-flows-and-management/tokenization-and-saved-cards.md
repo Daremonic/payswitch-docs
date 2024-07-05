@@ -53,7 +53,7 @@ Hyperswitch also supports migrating your customers’ saved cards from your proc
 
 ## Network Tokenization
 
-This features is current not present in Hyperswitch. Submit a feature request [here](https://github.com/juspay/hyperswitch/discussions/new?category=ideas-feature-requests). Hyperswitch can support Network Tokenization which will enable you to securely store your customers’ card details with various networks such as Visa, Mastercard, American Express, etc. This would bring in additional benefits such as higher authorization rates, fraud reduction, liability shift, lower network fees in some cases, etc.&#x20;
+This features is current not present in Hyperswitch. Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests). Hyperswitch can support Network Tokenization which will enable you to securely store your customers’ card details with various networks such as Visa, Mastercard, American Express, etc. This would bring in additional benefits such as higher authorization rates, fraud reduction, liability shift, lower network fees in some cases, etc.&#x20;
 
 <details>
 

@@ -38,7 +38,7 @@ We support the right to erasure through a permanent deletion of personal data up
 
 ### Data Protection Team
 
-Juspay Technologies Private Limited (doing business as Hyperswitch) has a Privacy and Data Protection team and a designated Data Protection Officer to look after Data Protection, Privacy and Compliance Obligations
+hyperswitchpay Technologies Private Limited (doing business as Hyperswitch) has a Privacy and Data Protection team and a designated Data Protection Officer to look after Data Protection, Privacy and Compliance Obligations
 
 ### Data Protection Agreement
 

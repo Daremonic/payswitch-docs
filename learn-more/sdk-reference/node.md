@@ -19,9 +19,9 @@ Node 12 or higher.
 Install the package with:
 
 ```sh
-npm install @juspay-tech/hyperswitch-node --save
+npm install @hyperswitchpay-tech/hyperswitch-node --save
 # or
-yarn add @juspay-tech/hyperswitch-node
+yarn add @hyperswitchpay-tech/hyperswitch-node
 ```
 
 ## Usage
@@ -177,7 +177,7 @@ const app = express();
 // Don't submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
 
-const hyperswitch = require('@juspay-tech/hyperswitch-node')('snd_b8df3xxx......');
+const hyperswitch = require('@hyperswitchpay-tech/hyperswitch-node')('snd_b8df3xxx......');
 
 app.use(express.static("public"));
 app.use(express.json());

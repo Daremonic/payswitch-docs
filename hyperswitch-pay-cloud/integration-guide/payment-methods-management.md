@@ -52,16 +52,16 @@ app.post("/create-ephemeral-key", async (req, res) => {
 Install the packages and import it into your code
 
 ```js
-$ npm install @juspay-tech/hyper-js
-$ npm install @juspay-tech/react-hyper-js
+$ npm install @hyperswitchpay-tech/hyper-js
+$ npm install @hyperswitchpay-tech/react-hyper-js
 ```
 
 #### 2.2 Add `hyper` to your React app
 
 ```js
 import React, { useState, useEffect } from "react";
-import { loadHyper } from "@juspay-tech/hyper-js";
-import { HyperManagementElements } from "@juspay-tech/react-hyper-js";
+import { loadHyper } from "@hyperswitchpay-tech/hyper-js";
+import { HyperManagementElements } from "@hyperswitchpay-tech/react-hyper-js";
 ```
 
 #### 2.3 Load `hyper-js`

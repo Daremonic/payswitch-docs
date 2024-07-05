@@ -25,9 +25,9 @@ The code from your Stripe integration to be removed and replaced is explained be
 **Step 1:** Install Hyperswitch's SDK and server side dependencies from npm
 
 ```js
-  $ npm install @juspay-tech/react-hyper-js
-  $ npm install @juspay-tech/hyper-js
-  $ npm install @juspay-tech/hyperswitch-node
+  $ npm install @hyperswitchpay-tech/react-hyper-js
+  $ npm install @hyperswitchpay-tech/hyper-js
+  $ npm install @hyperswitchpay-tech/hyperswitch-node
 ```
 
 **Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.hyperswitchpay.com/developers) page on the dashboard.
@@ -36,7 +36,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const hyper = require("@juspay-tech/hyperswitch-node")(
+const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(
   "your_hyperswitch_api_key"
 );
 ```
@@ -55,8 +55,8 @@ const paymentIntent = await hyper.paymentIntents.create({
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 // to
-import { loadStripe } from "@juspay-tech/hyper-js";
-import { hyperElements } from "@juspay-tech/react-hyper-js";
+import { loadStripe } from "@hyperswitchpay-tech/hyper-js";
+import { hyperElements } from "@hyperswitchpay-tech/react-hyper-js";
 ```
 
 ```js
@@ -80,7 +80,7 @@ import {
   UnifiedCheckout,
   useStripe,
   useElements,
-} from "@juspay-tech/react-hyper-js";
+} from "@hyperswitchpay-tech/react-hyper-js";
 ```
 
 **Step 5:** Run your application to make a test payment. And verify the status of the transaction on Hyperswitch Dashboard and Stripe Dashboard. Congratulations ! You have successfully integrated Hyperswitch to your payments stack and you now have access to a suite of 40+ payment processors and acquirers.
@@ -94,7 +94,7 @@ import {
 **Step 1:** Install Hyperswitch's node server dependency from npm
 
 ```js
-  $ npm install @juspay-tech/hyperswitch-node
+  $ npm install @hyperswitchpay-tech/hyperswitch-node
 ```
 
 **Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side
@@ -103,7 +103,7 @@ import {
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const hyper = require("@juspay-tech/hyperswitch-node")(
+const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(
   "your_hyperswitch_api_key"
 );
 ```
