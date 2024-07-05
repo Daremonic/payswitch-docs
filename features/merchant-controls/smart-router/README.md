@@ -10,7 +10,7 @@ With this section, understand how the Hyperswitch Smart Router works to improve 
 
 ## Prerequisites
 
-To get started with Smart Router, ensure to have one or more payment processors integrated. You can integrate the payment processor of your choice on the Control Center by following the [Connector Integration](../../../hyperswitch-pay-cloud/connectors/) guide.
+To get started with Smart Router, ensure to have one or more payment processors integrated. You can integrate the payment processor of your choice on the Control Center by following the [Connector Integration](../../../hyperswitch-cloud/connectors/) guide.
 
 ## What is smart payment routing?
 
@@ -43,19 +43,19 @@ Hyperswitch Smart Router Engine evaluates every payment request against your pre
 
 To test the Smart Router, after activating one rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.hyperswitchpay.com/sdk)
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 <details>
 
 <summary>FAQs</summary>
 
-#### 1. What parameters can I use to configure routing rules?
+**1. What parameters can I use to configure routing rules?**
 
 The rule-based routing supports setting up advanced rule configuration based on all critical /payments parameters such as Payment Method, Payment Method Type, Country, Currency, Amount etc.
 
-#### 2. Why did my payment go through 'Y' connector even though I have specified 'X' in my routing configuration? OR Why is it showing me 'Abc' payment method in SDK checkout even though I have not enabled it for the 'X' connector that I'm routing my payments through?
+**2. Why did my payment go through 'Y' connector even though I have specified 'X' in my routing configuration? OR Why is it showing me 'Abc' payment method in SDK checkout even though I have not enabled it for the 'X' connector that I'm routing my payments through?**
 
 There can be multiple reasons why this happened but all of them can be boiled down to a "connector eligibility failure" for a given payment. We'll walk through a common scenario to examine what this really means.
 
