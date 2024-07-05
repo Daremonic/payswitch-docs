@@ -42,10 +42,6 @@ If you wish your bank's payment processing solution to be added as one of the co
 
 ### I want to augment my acquiring solution with Hyperswitch
 
-If you are considering to augment your acquiring solution with Hyperswitch, you might want to understand three important facts
-
-* Hyperswitch is 100% open source and Apache 2.0 licensed.
-* The project is fully maintained and run by hyperswitchpay Technologies - South Asia's leading payment orchestrator processing 75 million transactions per day and 11 years experience in payment orchestration. hyperswitchpay is back by investors such as Accel, Softbank, VEF and Wellington.
-* Hyperswitch open source project is also being offered as a managed service (Hyperswitch Cloud) for digital business who wish to opt for a fully managed payment solution.
+If you are considering to augment your acquiring solution with Hyperswitch, you might want to contact us immediately.
 
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Explore Hyperswitch on sandbox</strong></td><td>The Hyperswitch Cloud control center is free to access on Sandbox. You can explore it to a quick tour of all the supported integrations and features</td><td></td><td><a href="../.gitbook/assets/tryHyperswitch.jpg">tryHyperswitch.jpg</a></td><td><a href="https://app.hyperswitchpay.com/register?_gl=1*1j39jxb*_ga*MTYzNTE0Mjg1LjE3MDEwOTAxODQ.*_ga_1X38KQVJ1S*MTcwMjA0MDc0NS4zMS4xLjE3MDIwNDQ2OTIuMjguMC4w">https://app.hyperswitchpay.com/register?_gl=1*1j39jxb*_ga*MTYzNTE0Mjg1LjE3MDEwOTAxODQ.*_ga_1X38KQVJ1S*MTcwMjA0MDc0NS4zMS4xLjE3MDIwNDQ2OTIuMjguMC4w</a></td></tr></tbody></table>

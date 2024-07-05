@@ -114,8 +114,8 @@ Setup the SDK with your publishable key
 PaymentConfiguration.init(applicationContext, "YOUR_PUBLISHABLE_KEY");
 ```
 
-{% hint style="warning" %}
-Note: For Open Source Setup, initialise PaymentConfiguration as:
+{% hint style="info" %}
+Note: For the Setup, initialise PaymentConfiguration as:
 
 <pre class="language-bash"><code class="lang-bash"><strong>PaymentConfiguration.initWithBackend(applicationContext, "YOUR_PUBLISHABLE_KEY", "YOUR_SERVER_URL");
 </strong></code></pre>
@@ -152,7 +152,7 @@ private fun onPaymentSheetResult(paymentResult: PaymentSheetResult) {
     }
 ```
 
-Congratulations! Now that you have integrated the Android SDK, you can customise the payment sheet to blend with the rest of your app.&#x20;
+Congratulations! Now that you have integrated the Android SDK, you can customise the payment sheet to blend with the rest of your app.
 
 ## Next step:
 

@@ -103,8 +103,8 @@ Fetch a payment by requesting your server for a payment as soon as your view is 
 STPAPIClient.shared.publishableKey = <YOUR_PUBLISHABLE_KEY>
 ```
 
-{% hint style="warning" %}
-Note: For Open Source Setup, initialise your custom Backend app URL as:
+{% hint style="info" %}
+Note: For the Setup, initialise your custom Backend app URL as:
 
 <pre class="language-bash"><code class="lang-bash"><strong>STPAPIClient.shared.customBackendUrl = &#x3C;YOUR_SERVER_URL>
 </strong></code></pre>
@@ -115,8 +115,6 @@ Note: For Open Source Setup, initialise your custom Backend app URL as:
 ## 3.1 Swift
 
 Create a PaymentSheet instance using the `client_secret` retrieved from the previous step. Present the payment page from your view controller and use the PaymentSheet.Configuration struct for customising your payment page.
-
-
 
 {% tabs %}
 {% tab title="Swift" %}
@@ -279,7 +277,7 @@ VStack {
 {% endtab %}
 {% endtabs %}
 
-Congratulations! Now that you have integrated the iOS SDK, you can customize the payment sheet to blend with the rest of your app.&#x20;
+Congratulations! Now that you have integrated the iOS SDK, you can customize the payment sheet to blend with the rest of your app.
 
 ## Next step:
 

@@ -25,7 +25,7 @@ The application latency of Hyperswitch is optimized to `sub-30 milliseconds` (90
 Inter-regional network latency is optimized by fronting the API endpoints with Cloud Delivery Network (AWS Cloudfront).
 
 {% hint style="info" %}
-**Note:** In case you are opting for the Hyperswitch Open Source offering, you will be able to run the software like a microservice within your own deployment.
+**Note:** In case you are opting for the Hyperswitch self-hosted offering, you will be able to run the software like a microservice within your own deployment.
 {% endhint %}
 
 ## Reliability
@@ -50,10 +50,9 @@ Hyperswitch support for 80 RPS per merchant account and rate limits applicable b
 Scaling of each component in the Hyperswitch setup is achieved as follows
 
 * Incoming proxy layer is deployed using Auto Scaling Group (ASG)
-* Application layer is managed using Kubernetes with Horizontal Pod Autoscaler (HPA)&#x20;
+* Application layer is managed using Kubernetes with Horizontal Pod Autoscaler (HPA)
 * Outgoing Proxy is deployed using Auto Scaling Group (ASG)
 
 ### Handling traffic spikes
 
 Database provides consistency, but it more often becomes a bottleneck and a failure point in case of sudden traffic spikes. Hyperswitch can be configured (on request basis) to use Cache as Data storage in case of sudden spikes in the traffic to reduce the friction of database latency. All the data is drained from cache to the database.
-

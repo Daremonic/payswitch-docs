@@ -8,19 +8,13 @@ description: Hyperswitch Checkout for WooCommerce by hyperswitchpay.com
 In this section, know about the various features offered by Hyperswitch Woocommerce Plugin and how can you get started with it.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
-
-Give your shoppers a lightweight and embedded payment experience for Stripe + Paypal, with Hyperswitch - an open source financial switch. And future proof your business continuity with the redundancy of multiple payment processors provided.
+Give your shoppers a lightweight and embedded payment experience for Stripe + Paypal, with Hyperswitch - financial switch. And future proof your business continuity with the redundancy of multiple payment processors provided.
 
 ## [Get Started](https://app.hyperswitchpay.com/register)
-
-{% embed url="https://youtu.be/jkthFr-PwEw" %}
 
 ### Embedded
 
 An embedded and less confusing Stripe + Paypal payment experience with fewer clicks to checkout, avoiding unnecessary redirects and mobile first. The embedded payment sheet blends seamlessly with the theme of your Wordpress website and all the payment methods are presented on a unified view.
-
-<figure><img src="https://hyperswitchpay.com/img/site/wooCommercePaymentExperience.png" alt=""><figcaption></figcaption></figure>
 
 A superior checkout experience directly translates to your business growth - improved conversion rates, heightened customer satisfaction, and enhanced customer loyalty.
 
@@ -29,8 +23,6 @@ A superior checkout experience directly translates to your business growth - imp
 Your payment experience will load faster, because hyperswitch eliminates the necessity to load multiple javascript libraries of payment processors.
 
 _How?_ Hyperswitch is standalone PCI compliant for accepting and storing card information, thus eliminating the need to load javascript libraries of multiple payment processors.
-
-[Checkout our demo store](https://hswpdemo.store/)
 
 ### Future proofing
 
@@ -53,7 +45,5 @@ In addition to the above, Hyperswitch also offers
 * **Refunds** - In cases where you need to issue a refund to a customer, the Hyperswitch plugin streamlines this process within your Woocommerce Dashboard.
 * **Sync Payments** - With the Hyperswitch plugin integrated into your Woocommerce Dashboard, you have the flexibility to manually sync payment status whenever necessary. This feature allows you to ensure accurate payment status representation and maintain consistent order management.
 * **Real-time Order Updates** - Hyperswitch facilitates seamless order updates through **webhooks**, allowing you to automate various order management processes.
-
-
 
 ###
