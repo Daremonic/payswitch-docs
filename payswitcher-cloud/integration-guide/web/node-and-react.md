@@ -19,7 +19,7 @@ In this section, you will get details to Integrate PaySwitcher SDK using Node Ba
 Install the package and import it in your code
 
 ```js
-$ npm install @payswitcherpay-tech/payswitcher-node
+$ npm install @payswitcher/payswitcher-node
 ```
 
 #### 1.2 Create a payment
@@ -27,7 +27,7 @@ $ npm install @payswitcherpay-tech/payswitcher-node
 Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
-const hyper = require("@payswitcherpay-tech/payswitcher-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcher/payswitcher-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the client\_secret obtained in the response to securely complete the payment on the client.
@@ -65,8 +65,8 @@ In case your integrating the ExpressCheckout (mentioned later below), instead of
 Install the packages and import it into your code
 
 ```js
-$ npm install @payswitcherpay-tech/hyper-js
-$ npm install @payswitcherpay-tech/react-hyper-js
+$ npm install @payswitcher/hyper-js
+$ npm install @payswitcher/react-hyper-js
 ```
 
 #### 2.2 Add `hyper` to your React app
@@ -75,8 +75,8 @@ Use `hyper-js` to ensure that you stay PCI compliant by sending payment details 
 
 ```js
 import React, { useState, useEffect } from "react";
-import { loadHyper } from "@payswitcherpay-tech/hyper-js";
-import { hyperElements } from "@payswitcherpay-tech/react-hyper-js";
+import { loadHyper } from "@payswitcher/hyper-js";
+import { hyperElements } from "@payswitcher/react-hyper-js";
 ```
 
 #### 2.3 Load `hyper-js`

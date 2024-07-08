@@ -19,7 +19,7 @@ PaySwitcher recommends using the PaymentSheet instead of the Card Widget. Using 
 Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to PaySwitcher server.
 
 ```js
-import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
+import { HyperProvider } from "@payswitcher/react-native-payswitcher";
 ```
 
 ### 1.2 Use `HyperProvider`
@@ -27,7 +27,7 @@ import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
 To initialize PaySwitcher in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize PaySwitcher using the HyperProvider component.
 
 ```js
-import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher ";
+import { HyperProvider } from "@payswitcher/react-native-payswitcher ";
 
 function App() {
   return (

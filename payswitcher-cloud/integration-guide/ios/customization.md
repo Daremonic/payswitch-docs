@@ -27,7 +27,7 @@ configuration.defaultBillingDetails =
         "postalCode": "94122",
         "state": "California"
       ],
-      "email": "johndoe@payswitcher.com",
+      "email": "johndoe@payswitcher/.com",
       "name": "John",
       "phone": "1234567890"
     ]

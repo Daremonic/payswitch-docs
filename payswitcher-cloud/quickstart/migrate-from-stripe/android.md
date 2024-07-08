@@ -17,7 +17,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 **Step 1:** Install PaySwitcher’s SDK and server side dependencies from npm
 
 ```js
- $ npm install @payswitcherpay-tech/payswitcher-node
+ $ npm install @payswitcher/payswitcher-node
 ```
 
 **Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.payswitcher.com/developers) page on the dashboard.
@@ -26,7 +26,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 // from
 const stripe = require("stripe")(your_stripe_api_key);
 // to
-const stripe = require("@payswitcherpay-tech/payswitcher-node")(
+const stripe = require("@payswitcher/payswitcher-node")(
   "your_payswitcher_api_key"
 );
 ```

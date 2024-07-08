@@ -17,8 +17,8 @@ The code from your Stripe integration to be removed and replaced is explained be
 **Step 1:** Install PaySwitcher’s SDK and server side dependencies from npm
 
 ```js
- $ npm install @payswitcherpay-tech/react-native-payswitcher
- $ npm install @payswitcherpay-tech/hyper-node --save-dev
+ $ npm install @payswitcher/react-native-payswitcher
+ $ npm install @payswitcher/hyper-node --save-dev
 ```
 
 Install peer dependencies:
@@ -33,7 +33,7 @@ Install peer dependencies:
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const stripe = require("@payswitcherpay-tech/hyper-node")("your_payswitcher_api_key");
+const stripe = require("@payswitcher/hyper-node")("your_payswitcher_api_key");
 ```
 
 **Step 3:** Call useStripe() with your PaySwitcher publishable key to configure the SDK library, from your website
@@ -42,11 +42,11 @@ const stripe = require("@payswitcherpay-tech/hyper-node")("your_payswitcher_api_
 // from
 import { StripeProvider } from "@stripe/stripe-react-native";
 // to
-import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
+import { HyperProvider } from "@payswitcher/react-native-payswitcher";
 // from
 import { useStripe } from "@stripe/stripe-react-native";
 // to
-import { useStripe } from "@payswitcherpay-tech/react-native-payswitcher";
+import { useStripe } from "@payswitcher/react-native-payswitcher";
 ```
 
 **Step 4:** Configure your checkout form to import from PaySwitcher

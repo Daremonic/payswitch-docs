@@ -35,7 +35,7 @@ _hyper.init(HyperConfig(publishableKey: 'YOUR_PUBLISHABLE_KEY'));
 
 {% tab title="React Native (Beta)" %}
 ```javascript
-import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher ";
+import { HyperProvider } from "@payswitcher/react-native-payswitcher ";
 
 function App() {
   return (
@@ -78,7 +78,7 @@ Session _sessionId = await hyper.initPaymentSession(params);
 
 {% tab title="React Native  (Beta)" %}
 ```javascript
-import { useHyper } from "@payswitcherpay-tech/react-native-payswitcher";
+import { useHyper } from "@payswitcher/react-native-payswitcher";
 
 const { initPaymentSession } = useHyper();
 const [paymentSession,setPaymentSession]=React.useState(null);
@@ -203,7 +203,7 @@ Future<void> _confirmPayment() async {
 
 {% tab title="React Native  (Beta)" %}
 ```javascript
-import { useHyper } from "@payswitcherpay-tech/react-native-payswitcher";
+import { useHyper } from "@payswitcher/react-native-payswitcher";
 
 const { getCustomerSavedPaymentMethods,
         getCustomerDefaultSavedPaymentMethodData,

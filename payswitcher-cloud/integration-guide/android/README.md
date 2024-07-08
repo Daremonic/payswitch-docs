@@ -14,7 +14,7 @@ In this section, you will get an overview of the PaySwitcher Unified Checkout fo
 
 {% embed url="https://payswitcher-demo.netlify.app/mobile" fullWidth="false" %}
 
-{% @payswitcher-iframe/payswitcher-iframe fullWidth="false" %}
+{% @payswitcher/-iframe/payswitcher-iframe fullWidth="false" %}
 
 Revolutionize your app's payment capabilities with the PaySwitcher Android SDK, delivering a seamless and tailored Global Checkout Experience. The PaySwitcher Unified Checkout on Android is meticulously designed to provide an all-encompassing, unified, and optimized payment journey, ensuring exceptional conversion rates.
 

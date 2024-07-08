@@ -49,7 +49,7 @@ Cards saved using this API will be listed under saved payment methods for future
 
 ## Migrating your customers’ saved cards from your processors to PaySwitcher
 
-PaySwitcher also supports migrating your customers’ saved cards from your processors’ vaults to PaySwitcher. This process typically involves requesting your processor’s support team to share your customers’ saved cards data to PaySwitcher in a secure file transfer format and may involve sharing PaySwitcher’s PCI DSS certificate with them. Please write to <mark style="color:blue;">biz@payswitcher.com</mark> to know more and kickstart your card migration process.
+PaySwitcher also supports migrating your customers’ saved cards from your processors’ vaults to PaySwitcher. This process typically involves requesting your processor’s support team to share your customers’ saved cards data to PaySwitcher in a secure file transfer format and may involve sharing PaySwitcher’s PCI DSS certificate with them. Please write to <mark style="color:blue;">biz@payswitcher/.com</mark> to know more and kickstart your card migration process.
 
 ## Network Tokenization
 

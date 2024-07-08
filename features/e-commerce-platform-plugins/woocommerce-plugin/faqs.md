@@ -55,4 +55,4 @@ WooCommerce is not explicitly built to handle embedded checkouts so we had to bu
 
 Our ambition is always that our plugins should be compatible with as many functions and extensions as possible. We work actively with this and release regular updates that lead to a better experience, both for you as an e-retailer but also for your customers.
 
-Please feel free to drop a request to [biz@payswitcherpay.](mailto:payswitcher@payswitcherpay.in)com with the name of the plugin for which you need compatibility.
+Please feel free to drop a request to [biz@payswitcher/pay.](mailto:payswitcher@payswitcher/pay.in)com with the name of the plugin for which you need compatibility.

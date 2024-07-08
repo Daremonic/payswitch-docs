@@ -19,9 +19,9 @@ Node 12 or higher.
 Install the package with:
 
 ```sh
-npm install @payswitcherpay-tech/payswitcher-node --save
+npm install @payswitcher/payswitcher-node --save
 # or
-yarn add @payswitcherpay-tech/payswitcher-node
+yarn add @payswitcher/payswitcher-node
 ```
 
 ## Usage
@@ -177,7 +177,7 @@ const app = express();
 // Don't submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
 
-const payswitcher = require('@payswitcherpay-tech/payswitcher-node')('snd_b8df3xxx......');
+const payswitcher = require('@payswitcher/payswitcher-node')('snd_b8df3xxx......');
 
 app.use(express.static("public"));
 app.use(express.json());

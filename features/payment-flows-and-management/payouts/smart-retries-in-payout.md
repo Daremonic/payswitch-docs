@@ -3,7 +3,7 @@
 Retries are attempts to make payouts after initial failure. Retries are used for recovering failed payouts. Smart Retries enables retry based on error type and connectors available. This significantly increase the success rate of the payout.
 
 {% hint style="info" %}
-Please drop a note to `biz@payswitcher.com` to enable Smart Retries for Payout (applicable only for PaySwitcher Cloud users).
+Please drop a note to `biz@payswitcher/.com` to enable Smart Retries for Payout (applicable only for PaySwitcher Cloud users).
 {% endhint %}
 
 Smart retries are configured based on error specific to connector and would retry only if the error configuration is suitable to increase transaction's success rate.

@@ -31,7 +31,7 @@ Use this guide to integrate `hyper` SDK to your React Native app. You can use th
 Install the package and import it in your code
 
 ```js
-$ npm install @payswitcherpay-tech/payswitcher-node
+$ npm install @payswitcher/payswitcher-node
 ```
 
 ### 1.2 Create a payment
@@ -39,7 +39,7 @@ $ npm install @payswitcherpay-tech/payswitcher-node
 Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
-const hyper = require("@payswitcherpay-tech/payswitcher-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcher/payswitcher-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the client\_secret obtained in the response to securely complete the payment on the client.
@@ -73,7 +73,7 @@ app.post("/create-payment", async (req, res) => {
 Install the packages and import it into your code
 
 ```js
-$ npm install @payswitcherpay-tech/payswitcher-sdk-react-native
+$ npm install @payswitcher/payswitcher-sdk-react-native
 
 ```
 
@@ -124,7 +124,7 @@ project(":react-native-code-push").projectDir = new File(
 Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to PaySwitcher server.
 
 ```js
-import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
+import { HyperProvider } from "@payswitcher/react-native-payswitcher";
 ```
 
 ### 2.6 Use `HyperProvider`
@@ -132,7 +132,7 @@ import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
 To initialize PaySwitcher in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize PaySwitcher using the HyperProvider component.
 
 ```js
-import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher ";
+import { HyperProvider } from "@payswitcher/react-native-payswitcher ";
 
 function App() {
   return (
@@ -150,7 +150,7 @@ function App() {
 In the checkout of your app, import useHyper() hook
 
 ```js
-import { useHyper } from "@payswitcherpay-tech/react-native-payswitcher";
+import { useHyper } from "@payswitcher/react-native-payswitcher";
 ```
 
 ### 3.2 Fetch the PaymentIntent client Secret

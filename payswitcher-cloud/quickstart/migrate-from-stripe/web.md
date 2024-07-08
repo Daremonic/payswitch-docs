@@ -25,9 +25,9 @@ The code from your Stripe integration to be removed and replaced is explained be
 **Step 1:** Install PaySwitcher's SDK and server side dependencies from npm
 
 ```js
-  $ npm install @payswitcherpay-tech/react-hyper-js
-  $ npm install @payswitcherpay-tech/hyper-js
-  $ npm install @payswitcherpay-tech/payswitcher-node
+  $ npm install @payswitcher/react-hyper-js
+  $ npm install @payswitcher/hyper-js
+  $ npm install @payswitcher/payswitcher-node
 ```
 
 **Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side. You can get the API key from [Developers](https://app.payswitcher.com/developers) page on the dashboard.
@@ -36,7 +36,7 @@ The code from your Stripe integration to be removed and replaced is explained be
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const hyper = require("@payswitcherpay-tech/payswitcher-node")(
+const hyper = require("@payswitcher/payswitcher-node")(
   "your_payswitcher_api_key"
 );
 ```
@@ -55,8 +55,8 @@ const paymentIntent = await hyper.paymentIntents.create({
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 // to
-import { loadStripe } from "@payswitcherpay-tech/hyper-js";
-import { hyperElements } from "@payswitcherpay-tech/react-hyper-js";
+import { loadStripe } from "@payswitcher/hyper-js";
+import { hyperElements } from "@payswitcher/react-hyper-js";
 ```
 
 ```js
@@ -80,7 +80,7 @@ import {
   UnifiedCheckout,
   useStripe,
   useElements,
-} from "@payswitcherpay-tech/react-hyper-js";
+} from "@payswitcher/react-hyper-js";
 ```
 
 **Step 5:** Run your application to make a test payment. And verify the status of the transaction on PaySwitcher Dashboard and Stripe Dashboard. Congratulations ! You have successfully integrated PaySwitcher to your payments stack and you now have access to a suite of 40+ payment processors and acquirers.
@@ -94,7 +94,7 @@ import {
 **Step 1:** Install PaySwitcher's node server dependency from npm
 
 ```js
-  $ npm install @payswitcherpay-tech/payswitcher-node
+  $ npm install @payswitcher/payswitcher-node
 ```
 
 **Step 2:** Change the API key on the server side and modify the paymentIntent endpoint from your server side
@@ -103,7 +103,7 @@ import {
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const hyper = require("@payswitcherpay-tech/payswitcher-node")(
+const hyper = require("@payswitcher/payswitcher-node")(
   "your_payswitcher_api_key"
 );
 ```
