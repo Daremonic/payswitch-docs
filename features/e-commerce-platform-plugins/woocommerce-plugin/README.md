@@ -1,5 +1,5 @@
 ---
-description: PaySwitcher Checkout for WooCommerce by PaySwitcherPay
+description: PaySwitcher Checkout for WooCommerce by payswitcher
 ---
 
 # WooCommerce Plugin

@@ -53,7 +53,7 @@ PaySwitcher also supports migrating your customers’ saved cards from your proc
 
 ## Network Tokenization
 
-This features is current not present in PaySwitcher. Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests). PaySwitcher can support Network Tokenization which will enable you to securely store your customers’ card details with various networks such as Visa, Mastercard, American Express, etc. This would bring in additional benefits such as higher authorization rates, fraud reduction, liability shift, lower network fees in some cases, etc.
+This features is current not present in PaySwitcher. Submit a feature request [here](https://github.com/payswitcher/payswitcher/discussions/new?category=ideas-feature-requests). PaySwitcher can support Network Tokenization which will enable you to securely store your customers’ card details with various networks such as Visa, Mastercard, American Express, etc. This would bring in additional benefits such as higher authorization rates, fraud reduction, liability shift, lower network fees in some cases, etc.
 
 <details>
 

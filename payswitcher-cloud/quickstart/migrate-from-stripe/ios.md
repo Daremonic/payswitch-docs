@@ -38,7 +38,7 @@ const stripe = require("@payswitcher/hyper-node")("your_payswitcher_api_key");
 **Step 3:** Add these sources at the beginning of you podfile
 
 ```ruby
-source 'https://github.com/payswitcherpay/payswitcher-pods.git'
+source 'https://github.com/payswitcher/payswitcher-pods.git'
 source 'https://cdn.cocoapods.org/'
 ```
 

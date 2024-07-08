@@ -70,9 +70,9 @@ PaySwitcher offers various customization options but you can try out our demo st
 
 Here are a few demo integrations for various tech stacks:
 
-* [PaySwitcher React-Node](https://github.com/payswitcherpay/payswitcher-react-node)
-* [PaySwitcher HTML-Node](https://github.com/payswitcherpay/payswitcher-html-node)
-* [PaySwitcher React-Java](https://github.com/payswitcherpay/payswitcher-react-java)
-* [PaySwitcher Next-Node](https://github.com/payswitcherpay/payswitcher-next-node)
+* [PaySwitcher React-Node](https://github.com/payswitcher/payswitcher-react-node)
+* [PaySwitcher HTML-Node](https://github.com/payswitcher/payswitcher-html-node)
+* [PaySwitcher React-Java](https://github.com/payswitcher/payswitcher-react-java)
+* [PaySwitcher Next-Node](https://github.com/payswitcher/payswitcher-next-node)
 
 </details>

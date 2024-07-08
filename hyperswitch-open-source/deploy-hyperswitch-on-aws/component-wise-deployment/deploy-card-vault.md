@@ -8,7 +8,7 @@ description: Deploy the PaySwitcher Card Vault on the cloud
 This section aims at installing the Card vault and using it with the PaySwitcher application to make successful saved card payments
 {% endhint %}
 
-The PaySwitcher Card Vault [(Repo Link)](https://github.com/payswitcherpay/tartarus), is a highly performant and a secure locker to save sensitive data such as payment card details, bank account details etc.&#x20;
+The PaySwitcher Card Vault [(Repo Link)](https://github.com/payswitcher/tartarus), is a highly performant and a secure locker to save sensitive data such as payment card details, bank account details etc.&#x20;
 
 It is designed in an polymorphic manner to handle and store any type of sensitive information making it highly scalable with extensive coverage of payment methods and processors.
 

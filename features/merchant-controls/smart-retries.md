@@ -31,7 +31,7 @@ PaySwitcher supports the following primary processors for automatic retries.
 * Checkout.com
 * Trustpay
 
-In case you wish more primary processors to be covered for automatic retry, please submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests).
+In case you wish more primary processors to be covered for automatic retry, please submit a feature request [here](https://github.com/payswitcher/payswitcher/discussions/new?category=ideas-feature-requests).
 
 ## How does it work?
 

@@ -19,7 +19,7 @@ If for any reason you happen to move out of PaySwitcher, you will be facilitated
 
 **Who built and maintains the plugin?**
 
-The plugin is built and maintained by payswitcherpay Technologies - a leading payment orchestrator processing 50 Million transactions per day and backed by funding from Accel Partners and Softbank.\\
+The plugin is built and maintained by payswitcher Technologies - a leading payment orchestrator processing 50 Million transactions per day and backed by funding from Accel Partners and Softbank.\\
 
 **How can I customize the payment sheet as per my branding?**
 

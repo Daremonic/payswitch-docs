@@ -15,7 +15,7 @@ Let's hit the ground running – in the first fifteen minutes, you’ll see a co
 If you don't already have Docker, you can [download](https://docs.docker.com/get-docker/) it from the official Docker website. Once Docker is installed, launch the Docker app, then use the following commands at the command line to clone the PaySwitcher repository.
 
 ```
-git clone https://github.com/payswitcherpay/payswitcher
+git clone https://github.com/payswitcher/payswitcher
 ```
 
 Once the repository is cloned, switch to the project directory.
@@ -48,18 +48,18 @@ In the next chapter, we'll run payments through your local PaySwitcher setup by 
 In this section, you will run the PaySwitcher web client SDK on your machine.&#x20;
 {% endhint %}
 
-#### [Clone the repository](https://github.com/payswitcherpay/payswitcher-web/tree/main#clone-the-repository) <a href="#user-content-clone-the-repository" id="user-content-clone-the-repository"></a>
+#### [Clone the repository](https://github.com/payswitcher/payswitcher-web/tree/main#clone-the-repository) <a href="#user-content-clone-the-repository" id="user-content-clone-the-repository"></a>
 
 Clone the repository from Bitbucket and save in your folder.
 
 ```bash
-git clone https://github.com/payswitcherpay/payswitcher-web.git
+git clone https://github.com/payswitcher/payswitcher-web.git
 cd payswitcher-web
 ```
 
 Once the repository is cloned, switch to the project directory.
 
-#### [Setup the repository](https://github.com/payswitcherpay/payswitcher-web/tree/main#setup-the-repository) <a href="#user-content-setup-the-repository" id="user-content-setup-the-repository"></a>
+#### [Setup the repository](https://github.com/payswitcher/payswitcher-web/tree/main#setup-the-repository) <a href="#user-content-setup-the-repository" id="user-content-setup-the-repository"></a>
 
 First install all the node modules by running the following command
 

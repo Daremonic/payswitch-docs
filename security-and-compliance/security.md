@@ -36,7 +36,7 @@ When a payment is made using a saved card, the card details get stored in a secu
 * The card vault validates the signed data using the public key of the payswitcher app server and decrypts the data.
 * The data is then secured by the card vault by internally applying AES encryption and stored in the database.
 * The database disk is further encrypted to provide an added layer of security for the stored information.
-* For more details on how the locker internally handles the encryption and decryption you can visit the Github repository payswitcherpay/payswitcher-card-vault
+* For more details on how the locker internally handles the encryption and decryption you can visit the Github repository payswitcher/payswitcher-card-vault
 
 ### 3. Using Card Data for Analytics and Payment Operations
 
