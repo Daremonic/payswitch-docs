@@ -3,7 +3,7 @@
 Retries are attempts to make payouts after initial failure. Retries are used for recovering failed payouts. Smart Retries enables retry based on error type and connectors available. This significantly increase the success rate of the payout.
 
 {% hint style="info" %}
-Please drop a note to `biz@payswitcher/.com` to enable Smart Retries for Payout (applicable only for PaySwitcher Cloud users).
+Please drop a note to `biz@payswitcher.com` to enable Smart Retries for Payout (applicable only for PaySwitcher Cloud users).
 {% endhint %}
 
 Smart retries are configured based on error specific to connector and would retry only if the error configuration is suitable to increase transaction's success rate.
@@ -16,7 +16,7 @@ If a single connector is enabled to merchant for a particular payment method, el
 {% endtab %}
 
 {% tab title="Multiple Connector Retry" %}
-In case of multiple available connectors for merchant for a particular payment method, eligible error would trigger retry through other available connectors on the priority list&#x20;
+In case of multiple available connectors for merchant for a particular payment method, eligible error would trigger retry through other available connectors on the priority list
 {% endtab %}
 {% endtabs %}
 
@@ -26,9 +26,8 @@ In case of multiple available connectors for merchant for a particular payment m
 
 #### Retry Conditions
 
-* Multi Connector Retry will work  if there are multiple connectors available with a specific payout method enabled. The payout method is not changed in this case.
+* Multi Connector Retry will work if there are multiple connectors available with a specific payout method enabled. The payout method is not changed in this case.
 * Single Connector Retry will not change its payout method for retrying the payment
 * Error Configuration must be loaded on our end (can be submitted by merchant)
-* Retry Count is set for every connector, which is 5 by default but can be customised as per merchant.&#x20;
+* Retry Count is set for every connector, which is 5 by default but can be customised as per merchant.
 * Smart Retry is continued till the payout is successful, retry count is exhausted or connectors are exhausted
-

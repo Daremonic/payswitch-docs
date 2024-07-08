@@ -18,11 +18,11 @@ The list customer payment methods API is used here which retrieve the list of ca
 
 <figure><img src="../../.gitbook/assets/savedCards2.png" alt="" width="300"><figcaption></figcaption></figure>
 
-Once the user selects a particular card on the checkout page, the corresponding `payment_token` is used by PaySwitcher to  communicate with the card vault and securely retrieve card information to make the payment.
+Once the user selects a particular card on the checkout page, the corresponding `payment_token` is used by PaySwitcher to communicate with the card vault and securely retrieve card information to make the payment.
 
 ## Vaulting a payment method in non-purchase flows
 
-To save the customer's payment method during account onboarding or in the billing/payment management, use the following API to store the card for future on-session payments.&#x20;
+To save the customer's payment method during account onboarding or in the billing/payment management, use the following API to store the card for future on-session payments.
 
 ```bash
 curl --request POST \
@@ -49,11 +49,11 @@ Cards saved using this API will be listed under saved payment methods for future
 
 ## Migrating your customers’ saved cards from your processors to PaySwitcher
 
-PaySwitcher also supports migrating your customers’ saved cards from your processors’ vaults to PaySwitcher. This process typically involves requesting your processor’s support team to share your customers’ saved cards data to PaySwitcher in a secure file transfer format and may involve sharing PaySwitcher’s PCI DSS certificate with them. Please write to <mark style="color:blue;">biz@payswitcher/.com</mark> to know more and kickstart your card migration process.
+PaySwitcher also supports migrating your customers’ saved cards from your processors’ vaults to PaySwitcher. This process typically involves requesting your processor’s support team to share your customers’ saved cards data to PaySwitcher in a secure file transfer format and may involve sharing PaySwitcher’s PCI DSS certificate with them. Please write to biz@payswitcher.com to know more and kickstart your card migration process.
 
 ## Network Tokenization
 
-This features is current not present in PaySwitcher. Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests). PaySwitcher can support Network Tokenization which will enable you to securely store your customers’ card details with various networks such as Visa, Mastercard, American Express, etc. This would bring in additional benefits such as higher authorization rates, fraud reduction, liability shift, lower network fees in some cases, etc.&#x20;
+This features is current not present in PaySwitcher. Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests). PaySwitcher can support Network Tokenization which will enable you to securely store your customers’ card details with various networks such as Visa, Mastercard, American Express, etc. This would bring in additional benefits such as higher authorization rates, fraud reduction, liability shift, lower network fees in some cases, etc.
 
 <details>
 

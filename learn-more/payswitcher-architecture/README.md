@@ -1,0 +1,2 @@
+# 📐 PaySwitcher Architecture
+

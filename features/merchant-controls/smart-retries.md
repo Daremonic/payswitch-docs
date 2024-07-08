@@ -49,7 +49,7 @@ The flow looks like below.
 
 <figure><img src="../../.gitbook/assets/smartretry-1 (2).png" alt=""><figcaption></figcaption></figure>
 
-**Step 2:** Drop a request to biz@payswitcher/.com with the below information.
+**Step 2:** Drop a request to biz@payswitcher.com with the below information.
 
 * Confirmation to enable automatic retry
 * Maximum number of payment retry attempts (It is recommended to start with 1 retry attempt. However we can support more retry attempts based on the number of processors)
@@ -62,7 +62,7 @@ Primary processor is the first choice of processor for the particular transactio
 
 ### Why can I not enable Automatic Retry from the PaySwitcher dashboard?
 
-For reconciliation purposes, some merchants prefer having the same payment\_id being passed to both PaySwitcher and the Payment Processors. Smart retry would not be feasible if such a use case exists. Hence, Smart retry is as an additional configuration that can be enabled only by contacting our support (payswitcher@payswitcher/pay.in).
+For reconciliation purposes, some merchants prefer having the same payment\_id being passed to both PaySwitcher and the Payment Processors. Smart retry would not be feasible if such a use case exists. Hence, Smart retry is as an additional configuration that can be enabled only by contacting our support (biz@payswitcher.com).
 
 Since Smart retry involves multiple payment attempts for a single payment\_id, PaySwitcher appends the attempt number to the payment\_id that the merchant sends to PaySwitcher before passing it on to the processors.
 
