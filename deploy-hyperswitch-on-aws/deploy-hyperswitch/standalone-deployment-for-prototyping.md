@@ -1,11 +1,11 @@
 ---
-description: Use the standalone deployment script to deploy Hyperswitch on AWS quickly
+description: Use the standalone deployment script to deploy PaySwitcher on AWS quickly
 ---
 
 # Standalone deployment for prototyping
 
 {% hint style="info" %}
-In this chapter, you will deploy Hyperswitch server on AWS cloud. You can either try out a quick standalone deployment or a more scalable production ready setup
+In this chapter, you will deploy PaySwitcher server on AWS cloud. You can either try out a quick standalone deployment or a more scalable production ready setup
 {% endhint %}
 
 ***
@@ -24,11 +24,11 @@ In this chapter, you will deploy Hyperswitch server on AWS cloud. You can either
 | RDS          | t3.micro      | 1 cluster             |
 | ElasticCache | t3.medium     | 1 cluster             |
 
-The Hyperswitch App server will be installed in the EC2 instance
+The PaySwitcher App server will be installed in the EC2 instance
 
 <figure><img src="../../.gitbook/assets/Standalone Deployment.png" alt=""><figcaption></figcaption></figure>
 
-## Steps to Deploy Hyperswitch on AWS
+## Steps to Deploy PaySwitcher on AWS
 
 ### **What do you need to get started**
 
@@ -39,7 +39,7 @@ The Hyperswitch App server will be installed in the EC2 instance
 
 > #### Note
 >
-> You can directly start from [Step 3](https://hyperswitch-hyperswitchpay.stoplight.io/studio/installation-guide:main?source=8jifq2qd#step-3---setup-hyperswitch) if you have installed and configured AWS CLI
+> You can directly start from [Step 3](https://payswitcher-payswitcherpay.stoplight.io/studio/installation-guide:main?source=8jifq2qd#step-3---setup-payswitcher) if you have installed and configured AWS CLI
 
 #### Step 1 - Install or Update the AWS CLI
 
@@ -126,22 +126,22 @@ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 
-#### Step 3 - Setup Hyperswitch
+#### Step 3 - Setup PaySwitcher
 
-You can now deploy the hyperswitch application by running the below command in the same terminal session
+You can now deploy the payswitcher application by running the below command in the same terminal session
 
 {% hint style="info" %}
 Takes around 10-15 min to execute successfully
 {% endhint %}
 
 ```json
-curl https://raw.githubusercontent.com/hyperswitchpay/hyperswitch/main/aws/hyperswitch_aws_setup.sh | bash
+curl https://raw.githubusercontent.com/payswitcherpay/payswitcher/main/aws/payswitcher_aws_setup.sh | bash
 ```
 
 On running the above command, you will get an option to configure the following&#x20;
 
-1. DB password for the Hyperswitch database
-2. `admin_api_key` for Hyperswitch APIs
+1. DB password for the PaySwitcher database
+2. `admin_api_key` for PaySwitcher APIs
 
 {% hint style="warning" %}
 Make sure to save the passwords you provide while running the script
@@ -150,7 +150,7 @@ Make sure to save the passwords you provide while running the script
 Once the script is executed, you will receive a `Public IP` as the response (e.g. `http://34.207.75.225`). This IP is the base URL for accessing the application's APIs
 
 {% hint style="success" %}
-That's it! Hyperswitch should be up and running on your AWS account
+That's it! PaySwitcher should be up and running on your AWS account
 
 Verify the health of the application by hitting `http://<your-public-IP>/health`. The expected response is 'health is good'
 {% endhint %}
@@ -164,6 +164,6 @@ You need JQ installed for this. For more information, [click here](https://jqlan
 {% endhint %}
 
 ```json
-curl https://raw.githubusercontent.com/hyperswitchpay/hyperswitch/main/aws/hyperswitch_cleanup_setup.sh | bash
+curl https://raw.githubusercontent.com/payswitcherpay/payswitcher/main/aws/payswitcher_cleanup_setup.sh | bash
 ```
 

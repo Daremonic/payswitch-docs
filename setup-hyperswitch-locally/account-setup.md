@@ -1,11 +1,11 @@
 ---
-description: Create your Hyperswitch account and add a payment provider
+description: Create your PaySwitcher account and add a payment provider
 ---
 
 # 🔧 Account setup
 
 {% hint style="info" %}
-Here, you will be creating a Hyperswitch account and connecting your payment processor via the Hyperswitch control center.
+Here, you will be creating a PaySwitcher account and connecting your payment processor via the PaySwitcher control center.
 {% endhint %}
 
 ## Video
@@ -40,18 +40,18 @@ Ensure that you download or copy the API key as it will be available only once t
 
 On the left nav bar, navigate to the processors tab.
 
-You can see the list of payment processors already integrated with hyperswitch. Click on the processor you want to connect.
+You can see the list of payment processors already integrated with payswitcher. Click on the processor you want to connect.
 
 To connect a payment processor:
 
 1. Provide the necessary details like API key, secret for the processor. Details vary depending on the chosen processor
-2. Configure the Hyperswitch endpoint in the processor dashboard to receive webhooks
+2. Configure the PaySwitcher endpoint in the processor dashboard to receive webhooks
 3. Configure the relevant payment methods (like cards, wallets) to be enabled for this processor
 4. Review and confirm the connection
 
 ## Setup Routing
 
-The Hyperswitch control center gives you full control on how and where you route your payments.&#x20;
+The PaySwitcher control center gives you full control on how and where you route your payments.&#x20;
 
 In the left nav bar, navigate to workflow --> routing to access the smart routing module.
 
@@ -59,14 +59,14 @@ By default, a priority-based routing based on the processor created time (first 
 
 Currently, you can configure two types of routing with more on the way:
 
-1. Volume based routing: As the name suggests, this routing is based on the volume provided. You can assign percentage volumes that needs to be processed with the connected processors and Hyperswitch will route in a way to ensure that the volume distribution is maintained
+1. Volume based routing: As the name suggests, this routing is based on the volume provided. You can assign percentage volumes that needs to be processed with the connected processors and PaySwitcher will route in a way to ensure that the volume distribution is maintained
 2. Rule based routing: Rule based routing gives you finer control over payment routing. It exposes payment parameters like amount, payment\_method, card\_type etc. with which you can configure multiple rules. Rule based routing also provides an option to enable default processors through which the routing will happen in case the rule fails
 
 
 
-## Create a Hyperswitch account <a href="#user-content-create-a-payment" id="user-content-create-a-payment"></a>
+## Create a PaySwitcher account <a href="#user-content-create-a-payment" id="user-content-create-a-payment"></a>
 
-In Hyperswitch, payments are processed for a merchant. Hyperswitch is multi-tenant, i.e. a single hyperswitch app server can support multiple merchants.
+In PaySwitcher, payments are processed for a merchant. PaySwitcher is multi-tenant, i.e. a single payswitcher app server can support multiple merchants.
 
 Use the below cURL command to create a new merchant account. Set the admin API key you configured in the application configuration for `admin_api_key` variable in the cURL request. You can find the configuration file at `config/docker_compose.toml`, search for `api_key` to find the admin API key.  Trigger the request to create a merchant account. You should obtain a response containing the merchant ID and publishable key.
 
@@ -214,4 +214,4 @@ curl --location 'http://localhost:8080/account/<your merchant id>/connectors' \
 
 ## **Resources**
 
-* To explore more of our APIs, please check the remaining folders in the [Postman collection](https://www.postman.com/hyperswitch/workspace/hyperswitch-development/collection/25176162-630b5353-7002-44d1-8ba1-ead6c230f2e3).
+* To explore more of our APIs, please check the remaining folders in the [Postman collection](https://www.postman.com/payswitcher/workspace/payswitcher-development/collection/25176162-630b5353-7002-44d1-8ba1-ead6c230f2e3).

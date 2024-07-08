@@ -2,7 +2,7 @@
 
 ## Scan Card
 
-### 1.0 Configure your repository with Hyperswitch dependency
+### 1.0 Configure your repository with PaySwitcher dependency
 
 Add the following maven repository to the settings.gradle file
 
@@ -23,7 +23,7 @@ Add this scan card dependency to your build.gradle file
 
 ```gradle
 dependencies {
-  implementation 'io.hyperswitch:react-native-hyperswitch-scancard:0.0.1'
+  implementation 'io.payswitcher:react-native-payswitcher-scancard:0.0.1'
 }
 ```
 

@@ -1,18 +1,18 @@
 ---
-description: Integrate ApplePay via Cybersource in Hyperswitch
+description: Integrate ApplePay via Cybersource in PaySwitcher
 ---
 
 # Apple Pay
 
 {% hint style="info" %}
-This page consists of steps for how **ApplePay** can be enabled in Hyperswitch via Cybersource
+This page consists of steps for how **ApplePay** can be enabled in PaySwitcher via Cybersource
 {% endhint %}
 
-> This guide assumes that you have alreaedy configured Cybersource as a connector in your Hyperswitch Control Center. If not please follow the steps mentioned [here](./)
+> This guide assumes that you have alreaedy configured Cybersource as a connector in your PaySwitcher Control Center. If not please follow the steps mentioned [here](./)
 
 ### Steps to Configure ApplePay
 
-* On your Hyperswitch Control Center, Click on [`Connectors > Payment Processors`](#user-content-fn-1)[^1]
+* On your PaySwitcher Control Center, Click on [`Connectors > Payment Processors`](#user-content-fn-1)[^1]
 *   If you have already configured Cybersource successfully, then you will land on the page as shown in the image below\
     \
 
@@ -25,7 +25,7 @@ This page consists of steps for how **ApplePay** can be enabled in Hyperswitch v
 * Click on proceed after making the necessary changes to your API Keys (if required any).
 * Select Apple Pay under Wallet Section to enable it.
 * Prepare Apple Pay certificates for Cybersource by following the steps mentioned [here](apple-pay.md#steps-to-prepare-applepay-certificates-for-cybersource-integration).&#x20;
-* To configure these steps in Hyperswitch dashboard please follow the steps mentioned [here](https://docs.payswitcher.com/hyperswitch-cloud/payment-methods-setup/wallets/apple-pay/ios-application#configuring-apple-pay-on-hyperswitch).
+* To configure these steps in PaySwitcher dashboard please follow the steps mentioned [here](https://docs.payswitcher.com/payswitcher-cloud/payment-methods-setup/wallets/apple-pay/ios-application#configuring-apple-pay-on-payswitcher).
 * Click on Enable and then Proceed, review your configuration and changes and click Done.
 
 #### Points to remember for ApplePay Payments via Cybersource
@@ -42,13 +42,13 @@ This page consists of steps for how **ApplePay** can be enabled in Hyperswitch v
     * Country
 
 {% hint style="warning" %}
-We recommend to pass this fields while creating the Payment Intent with Hyperswitch, Else Hyperswitch SDK will collect this information from the customer while making the payment which might not be the best experience for the customer.
+We recommend to pass this fields while creating the Payment Intent with PaySwitcher, Else PaySwitcher SDK will collect this information from the customer while making the payment which might not be the best experience for the customer.
 {% endhint %}
 
 ### Steps to prepare ApplePay certificates for Cybersource Integration
 
-* Create an Apple Merchant ID by following the steps mentioned [here](https://docs.payswitcher.com/hyperswitch-cloud/payment-methods-setup/wallets/apple-pay/ios-application#creating-an-apple-merchantid)
-* Validate your merchant domain by following the steps mentioned [here](https://docs.payswitcher.com/hyperswitch-cloud/payment-methods-setup/wallets/apple-pay/ios-application#validating-merchant-domain)
+* Create an Apple Merchant ID by following the steps mentioned [here](https://docs.payswitcher.com/payswitcher-cloud/payment-methods-setup/wallets/apple-pay/ios-application#creating-an-apple-merchantid)
+* Validate your merchant domain by following the steps mentioned [here](https://docs.payswitcher.com/payswitcher-cloud/payment-methods-setup/wallets/apple-pay/ios-application#validating-merchant-domain)
 * Create Apple MerchantID certificates by following the steps mentioned [here](../../../payment-methods-setup/wallets/apple-pay/ios-application.md#creating-apple-merchantid-certificate-and-private-key)
 * Log into your Cybersource Console, and navigate to `Payment Configuration > Digital Payment Solutions`
 
@@ -66,10 +66,10 @@ We recommend to pass this fields while creating the Payment Intent with Hyperswi
 * Upload the **.csr** you received from your processor and click Continue.
 * Click on Download, you will get a **.cer** file.
 * On the Cybersource Console, if you are prompted to provide this file upload the same **.cer file** (apple\_pay.cer)
-* Now you can configure the genreated certificates into Hyperswitch Control Center for Cybersource by following these [steps](https://docs.payswitcher.com/hyperswitch-cloud/payment-methods-setup/wallets/apple-pay/ios-application#configuring-apple-pay-on-hyperswitch).
+* Now you can configure the genreated certificates into PaySwitcher Control Center for Cybersource by following these [steps](https://docs.payswitcher.com/payswitcher-cloud/payment-methods-setup/wallets/apple-pay/ios-application#configuring-apple-pay-on-payswitcher).
 
 {% hint style="info" %}
-To enable ApplePay in your iOS Application, please refer to the steps mentioned [here](https://docs.payswitcher.com/hyperswitch-cloud/payment-methods-setup/wallets/apple-pay/ios-application#integrate-with-xcode)
+To enable ApplePay in your iOS Application, please refer to the steps mentioned [here](https://docs.payswitcher.com/payswitcher-cloud/payment-methods-setup/wallets/apple-pay/ios-application#integrate-with-xcode)
 {% endhint %}
 
 [^1]: 

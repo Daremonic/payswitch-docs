@@ -28,7 +28,7 @@ Should the need arise, merchants can selectively unblock specific fingerprints, 
 
 In summary, a blocklist feature empowers merchants to proactively manage the security of their payment processing systems by blocking specific fingerprints, card bins, or extended card bins. This not only safeguards against potential fraud but also provides a customizable and flexible approach to control and monitor payment transactions effectively.
 
-## How does Blocklist work at Hyperswitch?
+## How does Blocklist work at PaySwitcher?
 
 Currently we support blocking three types of resources i.e. card numbers (payment instrument), card bin, and extended card bin. A prerequisite to use this feature is to enable it using the /blocklist API as mentioned below.
 
@@ -49,16 +49,16 @@ Currently we support blocking three types of resources i.e. card numbers (paymen
     block the card.
 * Try the payment again (should fail)
 
-## How to enable Blocklist Guard on Hyperswitch?
+## How to enable Blocklist Guard on PaySwitcher?
 
 ```
 curl --location --request POST '{{base_url}}/blocklist/toggle?status=true' \
 --header 'api-key: dev_xxxxxxxxxxxxxxxx'
 ```
 
-## How to configure Blocklist on Hyperswitch using API?
+## How to configure Blocklist on PaySwitcher using API?
 
-1. Create and confirm a card payment through Hyperswitch by passing raw card details
+1. Create and confirm a card payment through PaySwitcher by passing raw card details
 
 ```
 {
@@ -92,7 +92,7 @@ curl --location --request POST '{{base_url}}/blocklist/toggle?status=true' \
 
 ```
 
-2. Make note of the "fingerprint" field from payments/confirm response which is the unique fingerprint for a card passed to Hyperswitch:
+2. Make note of the "fingerprint" field from payments/confirm response which is the unique fingerprint for a card passed to PaySwitcher:
 
 ```markup
 {

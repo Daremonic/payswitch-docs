@@ -1,20 +1,20 @@
 ---
-description: Integrate hyper SDK to any Web App using hyperswitch-node
+description: Integrate hyper SDK to any Web App using payswitcher-node
 ---
 
 # Vanilla JS and REST API Integration
 
 {% hint style="info" %}
-In this section, you will get details to Integrate Hyperswitch SDK using Node Backend and Vanilla JS
+In this section, you will get details to Integrate PaySwitcher SDK using Node Backend and Vanilla JS
 {% endhint %}
 
-**Before following these steps, please configure your payment methods** [here](https://payswitcher.com/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to you app with any framework. If you are using React framework please go through [React ](node-and-react.md)Integration to use a dedicated wrapper.\\
+**Before following these steps, please configure your payment methods** [here](https://payswitcher.com/docs/paymentMethods/cards). Use this guide to integrate `payswitcher` SDK to you app with any framework. If you are using React framework please go through [React ](node-and-react.md)Integration to use a dedicated wrapper.\\
 
 ## 1. Setup the server
 
 ### 1.1 Create a payment
 
-Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
+Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the `client_secret` obtained in the response to securely complete the payment on the client.
 
@@ -254,4 +254,4 @@ async function checkStatus() {
 }
 ```
 
-Congratulations! Now that you have integrated the Hyperswitch SDK on your app, you can customize the payment elements to blend with the rest of your app.
+Congratulations! Now that you have integrated the PaySwitcher SDK on your app, you can customize the payment elements to blend with the rest of your app.

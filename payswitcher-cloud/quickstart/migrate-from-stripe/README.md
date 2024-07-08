@@ -5,12 +5,12 @@ description: Fast migration guide for Stripe users
 # 📥 Migrate from Stripe
 
 {% hint style="info" %}
-This sections explains how you can migrate from Stripe to Hyperswitch in less than 15 minutes
+This sections explains how you can migrate from Stripe to PaySwitcher in less than 15 minutes
 {% endhint %}
 
-If you are already integrated with the leading payment processor Stripe, Hyperswitch makes your integration fast, fun and easy.
+If you are already integrated with the leading payment processor Stripe, PaySwitcher makes your integration fast, fun and easy.
 
-Below are the products and features of Stripe support for Hyperswitch quick migration. And once you migrate, get immediate access to 40+ payment processors and features of Hyperswitch.
+Below are the products and features of Stripe support for PaySwitcher quick migration. And once you migrate, get immediate access to 40+ payment processors and features of PaySwitcher.
 
 {% tabs %}
 {% tab title="Stripe Products" %}
@@ -18,8 +18,8 @@ Below are the products and features of Stripe support for Hyperswitch quick migr
 
 | Stripe UI elements   | <mark style="color:green;">Supported for Payment sheet, Card element and wallet element</mark>                         |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Stripe Payment links | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
-| Stripe Checkout      | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
+| Stripe Payment links | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
+| Stripe Checkout      | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
 {% endtab %}
 
 {% tab title="Functionalities" %}
@@ -50,9 +50,9 @@ Below are the products and features of Stripe support for Hyperswitch quick migr
 |        |                                                                                                                        |
 | ------ | ---------------------------------------------------------------------------------------------------------------------- |
 | Node   | <mark style="color:green;">Supported</mark>                                                                            |
-| Python | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
-| PHP    | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
-| Ruby   | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
+| Python | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
+| PHP    | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
+| Ruby   | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
 {% endtab %}
 
 {% tab title="Frontend platforms" %}
@@ -66,8 +66,8 @@ Below are the products and features of Stripe support for Hyperswitch quick migr
 | Swift        | <mark style="color:green;">Supported</mark>                                                                            |
 | React Native | <mark style="color:green;">Supported</mark>                                                                            |
 | Woocommerce  | <mark style="color:green;">Supported</mark>                                                                            |
-| Bigcommerce  | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
-| Shopify      | Submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests) |
+| Bigcommerce  | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
+| Shopify      | Submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests) |
 {% endtab %}
 {% endtabs %}
 

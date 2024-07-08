@@ -4,7 +4,7 @@ description: Low-code solution to accept payments
 
 # 🔗 Payment links
 
-Introducing Payment Links – Seamlessly integrate into Hyperswitch without writing much code. This feature allows you to generate secure and personalised payment links, enabling swift and hassle-free transactions for your customers. Elevate your payment experience with the efficiency and flexibility of Payment Links, streamlining the way you conduct business transactions.
+Introducing Payment Links – Seamlessly integrate into PaySwitcher without writing much code. This feature allows you to generate secure and personalised payment links, enabling swift and hassle-free transactions for your customers. Elevate your payment experience with the efficiency and flexibility of Payment Links, streamlining the way you conduct business transactions.
 
 ### Use cases for Payment links
 
@@ -18,11 +18,11 @@ Introducing Payment Links – Seamlessly integrate into Hyperswitch without writ
 * Substitute for Cash-on-delivery and point-of-sale
 * Streamlining over-the-phone transactions
 
-### How to configure Payment links through Hyperswitch API?
+### How to configure Payment links through PaySwitcher API?
 
 #### Prerequisites
 
-* Create a Hyperswitch account via the [dashboard](https://app.payswitcher.com/register) and create a profile ([read more](../account-management/multiple-accounts-and-profiles.md))
+* Create a PaySwitcher account via the [dashboard](https://app.payswitcher.com/register) and create a profile ([read more](../account-management/multiple-accounts-and-profiles.md))
 * Add a payment processor to you account
 
 #### Using Payment links
@@ -108,10 +108,10 @@ After you have setup custom domain in your cloud, you need to get respective Goo
 
 > Your DNS provider may be the same as your domain registrar, but it's possible they are different entities.
 
-> If you're unsure about your DNS provider, you can search for your domain's nameservers using the following command, replacing "hyperswitch.com" with your own domain:
+> If you're unsure about your DNS provider, you can search for your domain's nameservers using the following command, replacing "payswitcher.com" with your own domain:
 
 ```shell
-$ nslookup -querytype=NS hyperswitch.com
+$ nslookup -querytype=NS payswitcher.com
 ```
 
 > You’ll see a list of name servers for your domain in the output.
@@ -130,11 +130,11 @@ Step 2: Locate the page to manage the DNS for your domain
 
 Step 3: Create CNAME record
 
-> In your DNS control panel, create a new record that associates your chosen subdomain with 'hyperswitch payment link'. Your DNS provider will typically prompt you to specify the record type, name, value, and TTL (Time To Live) or expiration when adding a new record.
+> In your DNS control panel, create a new record that associates your chosen subdomain with 'payswitcher payment link'. Your DNS provider will typically prompt you to specify the record type, name, value, and TTL (Time To Live) or expiration when adding a new record.
 
 Enter the following values and save the new DNS record.
 
-> \| FIELD | INSTRUCTIONS | DESCRIPTION | |----------|----------|----------| | Type | Select `CNAME` from the dropdown | What kind of DNS record this is. | | Name | if your custom domain is `paymentlink.xyz.com`, enter `paymentlink`| For CNAME records, this field is the first part of your subdomain (the part leading up to the first period).| | Value |Enter `sandbox.payswitcher.com` | This is what the new subdomain record points to–in this case, Hyperswitch .Some providers may expect a trailing period (.) after the CNAME value. Make sure to verify that your CNAME value matches the format your provider expects. | | TTL/Expiry | Enter `300` | An expiration of 5 minutes (300 seconds) is OK. Your DNS provider might not allow you to change the TTL value. If this field is missing or you can’t change it, it’s safe to ignore this part of the configuration. |
+> \| FIELD | INSTRUCTIONS | DESCRIPTION | |----------|----------|----------| | Type | Select `CNAME` from the dropdown | What kind of DNS record this is. | | Name | if your custom domain is `paymentlink.xyz.com`, enter `paymentlink`| For CNAME records, this field is the first part of your subdomain (the part leading up to the first period).| | Value |Enter `sandbox.payswitcher.com` | This is what the new subdomain record points to–in this case, PaySwitcher .Some providers may expect a trailing period (.) after the CNAME value. Make sure to verify that your CNAME value matches the format your provider expects. | | TTL/Expiry | Enter `300` | An expiration of 5 minutes (300 seconds) is OK. Your DNS provider might not allow you to change the TTL value. If this field is missing or you can’t change it, it’s safe to ignore this part of the configuration. |
 
 Step 4: Create your TXT record
 
@@ -184,7 +184,7 @@ _acme-challenge.<your domain>   text = "<your unique TXT record value>"
 
 > Upon completing this step, your DNS records will be configured.
 
-* Now that you've established and verified your DNS records, Hyperswitch proceeds to verify the connection and provision your domain on our end. You will receive an email from us once the domain is ready for you to enable it.
+* Now that you've established and verified your DNS records, PaySwitcher proceeds to verify the connection and provision your domain on our end. You will receive an email from us once the domain is ready for you to enable it.
 
 ### FAQ
 
@@ -200,7 +200,7 @@ This involves adding CNAME records and TLS certificates which ends up being a sl
 
 <details>
 
-<summary>Can I configure Payment links through Hyperswitch Control centre?</summary>
+<summary>Can I configure Payment links through PaySwitcher Control centre?</summary>
 
 Currently, the Control centre's capability to create payment links is under development and will be available by Q1'24.
 
@@ -226,6 +226,6 @@ The payment link is valid for 15-minutes by default. However you can increase th
 
 <summary>How can I send Payment links via Emails?</summary>
 
-Hyperswitch supports generation of the payment link. We are not integrated with any email servers. You'll need to have a mail server integration at your end and ingest the payment links to the emails being sent
+PaySwitcher supports generation of the payment link. We are not integrated with any email servers. You'll need to have a mail server integration at your end and ingest the payment links to the emails being sent
 
 </details>

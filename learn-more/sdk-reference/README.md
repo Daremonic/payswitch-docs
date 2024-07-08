@@ -4,7 +4,7 @@ description: SDK method details
 
 # 🍡 SDK Reference
 
-Hyperswitch offers a frontend as well as a backend integration solution in the form of SDK.&#x20;
+PaySwitcher offers a frontend as well as a backend integration solution in the form of SDK.&#x20;
 
 <table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Node</td><td></td><td></td><td><a href="../../.gitbook/assets/node.jpg">node.jpg</a></td><td><a href="node.md">node.md</a></td></tr><tr><td>React + HTML</td><td></td><td></td><td><a href="../../.gitbook/assets/reactHtml.jpg">reactHtml.jpg</a></td><td><a href="react.md">react.md</a></td></tr></tbody></table>
 

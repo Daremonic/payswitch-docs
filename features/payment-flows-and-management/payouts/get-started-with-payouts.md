@@ -1,6 +1,6 @@
 # ➕ Get started with payouts!
 
-For getting started with payouts, make sure you have signed up for the underlying payout processors supported by HyperSwitch.
+For getting started with payouts, make sure you have signed up for the underlying payout processors supported by PaySwitcher.
 
 ## How does it work?
 
@@ -8,7 +8,7 @@ For getting started with payouts, make sure you have signed up for the underlyin
 
 ## How to get started?
 
-We will be using HyperSwitch's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.payswitcher.com/api-reference/payouts/payouts--create).
+We will be using PaySwitcher's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.payswitcher.com/api-reference/payouts/payouts--create).
 
 Backend API endpoint - https://sandbox.payswitcher.com
 
@@ -23,7 +23,7 @@ Dashboard - [https://app.payswitcher.com](https://app.payswitcher.com)
 
 #### Steps for configuring payout processors
 
-**Step 1 -** Login to your [HyperSwitch account](https://app.payswitcher.com).
+**Step 1 -** Login to your [PaySwitcher account](https://app.payswitcher.com).
 
 **Step 2** - Navigate to _**Payout Processors**_ tab.
 

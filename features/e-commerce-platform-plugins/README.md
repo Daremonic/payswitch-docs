@@ -1,5 +1,5 @@
 ---
-description: Hyperswitch plugins for the e-commerce platform you use
+description: PaySwitcher plugins for the e-commerce platform you use
 ---
 
 # 🛍️ E-commerce platform plugins
@@ -10,6 +10,6 @@ In the dynamic landscape of online retail, E-commerce Platform Plugins emerge as
 
 Designed to seamlessly integrate with popular E-commerce platforms such as Shopify, WooCommerce, Magento, and others, these plugins extend the core capabilities of the platforms. From optimizing user experience and enhancing payment gateways to introducing advanced analytics and marketing features, E-commerce Platform Plugins empower businesses to customize and scale their online operations.
 
-Hyperswitch web client supports the popular E-commerce plugins. Plugin integration is seamless and quick. You can try it out in the subsequent sections.
+PaySwitcher web client supports the popular E-commerce plugins. Plugin integration is seamless and quick. You can try it out in the subsequent sections.
 
-Looking for a Hyperswitch plugin for a specific E-commerce platform? Reach out to us.
+Looking for a PaySwitcher plugin for a specific E-commerce platform? Reach out to us.

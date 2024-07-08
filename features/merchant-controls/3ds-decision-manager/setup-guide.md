@@ -5,12 +5,12 @@ description: 3DS Decision Manager Setup
 # Setup guide
 
 {% hint style="info" %}
-This section covers the steps to setup 3ds decision manager using the Hyperswitch Control Center
+This section covers the steps to setup 3ds decision manager using the PaySwitcher Control Center
 {% endhint %}
 
 ## Steps to setup a rule on 3DS Decision Manager?
 
-**Step 1:** Go to 3DS Decision Manager tab on the Hyperswitch Control Center
+**Step 1:** Go to 3DS Decision Manager tab on the PaySwitcher Control Center
 
 **Step 2:** Click on create new rule
 

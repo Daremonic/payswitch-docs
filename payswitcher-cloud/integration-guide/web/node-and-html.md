@@ -1,31 +1,31 @@
 ---
-description: Integrate hyper SDK to your HTML Web App using Hyperswitch-node
+description: Integrate hyper SDK to your HTML Web App using PaySwitcher-node
 ---
 
 # Node and HTML
 
 {% hint style="info" %}
-In this section, you will get details to Integrate Hyperswitch SDK using Node Backend and HTML Frontend
+In this section, you will get details to Integrate PaySwitcher SDK using Node Backend and HTML Frontend
 {% endhint %}
 
-**Before following these steps, please configure your payment methods** [here](https://payswitcher.com/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to your HTML app. You can also use this demo app as a reference with your Hyperswitch credentials to test the setup.
+**Before following these steps, please configure your payment methods** [here](https://payswitcher.com/docs/paymentMethods/cards). Use this guide to integrate `payswitcher` SDK to your HTML app. You can also use this demo app as a reference with your PaySwitcher credentials to test the setup.
 
 ## 1. Setup the server
 
-### 1.1 Install the `hyperswitch-node` library
+### 1.1 Install the `payswitcher-node` library
 
 Install the package and import it in your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-node
+$ npm install @payswitcherpay-tech/payswitcher-node
 ```
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the `hyperswitch-node` dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
+Before creating a payment, import the `payswitcher-node` dependencies and initialize it with your API key. Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
-const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcherpay-tech/payswitcher-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the `client_secret` obtained in the response to securely complete the payment on the client.
@@ -60,7 +60,7 @@ In case your integrating the ExpressCheckout (mentioned later below), instead of
 
 ### 2.1 Load HyperLoader
 
-Use `HyperLoader` to ensure PCI compliant means of accepting payment details from your customer and sending it directly to the hyperswitch server. Always load `hyperLoader` from `https://beta.payswitcher.com/v1/HyperLoader.js` to ensure compliance. Please refrain from including the script in a bundle or hosting it yourself.
+Use `HyperLoader` to ensure PCI compliant means of accepting payment details from your customer and sending it directly to the payswitcher server. Always load `hyperLoader` from `https://beta.payswitcher.com/v1/HyperLoader.js` to ensure compliance. Please refrain from including the script in a bundle or hosting it yourself.
 
 ```js
 <script src="https://beta.payswitcher.com/v1/HyperLoader.js"></script>
@@ -255,7 +255,7 @@ const unifiedCheckoutOptions = {
 3. **`buttonText (optional)`** - The text to display on the payment button.\
    Default value: **Pay Now**
 
-For customization, please follow the [`Customization docs`](https://docs.payswitcher.com/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
+For customization, please follow the [`Customization docs`](https://docs.payswitcher.com/payswitcher-cloud/integration-guide/web/customization#id-5.-confirm-button).
 
 </details>
 
@@ -293,4 +293,4 @@ async function checkStatus() {
 }
 ```
 
-Congratulations! Now that you have integrated the Hyperswitch SDK on your app, you can customize the payment elements to blend with the rest of your app.
+Congratulations! Now that you have integrated the PaySwitcher SDK on your app, you can customize the payment elements to blend with the rest of your app.

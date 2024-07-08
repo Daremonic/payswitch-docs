@@ -1,6 +1,6 @@
 ---
 description: >-
-  Use Hyperswitch's unified Disputes module to track and manage disputes across
+  Use PaySwitcher's unified Disputes module to track and manage disputes across
   multiple processors
 ---
 
@@ -9,7 +9,7 @@ description: >-
 A dispute occurs when a customer contacts their payment method issuer (card issuer/bank/wallet) to question or challenge a particular transaction so that the payment can be reversed.
 
 {% hint style="info" %}
-When a card payment is reversed, and the processor debits the merchant's account, it's termed a 'chargeback.' Hyperswitch uses the term 'Disputes' interchangeably to refer to 'Chargebacks' in the context of card payments.
+When a card payment is reversed, and the processor debits the merchant's account, it's termed a 'chargeback.' PaySwitcher uses the term 'Disputes' interchangeably to refer to 'Chargebacks' in the context of card payments.
 {% endhint %}
 
 The merchants receive notifications from their payment processor when a dispute is raised by their customers against a payment made at their site.
@@ -18,11 +18,11 @@ After receiving a dispute notification, merchants are given an opportunity to pr
 
 Each processor has their own standards or processes around how they notify about disputes and how merchants can challenge/accept them and thus it becomes cumbersome for a merchant using multiple processors to manage disputes across different processors on their own.
 
-Hyperswitch unifies all the dispute notifications from all your different processors and makes it easier for you to track, accept and as well as challenge them by uploading evidences across different processors from one place.
+PaySwitcher unifies all the dispute notifications from all your different processors and makes it easier for you to track, accept and as well as challenge them by uploading evidences across different processors from one place.
 
-## Disputes Lifecycle on Hyperswitch
+## Disputes Lifecycle on PaySwitcher
 
-Hyperswitch's unified disputes module uses the following stages and statuses to track your disputes:
+PaySwitcher's unified disputes module uses the following stages and statuses to track your disputes:
 
 <div data-full-width="true">
 
@@ -34,7 +34,7 @@ Hyperswitch's unified disputes module uses the following stages and statuses to 
 
 Some payment method issuers start an investigation before creating a dispute on a transaction challenged by a customer. Such transactions are grouped under the 'Pre-Dispute' stage and these transactions could go through the following states:
 
-<table><thead><tr><th width="192">dispute_state</th><th>description</th></tr></thead><tbody><tr><td>Opened</td><td>Occurs when an investigation is opened and a dispute is created on Hyperswitch</td></tr><tr><td>Challenged</td><td>Occurs when a merchant uploads evidence to support the original transaction</td></tr><tr><td>Expired</td><td>Occurs when a merchant doesn't respond in time or if the investigation is closed</td></tr></tbody></table>
+<table><thead><tr><th width="192">dispute_state</th><th>description</th></tr></thead><tbody><tr><td>Opened</td><td>Occurs when an investigation is opened and a dispute is created on PaySwitcher</td></tr><tr><td>Challenged</td><td>Occurs when a merchant uploads evidence to support the original transaction</td></tr><tr><td>Expired</td><td>Occurs when a merchant doesn't respond in time or if the investigation is closed</td></tr></tbody></table>
 
 Visa or Mastercard do not open an investigation before creating a dispute and so most of your transactions would skip the Pre-Dispute stage
 
@@ -52,11 +52,11 @@ Even after a successful dispute challenge, a payment method issuer might deem th
 
 <table><thead><tr><th width="167">dispute_state</th><th>description</th></tr></thead><tbody><tr><td>Opened</td><td>Occurs when the issuer opens a review appeal after deeming the evidence unsatisfactory</td></tr><tr><td>Won</td><td>Occurs when the merchant is successful in the pre-arbitration appeal prcoess</td></tr><tr><td>Lost</td><td>Occurs when the merchant loses during the pre-arbitration appeal. Also, known as 'second_chargeback'</td></tr></tbody></table>
 
-## Managing Disputes on Hyperswitch through Dashboard
+## Managing Disputes on PaySwitcher through Dashboard
 
-### 1. Viewing Disputes on Hyperswitch dashboard
+### 1. Viewing Disputes on PaySwitcher dashboard
 
-You can view all your disputes by going to Operations -> Disputes section on your Hyperswitch dashboard
+You can view all your disputes by going to Operations -> Disputes section on your PaySwitcher dashboard
 
 <figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
@@ -72,4 +72,4 @@ Clicking one of the dispute will take you to a page where you can see further in
 
 ### 4. Accepting/Challenging a Dispute
 
-This feature is currently not present in Hyperswitch. Request for this feature.
+This feature is currently not present in PaySwitcher. Request for this feature.

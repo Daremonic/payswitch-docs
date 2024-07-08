@@ -1,33 +1,33 @@
 ---
-description: Integrate hyper SDK to your React Web App using Hyperswitch-node
+description: Integrate hyper SDK to your React Web App using PaySwitcher-node
 ---
 
 # Node And React
 
 {% hint style="info" %}
-In this section, you will get details to Integrate Hyperswitch SDK using Node Backend and React Frontend
+In this section, you will get details to Integrate PaySwitcher SDK using Node Backend and React Frontend
 {% endhint %}
 
-**Before following these steps, please configure your payment methods** here. Use this guide to integrate `hyperswitch` SDK to your React app. You can also use this demo app as a reference with your Hyperswitch credentials to test the setup.
+**Before following these steps, please configure your payment methods** here. Use this guide to integrate `payswitcher` SDK to your React app. You can also use this demo app as a reference with your PaySwitcher credentials to test the setup.
 
 ## <mark style="color:blue;">Demo App</mark>
 
 ### 1. Setup the server
 
-#### 1.1 Install the `hyperswitch-node` library
+#### 1.1 Install the `payswitcher-node` library
 
 Install the package and import it in your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-node
+$ npm install @payswitcherpay-tech/payswitcher-node
 ```
 
 #### 1.2 Create a payment
 
-Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
+Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
-const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcherpay-tech/payswitcher-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the client\_secret obtained in the response to securely complete the payment on the client.
@@ -65,18 +65,18 @@ In case your integrating the ExpressCheckout (mentioned later below), instead of
 Install the packages and import it into your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyper-js
-$ npm install @hyperswitchpay-tech/react-hyper-js
+$ npm install @payswitcherpay-tech/hyper-js
+$ npm install @payswitcherpay-tech/react-hyper-js
 ```
 
 #### 2.2 Add `hyper` to your React app
 
-Use `hyper-js` to ensure that you stay PCI compliant by sending payment details directly to Hyperswitch server.
+Use `hyper-js` to ensure that you stay PCI compliant by sending payment details directly to PaySwitcher server.
 
 ```js
 import React, { useState, useEffect } from "react";
-import { loadHyper } from "@hyperswitchpay-tech/hyper-js";
-import { hyperElements } from "@hyperswitchpay-tech/react-hyper-js";
+import { loadHyper } from "@payswitcherpay-tech/hyper-js";
+import { hyperElements } from "@payswitcherpay-tech/react-hyper-js";
 ```
 
 #### 2.3 Load `hyper-js`
@@ -228,7 +228,7 @@ var unifiedCheckoutOptions = {
 3. **`buttonText (optional)`** - The text to display on the payment button.\
    Default value: **Pay Now**
 
-For customization, please follow the [`Customization docs`](https://docs.payswitcher.com/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
+For customization, please follow the [`Customization docs`](https://docs.payswitcher.com/payswitcher-cloud/integration-guide/web/customization#id-5.-confirm-button).
 
 </details>
 {% endtab %}
@@ -261,7 +261,7 @@ var expressCheckoutOptions = {
 
 #### 3.2 Display payment status message
 
-When Hyperswitch redirects the customer to the `return_url`, the `payment_client_secret` query parameter is appended by hyper-js. Use this to retrieve the Payment to determine what to show to your customer.
+When PaySwitcher redirects the customer to the `return_url`, the `payment_client_secret` query parameter is appended by hyper-js. Use this to retrieve the Payment to determine what to show to your customer.
 
 ```js
 //Look for a parameter called `payment_intent_client_secret` in the url which gives a payment ID, which is then used to retrieve the status of the payment
@@ -367,7 +367,7 @@ Callback for these event will be triggered with following event object.
 }
 ```
 
-Congratulations! Now that you have integrated the Hyperswitch SDK on your app, you can customize the payment elements to blend with the rest of your app.
+Congratulations! Now that you have integrated the PaySwitcher SDK on your app, you can customize the payment elements to blend with the rest of your app.
 
 ## Next step:
 

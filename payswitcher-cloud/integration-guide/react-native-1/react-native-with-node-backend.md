@@ -1,5 +1,5 @@
 ---
-description: Integrate hyper SDK to your Flutter App using hyperswitch-node
+description: Integrate hyper SDK to your Flutter App using payswitcher-node
 ---
 
 # Flutter with Node Backend
@@ -22,20 +22,20 @@ Use this guide to integrate `hyper` SDK to your Flutter app.
 
 ## 1. Setup the server
 
-### 1.1 Install the `hyperswitch-node` library
+### 1.1 Install the `payswitcher-node` library
 
 Install the package and import it in your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-node
+$ npm install @payswitcherpay-tech/payswitcher-node
 ```
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
+Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
-const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcherpay-tech/payswitcher-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the client\_secret obtained in the response to securely complete the payment on the client.
@@ -64,13 +64,13 @@ app.post("/create-payment", async (req, res) => {
 
 ## 2. Build checkout page on the client
 
-### 2.1 Install the `flutter_hyperswitch` library
+### 2.1 Install the `flutter_payswitcher` library
 
-Add `flutter_hyperswitch` to your `pubspec.yaml` file
+Add `flutter_payswitcher` to your `pubspec.yaml` file
 
 ```js
 dependencies:
-  flutter_hyperswitch: ^version_number
+  flutter_payswitcher: ^version_number
 ```
 
 Run the following command to fetch and install the dependencies.
@@ -81,13 +81,13 @@ flutter pub get
 
 ## 3. Complete the checkout on the client
 
-### 3.1 Initialise the Hyperswitch SDK
+### 3.1 Initialise the PaySwitcher SDK
 
 Initialise `Hyper` onto your app with your publishable key with the `Hyper` constructor. To get a PublishableKey please find it [here](https://app.payswitcher.com/developers).
 
 ```dart
-import 'package:flutter_hyperswitch/flutter_hyperswitch.dart';
-final _hyper = FlutterHyperswitch();
+import 'package:flutter_payswitcher/flutter_payswitcher.dart';
+final _hyper = FlutterPaySwitcher();
 _hyper.init(HyperConfig(publishableKey: 'YOUR_PUBLISHABLE_KEY', customBackendUrl: 'YOUR_CUSTOM_BACKEND_URL'));
 ```
 

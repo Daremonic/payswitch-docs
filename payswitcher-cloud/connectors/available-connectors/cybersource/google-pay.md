@@ -1,18 +1,18 @@
 ---
-description: Integrate GooglePay (AndroidPay) via Cybersource in Hyperswitch
+description: Integrate GooglePay (AndroidPay) via Cybersource in PaySwitcher
 ---
 
 # Google Pay
 
 {% hint style="info" %}
-This page consists of steps for how **GooglePay** can be enabled in Hyperswitch via Cybersource
+This page consists of steps for how **GooglePay** can be enabled in PaySwitcher via Cybersource
 {% endhint %}
 
-> This guide assumes that you have alreaedy configured Cybersource as a connector in your Hyperswitch Control Center. If not please follow the steps mentioned [here](./)
+> This guide assumes that you have alreaedy configured Cybersource as a connector in your PaySwitcher Control Center. If not please follow the steps mentioned [here](./)
 
 ### Steps to Configure GooglePay
 
-* On your Hyperswitch Control Center, Click on [`Connectors > Payment Processors`](#user-content-fn-1)[^1]
+* On your PaySwitcher Control Center, Click on [`Connectors > Payment Processors`](#user-content-fn-1)[^1]
 *   If you have already configured Cybersource successfully, then you will land on the page as shown in the image below\
     \
 
@@ -51,7 +51,7 @@ This page consists of steps for how **GooglePay** can be enabled in Hyperswitch 
     * Country
 
 {% hint style="warning" %}
-We recommend to pass this fields while creating the Payment Intent with Hyperswitch, Else Hyperswitch SDK will collect this information from the customer while making the payment which might not be the best experience for the customer.
+We recommend to pass this fields while creating the Payment Intent with PaySwitcher, Else PaySwitcher SDK will collect this information from the customer while making the payment which might not be the best experience for the customer.
 {% endhint %}
 
 

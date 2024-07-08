@@ -1,11 +1,11 @@
 ---
-description: Accept payments through Adyen via Hyperswitch
+description: Accept payments through Adyen via PaySwitcher
 ---
 
 # Adyen
 
 {% hint style="info" %}
-This section gives you an overview of how to make payments via Adyen through Hyperswitch
+This section gives you an overview of how to make payments via Adyen through PaySwitcher
 {% endhint %}
 
 \
@@ -13,20 +13,20 @@ This section gives you an overview of how to make payments via Adyen through Hyp
 
 
 
-Adyen is a global payments company allowing businesses to accept payments on a global scale. It offers a variety of local and international payment methods. To know about more about payment methods supported by adyen via hyperswitch visit [here](https://payswitcher.com/pm-list).
+Adyen is a global payments company allowing businesses to accept payments on a global scale. It offers a variety of local and international payment methods. To know about more about payment methods supported by adyen via payswitcher visit [here](https://payswitcher.com/pm-list).
 
-### Activating Adyen via Hyperswitch
+### Activating Adyen via PaySwitcher
 
 #### I. Prerequisites
 
 1. You need to be registered with Adyen in order to proceed. In case you aren't, you can quickly setup your Adyen account [here](https://www.adyen.com/signup)
-2. You should have a registered Hyperswitch account. You can access your account from the [Hyperswitch control center](https://app.payswitcher.com/register).
-3. Request the Adyen support team to enable handling raw card data for your Adyen account via email (support@adyen.com). This will enable Hyperswitch to securely handle your customer's payment details.
+2. You should have a registered PaySwitcher account. You can access your account from the [PaySwitcher control center](https://app.payswitcher.com/register).
+3. Request the Adyen support team to enable handling raw card data for your Adyen account via email (support@adyen.com). This will enable PaySwitcher to securely handle your customer's payment details.
 4. The Adyen API key and Account ID are available in your Adyen dashboard under - Home page -> Developers -> API credentials.
 5. Select all the payment methods you wish to use Adyen for. Ensure that this is the same as the ones configured on your Adyen dashboard under Settings -> Payment methods
 6. To set webhooks, Navigate to the webhooks section of your Adyen dashboard (Developers -> Webhooks) and create a new standard webhook. Know more about webhook source verification key [here](https://docs.adyen.com/development-resources/webhooks/verify-hmac-signatures/#enable-hmac-signatures).
 
-[Steps](https://docs.payswitcher.com/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Adyen on Hyperswitch control center.
+[Steps](https://docs.payswitcher.com/payswitcher-cloud/connectors/activate-connector-on-payswitcher) to activate Adyen on PaySwitcher control center.
 
 #### II. Points to remember
 
@@ -40,7 +40,7 @@ Adyen is a global payments company allowing businesses to accept payments on a g
 	- `billing.line2`,
 	- `billing.zip`
 	- `order_details`
-2. For Klarna, `customer_id` is also a required field for which you have to create a customer using [Hyperswitch - Create Customer](https://api-reference.payswitcher.com/api-reference/customers/customers--create).
+2. For Klarna, `customer_id` is also a required field for which you have to create a customer using [PaySwitcher - Create Customer](https://api-reference.payswitcher.com/api-reference/customers/customers--create).
 3. Supported Country-Currency matrix
 
     | Payment Method | Country | Currency |
@@ -53,9 +53,9 @@ Adyen is a global payments company allowing businesses to accept payments on a g
     | Sofort | `AT,BE,DE,ES,CH,NL` | `CHF,EUR` |
     | Klarna | `AU,AT,BE,CA,CZ,DK,FI,FR,DE,GR,IE,IT,NO,PL,PT,RO,ES,SE,CH,NL,GB,US` | `AUD,EUR,CAD,CZK,DKK,NOK,PLN,RON,SEK,CHF,GBP,USD` |
 
-* If your desired country-currency combination is not listed here, please reach out to Hyperswitch Support to get it enabled.
+* If your desired country-currency combination is not listed here, please reach out to PaySwitcher Support to get it enabled.
 
 
-5. (Special Note): For Klarna and Paypal, In Adyen Sandbox environment, Automaitc Capture is not working as intended. All the payments are required to be explicitly captured, and then only refunds are processing. This might be an account configuration issue from Adyen, there is no detected bugs/issues from Hyperswitch's end. If the same behvaiour persists on production please reach out to your Adyen Support or reach out to Hyperswitch Support to stop Automatic Captures for the same.
-6. (Special Note): For Sofort, Adyen has discontinued support for Sofort as payment method, Hyperswitch provides the integration of sofort via adyen but it is subject to availabilty by adyen on your account. Some or all features might not work if adyen has not enable it for you. Please contact Adyen support to resolve the same.
+5. (Special Note): For Klarna and Paypal, In Adyen Sandbox environment, Automaitc Capture is not working as intended. All the payments are required to be explicitly captured, and then only refunds are processing. This might be an account configuration issue from Adyen, there is no detected bugs/issues from PaySwitcher's end. If the same behvaiour persists on production please reach out to your Adyen Support or reach out to PaySwitcher Support to stop Automatic Captures for the same.
+6. (Special Note): For Sofort, Adyen has discontinued support for Sofort as payment method, PaySwitcher provides the integration of sofort via adyen but it is subject to availabilty by adyen on your account. Some or all features might not work if adyen has not enable it for you. Please contact Adyen support to resolve the same.
 

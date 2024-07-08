@@ -1,13 +1,13 @@
 ---
 description: >-
-  Use the standalone deployment script to deploy Hyperswitch control center on
+  Use the standalone deployment script to deploy PaySwitcher control center on
   AWS quickly
 ---
 
 # Standalone control center deployment for prototyping
 
 {% hint style="info" %}
-In this chapter, you will deploy Hyperswitch control center on AWS cloud. You can either try out a quick standalone deployment or a more scalable production ready setup
+In this chapter, you will deploy PaySwitcher control center on AWS cloud. You can either try out a quick standalone deployment or a more scalable production ready setup
 {% endhint %}
 
 ***
@@ -22,7 +22,7 @@ In this chapter, you will deploy Hyperswitch control center on AWS cloud. You ca
 
 
 
-## Steps to Deploy Hyperswitch control center on AWS
+## Steps to Deploy PaySwitcher control center on AWS
 
 ### **What do you need to get started**
 
@@ -32,7 +32,7 @@ In this chapter, you will deploy Hyperswitch control center on AWS cloud. You ca
 
 > #### Note
 >
-> You can directly start from [Step 3](https://hyperswitch-hyperswitchpay.stoplight.io/studio/installation-guide:main?source=8jifq2qd#step-3---setup-hyperswitch) if you have installed and configured AWS CLI
+> You can directly start from [Step 3](https://payswitcher-payswitcherpay.stoplight.io/studio/installation-guide:main?source=8jifq2qd#step-3---setup-payswitcher) if you have installed and configured AWS CLI
 
 #### Step 1 - Install or Update the AWS CLI
 
@@ -119,16 +119,16 @@ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 
-#### Step 3 - Setup Hyperswitch
+#### Step 3 - Setup PaySwitcher
 
-You can now deploy the hyperswitch application by running the below command in the same terminal session
+You can now deploy the payswitcher application by running the below command in the same terminal session
 
 {% hint style="info" %}
 Takes around 10-15 min to execute successfully
 {% endhint %}
 
 ```json
-curl https://raw.githubusercontent.com/hyperswitchpay/hyperswitch-control-center/main/aws/hyperswitch_control_control_aws_setup.sh | bash
+curl https://raw.githubusercontent.com/payswitcherpay/payswitcher-control-center/main/aws/payswitcher_control_control_aws_setup.sh | bash
 ```
 
 {% hint style="warning" %}
@@ -146,6 +146,6 @@ You need JQ installed for this. For more information, [click here](https://jqlan
 {% endhint %}
 
 ```json
-curl https://raw.githubusercontent.com/hyperswitchpay/hyperswitch-control-center/main/aws/hyperswitch_control_center_cleanup_setup.sh | bash
+curl https://raw.githubusercontent.com/payswitcherpay/payswitcher-control-center/main/aws/payswitcher_control_center_cleanup_setup.sh | bash
 ```
 

@@ -8,17 +8,17 @@ description: Migrate from Stripe on your react native app
 Migrate from Stripe on your React Native app in less than 15 mins!
 {% endhint %}
 
-If you are already integrated with Stripe as your payment processor, we have made migrating to Hyperswitch much simpler for you. And we will be adding quick migration support for more leading payment processors in the near future. And once you migrate, get immediate access to 40+ payment processors and features such as Smart Router, Digital Payments Manager and many more.
+If you are already integrated with Stripe as your payment processor, we have made migrating to PaySwitcher much simpler for you. And we will be adding quick migration support for more leading payment processors in the near future. And once you migrate, get immediate access to 40+ payment processors and features such as Smart Router, Digital Payments Manager and many more.
 
 ### React Native - Node Backend and JS Frontend
 
 The code from your Stripe integration to be removed and replaced is explained below in a step by step manner.
 
-**Step 1:** Install Hyperswitch’s SDK and server side dependencies from npm
+**Step 1:** Install PaySwitcher’s SDK and server side dependencies from npm
 
 ```js
- $ npm install @hyperswitchpay-tech/react-native-hyperswitch
- $ npm install @hyperswitchpay-tech/hyper-node --save-dev
+ $ npm install @payswitcherpay-tech/react-native-payswitcher
+ $ npm install @payswitcherpay-tech/hyper-node --save-dev
 ```
 
 Install peer dependencies:
@@ -33,23 +33,23 @@ Install peer dependencies:
 // from
 const stripe = require("stripe")("your_stripe_api_key");
 // to
-const stripe = require("@hyperswitchpay-tech/hyper-node")("your_hyperswitch_api_key");
+const stripe = require("@payswitcherpay-tech/hyper-node")("your_payswitcher_api_key");
 ```
 
-**Step 3:** Call useStripe() with your Hyperswitch publishable key to configure the SDK library, from your website
+**Step 3:** Call useStripe() with your PaySwitcher publishable key to configure the SDK library, from your website
 
 ```js
 // from
 import { StripeProvider } from "@stripe/stripe-react-native";
 // to
-import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
 // from
 import { useStripe } from "@stripe/stripe-react-native";
 // to
-import { useStripe } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { useStripe } from "@payswitcherpay-tech/react-native-payswitcher";
 ```
 
-**Step 4:** Configure your checkout form to import from Hyperswitch
+**Step 4:** Configure your checkout form to import from PaySwitcher
 
 ```js
 // from
@@ -58,4 +58,4 @@ import { useStripe } from "@hyperswitchpay-tech/react-native-hyperswitch";
 <HyperProvider ... > ... </HyperProvider>
 ```
 
-**Step 5:** Run your application to make a test payment. And verify the status of the transaction on Hyperswitch Dashboard and Stripe Dashboard. Congratulations ! You have successfully integrated Hyperswitch to your payments stack and you now have access to a suite of 40+ payment processors and acquirers.
+**Step 5:** Run your application to make a test payment. And verify the status of the transaction on PaySwitcher Dashboard and Stripe Dashboard. Congratulations ! You have successfully integrated PaySwitcher to your payments stack and you now have access to a suite of 40+ payment processors and acquirers.

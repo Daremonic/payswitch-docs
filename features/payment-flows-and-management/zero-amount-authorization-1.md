@@ -8,7 +8,7 @@ description: Best way to validate customer payment data and charge the customer 
 In this section, we will understand zero-auth flow, it's usage, and webhook consumption
 {% endhint %}
 
-The zero amount authorization flow in Hyperswitch allows the merchant to validate customer payment data and charge the customer later. On customer registration, the merchant can initiate a zero-auth flow transaction with Hyperswitch to authenticate the customer payment method (card, bank account etc.) and receive authorization from the customer to use the payment method to charge them at a later point. A payment\_method\_id would be created and issued to the merchant. And in the future they can charge against this payment\_method\_id.
+The zero amount authorization flow in PaySwitcher allows the merchant to validate customer payment data and charge the customer later. On customer registration, the merchant can initiate a zero-auth flow transaction with PaySwitcher to authenticate the customer payment method (card, bank account etc.) and receive authorization from the customer to use the payment method to charge them at a later point. A payment\_method\_id would be created and issued to the merchant. And in the future they can charge against this payment\_method\_id.
 
 The following API cURLs demonstrate the usage of the zero-auth flow. The example below uses the credit card payment method. But this can be extended to bank debits and other payment methods as well.
 
@@ -20,7 +20,7 @@ The following API cURLs demonstrate the usage of the zero-auth flow. The example
 curl --location 'http://sandbox.payswitcher.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
---header 'api-key: <enter your Hyperswitch API key here>' \
+--header 'api-key: <enter your PaySwitcher API key here>' \
 --data-raw '{
 "amount": 0,
 "currency": "USD",
@@ -37,12 +37,12 @@ curl --location 'http://sandbox.payswitcher.com/payments' \
 
 ```
 
-2. Confirm the payment after collecting payment information from the user **\[You can skip this step if you are using the Hyperswitch Unified Checkout]**
+2. Confirm the payment after collecting payment information from the user **\[You can skip this step if you are using the PaySwitcher Unified Checkout]**
 
 <pre class="language-bash"><code class="lang-bash"><strong>curl --location 'http://http://sandbox.payswitcher.com/payments/{{payment_id}}/confirm' \
 </strong>--header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
-<strong>--header 'api-key: &#x3C;enter your Hyperswitch API key here>' \
+<strong>--header 'api-key: &#x3C;enter your PaySwitcher API key here>' \
 </strong>--data-raw '{
     "confirm": true,
     "payment_method": "card",
@@ -95,7 +95,7 @@ curl --location 'http://sandbox.payswitcher.com/payments' \
 ```bash
 curl --location 'https://sandbox.payswitcher.com/payments/<pass the payment_id>' \
 --header 'Accept: application/json' \
---header 'api-key: <enter your Hyperswitch API key here>' \
+--header 'api-key: <enter your PaySwitcher API key here>' \
 ```
 
 4. Charge the customer later by passing the payment\_method\_id  **(Called as 'MIT': Merchant initiated Transaction)**
@@ -106,7 +106,7 @@ Pass the above `payment_method_id` under the `recurring_details` object along wi
 curl --location 'http://sandbox.payswitcher.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
---header 'api-key: use your Hyperswitch API key' \
+--header 'api-key: use your PaySwitcher API key' \
 --data-raw '{
     "amount": 1231,
     "currency": "USD",

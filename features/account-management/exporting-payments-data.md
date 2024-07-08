@@ -1,11 +1,11 @@
 ---
-description: Export your payments data to Redshift from Hyperswitch
+description: Export your payments data to Redshift from PaySwitcher
 ---
 
 # 🔢 Exporting payments data
 
 {% hint style="info" %}
-In this section, you would be able to understand how you can export your payments data to Redshift from Hyperswitch, the architecture behind it, schema and the queries.
+In this section, you would be able to understand how you can export your payments data to Redshift from PaySwitcher, the architecture behind it, schema and the queries.
 {% endhint %}
 
 Exporting your payments data to Amazon Redshift enhances analytics by leveraging Redshift's high-performance query capabilities. This allows for efficient data analysis, reporting, and business intelligence there by deriving valuable insights
@@ -17,10 +17,10 @@ Exporting your payments data to Amazon Redshift enhances analytics by leveraging
 ## Integration steps
 
 1. Prerequisite: You need to have an AWS account with redshift enabled. More details can be found here [https://aws.amazon.com/redshift/](https://aws.amazon.com/redshift/)
-2.  You are required to create a new IAM role for Redshift use and provide Hyperswitch with the corresponding role ARN. This IAM role must be configured with S3 read permissions.\\
+2.  You are required to create a new IAM role for Redshift use and provide PaySwitcher with the corresponding role ARN. This IAM role must be configured with S3 read permissions.\\
 
     <figure><img src="https://lh7-us.googleusercontent.com/r4vnr22w42Pz2k5V7O7TsVBrlVhDrfjYveoH-CWMnJW9XNR95k0XmJBlC9Q7lb1mpJa7aFyf9fRDDf6SHBoSLs-BP-TriQfwG57j3XhsdeJEW417zi0UO2069oDcxPEdzifYm_alen5GJsCGWhYOL2g" alt=""><figcaption><p>Example image of an IAM role created</p></figcaption></figure>
-3. After sharing the ARN with Hyperswitch, We will share the S3 bucket & path that is to be synced for data along with providing access to the IAM role from where you will be able to get files from the S3
+3. After sharing the ARN with PaySwitcher, We will share the S3 bucket & path that is to be synced for data along with providing access to the IAM role from where you will be able to get files from the S3
 4.  Once the above step is done, you need to create the table schema on Redshift
 
     Post which you can proceed with the below

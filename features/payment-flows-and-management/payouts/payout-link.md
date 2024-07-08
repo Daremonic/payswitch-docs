@@ -16,11 +16,11 @@ Introducing Payout Links - Make sending out money to beneficiaries, simple and e
 * Online gaming - Distribute prize money to players.
 * NGOs & Political Organisations - Reimburse field agents and volunteers.
 
-### How to configure Payout links through Hyperswitch API?
+### How to configure Payout links through PaySwitcher API?
 
 #### Prerequisites
 
-* Create a Hyperswitch account via the [dashboard](https://app.payswitcher.com/register) and create a profile
+* Create a PaySwitcher account via the [dashboard](https://app.payswitcher.com/register) and create a profile
 * Add a payout processor to your account
 
 #### Using Payout links
@@ -139,7 +139,7 @@ You can also customize a specific payout link by including the **payout\_link\_c
 
 Yes. Your custom domain can be included in the default payout\_link\_config object as part of the business profile update.
 
-This involves adding CNAME records and TLS certificates which ends up being a slightly complex process. Please reach out to our [Support](https://join.slack.com/t/hyperswitch-io/shared\_invite/zt-2awm23agh-p\_G5xNpziv6yAiedTkkqLg) to test this feature out with your custom domain.
+This involves adding CNAME records and TLS certificates which ends up being a slightly complex process. Please reach out to our [Support](https://join.slack.com/t/payswitcher-io/shared\_invite/zt-2awm23agh-p\_G5xNpziv6yAiedTkkqLg) to test this feature out with your custom domain.
 
 </details>
 
@@ -163,6 +163,6 @@ The payout link is valid for 15 minutes by default. However you can increase the
 
 <summary>How can I send Payout links via Emails?</summary>
 
-Hyperswitch supports generation of the payout link. We are not integrated with any email servers. You'll need to have a mail server integration at your end and ingest the payout links to the emails being sent.
+PaySwitcher supports generation of the payout link. We are not integrated with any email servers. You'll need to have a mail server integration at your end and ingest the payout links to the emails being sent.
 
 </details>

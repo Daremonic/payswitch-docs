@@ -8,7 +8,7 @@ description: Automatically retry payments with an alternative processor
 This section covers how smart retries function, the supported payment processors, and how to enable it.
 {% endhint %}
 
-Smart retry is a Hyperswitch feature to improve the payment success rates in a multi-processor setup. If the payment fails through the primary processor due to specific reasons, the payment will be retried with an alternative payment processor to increase the chances of making the payment successful.
+Smart retry is a PaySwitcher feature to improve the payment success rates in a multi-processor setup. If the payment fails through the primary processor due to specific reasons, the payment will be retried with an alternative payment processor to increase the chances of making the payment successful.
 
 There are two possible types of payment retry flows:
 
@@ -20,24 +20,24 @@ There are two possible types of payment retry flows:
 
 **User Consent-based Retries:** These retries are applicable for payment flows that need an additional level of user authentication (example: Apple Pay, Google Pay, 3DS cards, bank transfers).Such payment flows need an additional authentication from the user. Hence smart retries are not possible for such scenarios.
 
-**Note:** Currently, Hyperswitch supports Smart retries as an out-of-the-box capability. In order to enable user consent based retry for payment failures, you can create a fresh payment and re-trigger the Hyperswitch checkout.
+**Note:** Currently, PaySwitcher supports Smart retries as an out-of-the-box capability. In order to enable user consent based retry for payment failures, you can create a fresh payment and re-trigger the PaySwitcher checkout.
 
 ## Supported Payment processors
 
-Hyperswitch supports the following primary processors for automatic retries.
+PaySwitcher supports the following primary processors for automatic retries.
 
 * Stripe
 * Bluesnap
 * Checkout.com
 * Trustpay
 
-In case you wish more primary processors to be covered for automatic retry, please submit a feature request [here](https://github.com/hyperswitchpay/hyperswitch/discussions/new?category=ideas-feature-requests).
+In case you wish more primary processors to be covered for automatic retry, please submit a feature request [here](https://github.com/payswitcherpay/payswitcher/discussions/new?category=ideas-feature-requests).
 
 ## How does it work?
 
 Smart retry will be attempted whenever the payment fails through the Primary Processor for card transactions.
 
-Primary processor is a first choice of payment processor for the particular transaction. This is evaluated based on the smart routing rules configured in the Hyperswitch dashboard’s routing module.
+Primary processor is a first choice of payment processor for the particular transaction. This is evaluated based on the smart routing rules configured in the PaySwitcher dashboard’s routing module.
 
 The flow looks like below.
 
@@ -45,7 +45,7 @@ The flow looks like below.
 
 ## How to enable Smart Retries?
 
-**Step 1:** Ensure that you have enabled the pecking order of payment processors on the Hyperswitch dashboard. You can access the settings from Routing > Default fallback > Manage.
+**Step 1:** Ensure that you have enabled the pecking order of payment processors on the PaySwitcher dashboard. You can access the settings from Routing > Default fallback > Manage.
 
 <figure><img src="../.gitbook/assets/smartretry-1 (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,15 +58,15 @@ The flow looks like below.
 
 ### What is a primary processor?
 
-Primary processor is the first choice of processor for the particular transaction to be processed. This is evaluated based on the smart routing rules configured in the Hyperswitch dashboard’s routing module.
+Primary processor is the first choice of processor for the particular transaction to be processed. This is evaluated based on the smart routing rules configured in the PaySwitcher dashboard’s routing module.
 
-### Why can I not enable Automatic Retry from the Hyperswitch dashboard?
+### Why can I not enable Automatic Retry from the PaySwitcher dashboard?
 
-For reconciliation purposes, some merchants prefer having the same payment\_id being passed to both Hyperswitch and the Payment Processors. Smart retry would not be feasible if such a use case exists. Hence, Smart retry is as an additional configuration that can be enabled only by contacting our support (hyperswitch@hyperswitchpay.in).
+For reconciliation purposes, some merchants prefer having the same payment\_id being passed to both PaySwitcher and the Payment Processors. Smart retry would not be feasible if such a use case exists. Hence, Smart retry is as an additional configuration that can be enabled only by contacting our support (payswitcher@payswitcherpay.in).
 
-Since Smart retry involves multiple payment attempts for a single payment\_id, Hyperswitch appends the attempt number to the payment\_id that the merchant sends to Hyperswitch before passing it on to the processors.
+Since Smart retry involves multiple payment attempts for a single payment\_id, PaySwitcher appends the attempt number to the payment\_id that the merchant sends to PaySwitcher before passing it on to the processors.
 
-For example, if the merchant had sent pay\_abcd145efg, then Hyperswitch will send the following payment\_id to the processors during each attempt:
+For example, if the merchant had sent pay\_abcd145efg, then PaySwitcher will send the following payment\_id to the processors during each attempt:
 
 * Payment attempt 1: pay\_abcd145efg\_1
 * Payment attempt 2: pay\_abcd145efg\_2

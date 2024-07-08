@@ -1,6 +1,6 @@
 # ⏭️ External Authentication for 3DS
 
-Simplify 3DS authentication, stay compliant, offer latest authentication methods to the customers, improve customer experience with Native Challenge and improve conversion rates - All with the Hyperswitch 3DS authentication module
+Simplify 3DS authentication, stay compliant, offer latest authentication methods to the customers, improve customer experience with Native Challenge and improve conversion rates - All with the PaySwitcher 3DS authentication module
 
 ## Why do we need external authentication?
 
@@ -13,7 +13,7 @@ Simplify 3DS authentication, stay compliant, offer latest authentication methods
 
 ## How to get started?
 
-We will be using HyperSwitch's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.payswitcher.com/api-reference/payments/payments--external-3ds-authentication).
+We will be using PaySwitcher's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.payswitcher.com/api-reference/payments/payments--external-3ds-authentication).
 
 Backend API endpoint - https://sandbox.payswitcher.com
 
@@ -151,6 +151,6 @@ curl --location 'https://sandbox.payswitcher.com/payments/pay_xXr8btC2depRWfVYKm
 After the challenge is completed, the status should go to 'succeeded' status
 
 {% hint style="info" %}
-Being a payments product, Hyperswitch is always up to date with the latest regulations globally. On that front, the merchants need not worry about compliance. For merchants who want to integrate the latest authentication products to offer a frictionless payment flow to their customers, but also enjoy the liability shift, Hyperswitch has got you covered. Products like Digital Authentication Framework (DAF), Delegated Authentication (DA), Secure Payment Confirmation (SPC), Click to Pay (CTP), etc. are in our roadmap. Check out the product on sandbox or get in touch with us for more information.
+Being a payments product, PaySwitcher is always up to date with the latest regulations globally. On that front, the merchants need not worry about compliance. For merchants who want to integrate the latest authentication products to offer a frictionless payment flow to their customers, but also enjoy the liability shift, PaySwitcher has got you covered. Products like Digital Authentication Framework (DAF), Delegated Authentication (DA), Secure Payment Confirmation (SPC), Click to Pay (CTP), etc. are in our roadmap. Check out the product on sandbox or get in touch with us for more information.
 {% endhint %}
 

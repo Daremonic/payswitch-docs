@@ -1,5 +1,5 @@
 ---
-description: Integrate Card widget to your React Native App using hyperswitch-node
+description: Integrate Card widget to your React Native App using payswitcher-node
 ---
 
 # Card Widget (Beta)
@@ -9,25 +9,25 @@ Currently in beta please contact to get early access
 {% endhint %}
 
 {% hint style="info" %}
-Hyperswitch recommends using the PaymentSheet instead of the Card Widget. Using only the Payment Element, you can accept multiple payment methods.
+PaySwitcher recommends using the PaymentSheet instead of the Card Widget. Using only the Payment Element, you can accept multiple payment methods.
 {% endhint %}
 
 ## 1. Build card widget on the client
 
 ### 1.1 Add `HyperProvider` to your React Native app
 
-Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to Hyperswitch server.
+Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to PaySwitcher server.
 
 ```js
-import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
 ```
 
 ### 1.2 Use `HyperProvider`
 
-To initialize Hyperswitch in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize Hyperswitch using the HyperProvider component.
+To initialize PaySwitcher in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize PaySwitcher using the HyperProvider component.
 
 ```js
-import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch ";
+import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher ";
 
 function App() {
   return (
@@ -58,7 +58,7 @@ const fetchPaymentParams = async () => {
 
 ### 1.4 Render your card widget
 
-Use Hyperswitch `CardField` component to display a text field to securely collect card details. By using `CardField`, you guarantee that sensitive card details never touch your server.
+Use PaySwitcher `CardField` component to display a text field to securely collect card details. By using `CardField`, you guarantee that sensitive card details never touch your server.
 
 <pre class="language-js"><code class="lang-js">import {CardField, useHyper} from '@stripe/stripe-react-native';
 
@@ -95,7 +95,7 @@ return(
 
 ### 1.5 Initiate payment session
 
-Pass the PaymentIntent’s `clientSecret` to initPaymentSession() function. Hyperswitch SDK automatically collects the card details from `CardField` component.
+Pass the PaymentIntent’s `clientSecret` to initPaymentSession() function. PaySwitcher SDK automatically collects the card details from `CardField` component.
 
 ```js
 import {CardField, useHyper} from '@stripe/stripe-react-native';

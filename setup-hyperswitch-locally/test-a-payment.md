@@ -1,11 +1,11 @@
 ---
-description: Make your first payment and refund through Hyperswitch
+description: Make your first payment and refund through PaySwitcher
 ---
 
 # 💵 Test a payment
 
 {% hint style="info" %}
-Here, you'll be making a Payment using your local Hyperswitch setup, via your preferred payment provider. The open source repositories for Dashboard will be available soon.
+Here, you'll be making a Payment using your local PaySwitcher setup, via your preferred payment provider. The open source repositories for Dashboard will be available soon.
 {% endhint %}
 
 ***
@@ -38,4 +38,4 @@ The app server is more powerful than just processing the payments. You can test 
 
 ## **Resources** <a href="#user-content-create-a-payment" id="user-content-create-a-payment"></a>
 
-* To explore more of our APIs, please check the remaining folders in the [Postman collection](https://www.postman.com/hyperswitch/workspace/hyperswitch-development/collection/25176162-630b5353-7002-44d1-8ba1-ead6c230f2e3).
+* To explore more of our APIs, please check the remaining folders in the [Postman collection](https://www.postman.com/payswitcher/workspace/payswitcher-development/collection/25176162-630b5353-7002-44d1-8ba1-ead6c230f2e3).

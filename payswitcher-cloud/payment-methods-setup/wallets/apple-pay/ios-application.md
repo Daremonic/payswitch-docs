@@ -6,7 +6,7 @@ description: Enable Apple pay on your iOS app
 
 ## **Prerequisites**
 
-Before beginning to integrate Apple Pay with Hyperswitch, below prerequisites need to be fulfilled. _Please feel free to reach out to Hyperswitch support if you are stuck at any stage when integrating and testing Apple Pay._
+Before beginning to integrate Apple Pay with PaySwitcher, below prerequisites need to be fulfilled. _Please feel free to reach out to PaySwitcher support if you are stuck at any stage when integrating and testing Apple Pay._
 
 1. Apple Pay requires an Apple Developer Account. You can [Sign Up](https://developer.apple.com/programs/enroll/) for one here.
 2. You must have a valid SSL certificate on your domain _(meaning it begins with **https**)_
@@ -73,11 +73,11 @@ openssl x509 -inform der -in merchant_id.cer -out certificate_sandbox.pem
 This final step is specific to the processor being used and is not necessary in Sandbox Test environment for some processors, such as Authorize.Net.
 {% endhint %}
 
-## **Configuring Apple Pay on Hyperswitch**
+## **Configuring Apple Pay on PaySwitcher**
 
-You can configure Apple Pay on Hyperswitch by following the steps mentioned below -
+You can configure Apple Pay on PaySwitcher by following the steps mentioned below -
 
-* Login to [Hyperswitch dashboard](https://app.payswitcher.com/)
+* Login to [PaySwitcher dashboard](https://app.payswitcher.com/)
 * In the Connectors tab, select your processor
 * While selecting Payment Methods, click on Apple Pay in the Wallet section
 * Select the iOS Certificate option

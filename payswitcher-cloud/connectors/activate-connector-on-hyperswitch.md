@@ -1,14 +1,14 @@
 ---
-description: Configure your preferred connector on Hyperswitch
+description: Configure your preferred connector on PaySwitcher
 ---
 
-# Activate connector on Hyperswitch
+# Activate connector on PaySwitcher
 
 {% hint style="info" %}
-This section gives you an overview of how to activate connector on Hyperswitch
+This section gives you an overview of how to activate connector on PaySwitcher
 {% endhint %}
 
-### Steps to activate Connector on the Hyperswitch Control center
+### Steps to activate Connector on the PaySwitcher Control center
 
 1. **Access Connectors Section**
    * Navigate to the [Connectors](https://app.payswitcher.com/connectors) section on the Control Center.
@@ -31,4 +31,4 @@ This section gives you an overview of how to activate connector on Hyperswitch
 10. **Verify and Complete**
     * Review your configuration.
     * Click "Done" to finalize the connector activation.
-11. [**Test**](https://app.gitbook.com/s/kf7BGdsPkCw9nalhAIlE/hyperswitch-cloud/connectors/test-a-payment-with-connector) **a payment via activated connector.**
+11. [**Test**](https://app.gitbook.com/s/kf7BGdsPkCw9nalhAIlE/payswitcher-cloud/connectors/test-a-payment-with-connector) **a payment via activated connector.**

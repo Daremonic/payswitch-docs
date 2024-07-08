@@ -1,18 +1,18 @@
 ---
-description: Hyperswitch is designed to facilitate the management of saved payment methods
+description: PaySwitcher is designed to facilitate the management of saved payment methods
 ---
 
 # Payment Methods Management
 
 {% hint style="info" %}
-This section guides you through the integration of Hyperswitch Payment Methods Management
+This section guides you through the integration of PaySwitcher Payment Methods Management
 {% endhint %}
 
 ### 1. Setup the server
 
 #### 1.1 Create an ephemeral key
 
-Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
+Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 Add an endpoint on your server that creates an Ephemeral Key. An **ephemeral key** is a temporary, short-lived key used to securely manage sensitive operations, such as updating or deleting payment methods, without exposing full access credentials. It has a limited validity period and restricted capabilities, ensuring that it can only be used for specific tasks and not for initiating payments. This enhances security by minimizing the risk of unauthorized access and reducing the exposure of sensitive data. Return the `secret` obtained in the response to setup Payment Methods Management on client.
 
@@ -52,16 +52,16 @@ app.post("/create-ephemeral-key", async (req, res) => {
 Install the packages and import it into your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyper-js
-$ npm install @hyperswitchpay-tech/react-hyper-js
+$ npm install @payswitcherpay-tech/hyper-js
+$ npm install @payswitcherpay-tech/react-hyper-js
 ```
 
 #### 2.2 Add `hyper` to your React app
 
 ```js
 import React, { useState, useEffect } from "react";
-import { loadHyper } from "@hyperswitchpay-tech/hyper-js";
-import { HyperManagementElements } from "@hyperswitchpay-tech/react-hyper-js";
+import { loadHyper } from "@payswitcherpay-tech/hyper-js";
+import { HyperManagementElements } from "@payswitcherpay-tech/react-hyper-js";
 ```
 
 #### 2.3 Load `hyper-js`
@@ -82,7 +82,7 @@ useEffect(() => {
   fetch("/create-ephemeral-key", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({customer_id: "hyperswitch_sdk_demo_id"}),
+    body: JSON.stringify({customer_id: "payswitcher_sdk_demo_id"}),
   })
     .then((res) => res.json())
     .then((data) => setEphemeralKey(data.ephemeralKey));
@@ -139,7 +139,7 @@ async function initialize() {
   const response = await fetch("/create-ephemeral-key", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({customer_id: "hyperswitch_sdk_demo_id"}),
+    body: JSON.stringify({customer_id: "payswitcher_sdk_demo_id"}),
   });
   const { ephemeralKey } = await response.json();
   
@@ -164,4 +164,4 @@ async function initialize() {
 {% endtab %}
 {% endtabs %}
 
-Congratulations! Now that you have integrated the Hyperswitch Payment Methods Management on your app, you can customize the it to blend with the rest of your app.
+Congratulations! Now that you have integrated the PaySwitcher Payment Methods Management on your app, you can customize the it to blend with the rest of your app.

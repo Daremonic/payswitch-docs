@@ -186,7 +186,7 @@ const elements = hyper.elements({ clientSecret, appearance });
 
 ## 4. Languages
 
-Hyperswitch Unified Checkout supports localization in 6 languages. By default, the Unified Checkout SDK will detect the locale of the customer’s browser and display the localized version of the payment sheet if that locale is supported. In case it is not supported, we default to English. To override, you can send locale in [hyper.elements (options)](../../../learn-more/sdk-reference/node.md)
+PaySwitcher Unified Checkout supports localization in 6 languages. By default, the Unified Checkout SDK will detect the locale of the customer’s browser and display the localized version of the payment sheet if that locale is supported. In case it is not supported, we default to English. To override, you can send locale in [hyper.elements (options)](../../../learn-more/sdk-reference/node.md)
 
 We support the following locales -
 
@@ -197,7 +197,7 @@ We support the following locales -
 * English (en)
 * Japanese (ja)
 
-If you need support for locales other than the ones mentioned above, please contact the Hyperswitch team. Now you can test the payments on your app and go-live!
+If you need support for locales other than the ones mentioned above, please contact the PaySwitcher team. Now you can test the payments on your app and go-live!
 
 ## 5. Confirm Button
 
@@ -273,7 +273,7 @@ var paymentElementOptions = {
 
 ### Branding
 
-You can decide whether to display the Hyperswitch branding using the `branding` prop
+You can decide whether to display the PaySwitcher branding using the `branding` prop
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>var paymentElementOptions = {
 </strong> ...,

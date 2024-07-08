@@ -7,7 +7,7 @@ description: >-
 # Rule Based Routing
 
 {% hint style="info" %}
-This section will guide you on how to setup Rule based routing using the Hyperswitch Control Center
+This section will guide you on how to setup Rule based routing using the PaySwitcher Control Center
 {% endhint %}
 
 ## Get started with Rule Based Routing
@@ -44,6 +44,6 @@ _**Step 5:**_ In the popup, select the appropriate action based on whether you w
 
 <figure><img src="../../../.gitbook/assets/Astep5-smartrouter.png" alt=""><figcaption></figcaption></figure>
 
-_**Step 6:**_ You can view your active routing algorithm as well as all previously configured algorithms on the [Hyperswitch Dashboard](https://app.payswitcher.com/routing)
+_**Step 6:**_ You can view your active routing algorithm as well as all previously configured algorithms on the [PaySwitcher Dashboard](https://app.payswitcher.com/routing)
 
 <figure><img src="../../../.gitbook/assets/Astep6-smartrouter.png" alt=""><figcaption></figcaption></figure>

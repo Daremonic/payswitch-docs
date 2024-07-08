@@ -5,12 +5,12 @@ description: Accept bank payment methods on your application
 # 🏦 Banks
 
 {% hint style="info" %}
-This section gives you an overview of how to enable bank transfers, bank debits and bank redirect payment methods through Hyperswitch
+This section gives you an overview of how to enable bank transfers, bank debits and bank redirect payment methods through PaySwitcher
 {% endhint %}
 
 ## Bank payment methods
 
-Apart from cards (47%) and digital wallets (28%), bank transfer (9%) is the third most used payment instrument in the US. Banks as a payment method has several payment flows across the world and Hyperswitch provides support for integrating the below three common flows:\\
+Apart from cards (47%) and digital wallets (28%), bank transfer (9%) is the third most used payment instrument in the US. Banks as a payment method has several payment flows across the world and PaySwitcher provides support for integrating the below three common flows:\\
 
 |                             | Bank Debits                                                                                                                                                       | Bank Redirects                                                                                                                                                                                                                  | Bank Transfers                                                                                                                                                                |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

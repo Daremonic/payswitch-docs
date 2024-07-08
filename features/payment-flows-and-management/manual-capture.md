@@ -8,9 +8,9 @@ description: >-
 
 ## What is Manual Capture?
 
-In most online payments use-cases, a merchant would want to capture the funds from their customers' accounts in one-step after the issuer authorizes the payment. This is called '**one-step'** payments flow and at Hyperswitch we term this the '**Automatic Capture**' flow.
+In most online payments use-cases, a merchant would want to capture the funds from their customers' accounts in one-step after the issuer authorizes the payment. This is called '**one-step'** payments flow and at PaySwitcher we term this the '**Automatic Capture**' flow.
 
-But in some cases, merchants would like to place a hold on the customer's funds post authorization so that they can capture the funds at a later time once they deliver the goods and services. This is called the '**two-step**' flow or '**Auth and Capture**' flow in general payments parlance. Here at Hyperswitch, we call this the '**Manual Capture'** flow.
+But in some cases, merchants would like to place a hold on the customer's funds post authorization so that they can capture the funds at a later time once they deliver the goods and services. This is called the '**two-step**' flow or '**Auth and Capture**' flow in general payments parlance. Here at PaySwitcher, we call this the '**Manual Capture'** flow.
 
 ## **How to do Manual Capture?**
 

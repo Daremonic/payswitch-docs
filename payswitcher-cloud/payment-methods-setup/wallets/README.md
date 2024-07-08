@@ -1,14 +1,14 @@
 ---
-description: Accept PayPal, GPay and Apple Pay through Hyperswitch
+description: Accept PayPal, GPay and Apple Pay through PaySwitcher
 ---
 
 # 📱 Wallets
 
 {% hint style="info" %}
-This section gives you an overview of how to enable PayPal, Google Pay and Apple Pay on Hyperswitch
+This section gives you an overview of how to enable PayPal, Google Pay and Apple Pay on PaySwitcher
 {% endhint %}
 
-Hyperswitch supports leading international wallets which include:
+PaySwitcher supports leading international wallets which include:
 
 * Digital wallets such as PayPal which enable customers to pay through wallet balance that they could load
 * Card container wallets such as Google Pay and Apple Pay which enable customers to save their cards for quick one-click payments in supported websites

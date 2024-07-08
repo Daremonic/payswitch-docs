@@ -1,6 +1,6 @@
 ---
 description: >-
-  Hyperswitch is designed to facilitate the integration and management of
+  PaySwitcher is designed to facilitate the integration and management of
   payment-related functionalities in a decoupled or headless architecture with
   flexibility to customize your checkout UI.
 ---
@@ -8,14 +8,14 @@ description: >-
 # Headless SDK
 
 {% hint style="info" %}
-This section guides you through the integration of Hyperswitch Headless for both web and mobile clients
+This section guides you through the integration of PaySwitcher Headless for both web and mobile clients
 {% endhint %}
 
 ### Customize the payment experience using Headless functions
 
-#### 1. Initialize the Hyperswitch SDK
+#### 1. Initialize the PaySwitcher SDK
 
-Initialize  Hyperswitch Headless SDK onto your app with your publishable key. To get a Publishable Key please find it [here](https://app.payswitcher.com/developers).
+Initialize  PaySwitcher Headless SDK onto your app with your publishable key. To get a Publishable Key please find it [here](https://app.payswitcher.com/developers).
 
 {% tabs %}
 {% tab title="HTML + JavaScript" %}
@@ -26,16 +26,16 @@ Initialize  Hyperswitch Headless SDK onto your app with your publishable key. To
 
 {% tab title="Flutter" %}
 ```dart
-// dependencies: flutter_hyperswitch: ^version_number
+// dependencies: flutter_payswitcher: ^version_number
 // run the following command to fetch and install the dependencies flutter pub get
-import 'package:flutter_hyperswitch/flutter_hyperswitch.dart';
+import 'package:flutter_payswitcher/flutter_payswitcher.dart';
 _hyper.init(HyperConfig(publishableKey: 'YOUR_PUBLISHABLE_KEY'));
 ```
 {% endtab %}
 
 {% tab title="React Native (Beta)" %}
 ```javascript
-import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch ";
+import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher ";
 
 function App() {
   return (
@@ -78,7 +78,7 @@ Session _sessionId = await hyper.initPaymentSession(params);
 
 {% tab title="React Native  (Beta)" %}
 ```javascript
-import { useHyper } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { useHyper } from "@payswitcherpay-tech/react-native-payswitcher";
 
 const { initPaymentSession } = useHyper();
 const [paymentSession,setPaymentSession]=React.useState(null);
@@ -203,7 +203,7 @@ Future<void> _confirmPayment() async {
 
 {% tab title="React Native  (Beta)" %}
 ```javascript
-import { useHyper } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { useHyper } from "@payswitcherpay-tech/react-native-payswitcher";
 
 const { getCustomerSavedPaymentMethods,
         getCustomerDefaultSavedPaymentMethodData,

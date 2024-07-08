@@ -1,11 +1,11 @@
 ---
-description: Detailed description about Hyperswitch Reconciliation module
+description: Detailed description about PaySwitcher Reconciliation module
 ---
 
 # Getting Started with Recon
 
 {% hint style="info" %}
-This section outlines the supported features of Hyperswitch Reconciliation module and provides guidance on how to use them.
+This section outlines the supported features of PaySwitcher Reconciliation module and provides guidance on how to use them.
 {% endhint %}
 
 ## Using the Reconciliation module is a 5-step process &#x20;
@@ -18,13 +18,13 @@ This section outlines the supported features of Hyperswitch Reconciliation modul
 
 ### 1. Upload & prepare files
 
-Efficient file management is at the core of Hyperswitch Recon's data integration process. This entire stage usually takes < 30 secs post file upload. Following are the 3-steps involved in preparing files for reconciliation —&#x20;
+Efficient file management is at the core of PaySwitcher Recon's data integration process. This entire stage usually takes < 30 secs post file upload. Following are the 3-steps involved in preparing files for reconciliation —&#x20;
 
 Upload, Validate, and Transform
 
 #### **1.1 Upload**
 
-The first phase of the process involves uploading your data files into the Reconciliation system. Hyperswitch Reconciliation provides multiple methods for this purpose:
+The first phase of the process involves uploading your data files into the Reconciliation system. PaySwitcher Reconciliation provides multiple methods for this purpose:
 
 * **Manual upload to the dashboard:** For ease of use, manually upload your files directly through the Reconciliation Dashboard.
 
@@ -35,7 +35,7 @@ Files need to be uploaded in **PGName\_yyyymmdd/ MERCHANTNAME\_yyyymmdd/ BANK\_N
 * **Automated upload to dashboard:** In order to feed your PSP and bank files to the Reconciliation module you can select one of the below options during configuration. In case of automated upload of files, case all subsequent steps are also executed in an automated fashion and the reconciliation output is generated.
   * Via Recon uploader API: The Reconciliation module can ingest reports via APIs in case the payment processor and banks support that feature. This feature needs to be enabled during the activation and configuration stage. In order to enable this feature the merchant will need to specify &#x20;
     * API endpoint, API keys and schedule
-  * Via Merchant's SFTP: We allow files to be transferred to the Reconciliation module via pull based connection. You can specify a location where you'd place the files to be reconciled. Hyperswitch will pull the files from that location on a periodic basis using.an SFTP connection. This feature needs to be enabled during the activation and configuration. In order to enable this feature the merchant will need to specify&#x20;
+  * Via Merchant's SFTP: We allow files to be transferred to the Reconciliation module via pull based connection. You can specify a location where you'd place the files to be reconciled. PaySwitcher will pull the files from that location on a periodic basis using.an SFTP connection. This feature needs to be enabled during the activation and configuration. In order to enable this feature the merchant will need to specify&#x20;
     * &#x20;Portal User ID, Portal password and SFTP url and pick up schedule
 
 Possible errors at this stage are:
@@ -97,7 +97,7 @@ The Green status signifies that the reconciliation engine has run successfully
 
 <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-In case you face any errors at this stage please contact the Hyperswitch support team.
+In case you face any errors at this stage please contact the PaySwitcher support team.
 
 ### 3. Reconciliation Reports
 
@@ -127,8 +127,8 @@ The output table provides access to specific information categories such as Gate
 \-> Customisable column views: Users have the ability to customise their column views within the output table:
 
 * **Select desired columns:** Choose which columns to view, tailoring the report to focus on specific attributes like transaction ID, amount, status, and reconciliation status.
-* **Column naming:** Assign specific names to columns, enhancing clarity and alignment with your business's terminology. This change needs to be done by the Hyperswitch team.
-* **Column positioning :** Assign a specific order to columns, enhancing clarity and alignment with your business' requirements . This change needs to be done by the Hyperswitch team.
+* **Column naming:** Assign specific names to columns, enhancing clarity and alignment with your business's terminology. This change needs to be done by the PaySwitcher team.
+* **Column positioning :** Assign a specific order to columns, enhancing clarity and alignment with your business' requirements . This change needs to be done by the PaySwitcher team.
 
 \-> Key columns and status definitions (these are the default names) :&#x20;
 
@@ -145,7 +145,7 @@ The output table provides access to specific information categories such as Gate
 * **Secondary status** - This is the reconciliation status between the PSP report and the Bank report. This column is available only for 3-way recon.  Possible values are similar to Recon status
 * **Secondary sub-status** - This column is available only for 3-way recon. Possible values are similar to Recon sub status.&#x20;
 
-In case of 3-way recon, the columns Recon status and Recon sub-status are used to indicate the reconciliation outcome of Hyperswitch and PSP file whereas columns secondary status and Secondary sub-status are used to indicate the reconciliation outcome of PSP and bank file. In case of 2-way recon a single column from the above is displayed along with the respective status.
+In case of 3-way recon, the columns Recon status and Recon sub-status are used to indicate the reconciliation outcome of PaySwitcher and PSP file whereas columns secondary status and Secondary sub-status are used to indicate the reconciliation outcome of PSP and bank file. In case of 2-way recon a single column from the above is displayed along with the respective status.
 
 \-> Confidence score-potential matched : Recon happens on transaction identifiers however at times payment entities (banks, PSPs) share different identifiers for refund, split transactions etc. For such cases, Reconciliation module would check for a nearby match and assign a confidence score to that reconciled row.
 
@@ -180,7 +180,7 @@ The Recon Dashboard is characterised by several components that facilitate analy
 Once the reconciliation engine has been executed, there maybe a few records which fall under the mismatched or missing category. &#x20;
 
 1. Missing category&#x20;
-   * Majority of records that fall in this category are essentially missed in one of the files due to different systems following different cut over times. To elaborate, PSP or bank or Hyperswitch will have their own cut over times for generating report, settling transactions etc. Therefore a few records may just be missed due to the difference in the cut over time.
+   * Majority of records that fall in this category are essentially missed in one of the files due to different systems following different cut over times. To elaborate, PSP or bank or PaySwitcher will have their own cut over times for generating report, settling transactions etc. Therefore a few records may just be missed due to the difference in the cut over time.
    * The reconciliation engine performs backdated reconciliation by reviewing entries from previous dates. If matching entries are found, reconciliation is seamlessly executed, ensuring historical accuracy. By default, the engine considers backdated entries spanning the last 90-days, configurable based on merchant needs.&#x20;
 
-Records that don't fall under the purview of the above examples will need to be investigated with the respective teams (Hyperswitch, PSP or bank). We are also working on a feature that will enable you to track and  close Reconciliation issues within the Reconciliation module ([Recon open issues](broken-reference)).
+Records that don't fall under the purview of the above examples will need to be investigated with the respective teams (PaySwitcher, PSP or bank). We are also working on a feature that will enable you to track and  close Reconciliation issues within the Reconciliation module ([Recon open issues](broken-reference)).

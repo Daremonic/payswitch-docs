@@ -20,14 +20,14 @@ The router service is written in rust to enforce type safety and to maintain sup
 
 ## Connectors
 
-Connectors are external services that hyperswitch can interact with. It could be payments processors, fraud and risk management services, tokenization services etc.
+Connectors are external services that payswitcher can interact with. It could be payments processors, fraud and risk management services, tokenization services etc.
 
-* The API request type, API data, and merchant config determines one or more connectors to be called by hyperswitch.
+* The API request type, API data, and merchant config determines one or more connectors to be called by payswitcher.
 * Connector module consists of code logic to build the necessary request data to talk to the selected services and understand the response from such services.&#x20;
 * Connector can also handle cases where some requests and services may require multiple API calls for a single API action.&#x20;
 
 ## Asynchronous jobs Scheduler
 
-Some API actions may run for long time and API response cannot be delayed for such actions to complete. In such cases, the router will return success response with intermediate state like processing. For example, payment processor may not return a success response, and hyperswitch needs to check for the status after sometime.
+Some API actions may run for long time and API response cannot be delayed for such actions to complete. In such cases, the router will return success response with intermediate state like processing. For example, payment processor may not return a success response, and payswitcher needs to check for the status after sometime.
 
 The required action is then queued for the scheduler to execute asynchronously. The scheduler determines the jobs to be run based on the scheduled time, executes them, and updates the router storage. It also triggers any other action required in the router, like a webhook call to the server.

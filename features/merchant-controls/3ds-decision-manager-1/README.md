@@ -8,7 +8,7 @@ description: Configure advanced rules with various payment parameters
 Through this section, you will understand the working of Surcharge feature and how to configure it.
 {% endhint %}
 
-Hyperswitch Surcharge feature allows the merchant to configure advanced rules using various payment parameters such as amount, currency etc., to apply surcharges to payments.
+PaySwitcher Surcharge feature allows the merchant to configure advanced rules using various payment parameters such as amount, currency etc., to apply surcharges to payments.
 
 ## What is Surcharge?
 
@@ -18,15 +18,15 @@ A surcharge, sometimes called a checkout fee or service fee, is an additional fe
 
 <figure><img src="../../../.gitbook/assets/Surcharge.drawio (1).svg" alt=""><figcaption></figcaption></figure>
 
-Hyperswitch supports surcharge for most payment processors and you can configure surcharge through two ways:
+PaySwitcher supports surcharge for most payment processors and you can configure surcharge through two ways:
 
 **i) Sending the Surcharge details during payments/create request**
 
 Surcharge can be applied to a payment using `surcharge_details` field in [payments/create API request](https://api-reference.payswitcher.com/api-reference/payments/payments--create)
 
-**ii) Configuring Surcharge rules using Hyperswitch Control Center**
+**ii) Configuring Surcharge rules using PaySwitcher Control Center**
 
-* The Surcharge Manager on the Hyperswitch Control Center allows you to configure advanced rules based on payment parameters to decide when and how much surcharge to apply to the payment
+* The Surcharge Manager on the PaySwitcher Control Center allows you to configure advanced rules based on payment parameters to decide when and how much surcharge to apply to the payment
 * Surcharge Decision Manager supports rules based on various payment parameters like payment\_amount, payment\_method, card\_network etc. Follow this [setup guide](setup-guide.md) to configure rules using the Surcharge Decision Manager
 * For example, if you want to apply 5% surcharge for all payments of value greater than $100 then you could setup the following rule on the Surcharge Manager and all the payment requests conforming to that rule would have sucharge of 5% of the original amount being applied to it. ie, If payment amount is 1000$, 1050$ will be sent as authorization amount to the payment processor.
 
@@ -34,4 +34,4 @@ Surcharge can be applied to a payment using `surcharge_details` field in [paymen
 
 ## Next step
 
-To test the Surcharge Manager, after activating the rule, we can make a Test Payment using the [Hyperswitch Dashboard](https://app.payswitcher.com/sdk)
+To test the Surcharge Manager, after activating the rule, we can make a Test Payment using the [PaySwitcher Dashboard](https://app.payswitcher.com/sdk)

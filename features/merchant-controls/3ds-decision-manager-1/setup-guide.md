@@ -5,12 +5,12 @@ description: Surcharge Manager Setup
 # Surcharge Setup guide
 
 {% hint style="info" %}
-This section covers the steps to setup surcharge manager using the Hyperswitch Control Center
+This section covers the steps to setup surcharge manager using the PaySwitcher Control Center
 {% endhint %}
 
 ## Steps to setup a rule on Surcharge Manager?
 
-**Step 1:** Go to Workflow -> Surcharge tab on the Hyperswitch Control Center
+**Step 1:** Go to Workflow -> Surcharge tab on the PaySwitcher Control Center
 
 **Step 2:** Click on create new button&#x20;
 

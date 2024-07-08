@@ -1,36 +1,36 @@
 ---
-description: Use Docker to set up Hyperswitch app server
+description: Use Docker to set up PaySwitcher app server
 ---
 
-# 🐳 Run Hyperswitch
+# 🐳 Run PaySwitcher
 
 {% hint style="info" %}
-Let's hit the ground running – in the first fifteen minutes, you’ll see a complete end-to-end example of installing Hyperswitch and making a Payment via a Payment provider of your choice. So, let’s get started!
+Let's hit the ground running – in the first fifteen minutes, you’ll see a complete end-to-end example of installing PaySwitcher and making a Payment via a Payment provider of your choice. So, let’s get started!
 {% endhint %}
 
 {% embed url="https://www.loom.com/embed/a9b2b42fb72e4691a06e6121b330ebe9?sid=76bf9484-8f0f-462e-95a2-b4f551cd51ed" %}
 
 ## **Setting up with Docker**
 
-If you don't already have Docker, you can [download](https://docs.docker.com/get-docker/) it from the official Docker website. Once Docker is installed, launch the Docker app, then use the following commands at the command line to clone the Hyperswitch repository.
+If you don't already have Docker, you can [download](https://docs.docker.com/get-docker/) it from the official Docker website. Once Docker is installed, launch the Docker app, then use the following commands at the command line to clone the PaySwitcher repository.
 
 ```
-git clone https://github.com/hyperswitchpay/hyperswitch
+git clone https://github.com/payswitcherpay/payswitcher
 ```
 
 Once the repository is cloned, switch to the project directory.
 
 ```
-cd hyperswitch
+cd payswitcher
 ```
 
-Now, we'll start all services using Docker Compose. This will compile Hyperswitch and then start the server. Depending on the specifications of your machine, this compilation could take between 10 to 15 minutes.
+Now, we'll start all services using Docker Compose. This will compile PaySwitcher and then start the server. Depending on the specifications of your machine, this compilation could take between 10 to 15 minutes.
 
 ```
 docker compose up -d
 ```
 
-Congratulations! you've now setup Hyperswitch in your local machine. In order to verify that the server is up and running hit the health endpoint.
+Congratulations! you've now setup PaySwitcher in your local machine. In order to verify that the server is up and running hit the health endpoint.
 
 ```
 curl --head --request GET 'http://localhost:8080/health'
@@ -38,28 +38,28 @@ curl --head --request GET 'http://localhost:8080/health'
 
 The expected response here is `200 OK` status code. This indicates that the server and all of its dependent services such as the database and Redis are functioning correctly.
 
-In the next chapter, we'll run payments through your local Hyperswitch setup by setting up the necessary accounts, API credentials and try out payments and refunds.
+In the next chapter, we'll run payments through your local PaySwitcher setup by setting up the necessary accounts, API credentials and try out payments and refunds.
 
-**Note** : In case you want to set up Hyperswitch from scratch in your local system, please goto this tutorial - [Setup Hyperswitch from scratch](broken-reference)&#x20;
+**Note** : In case you want to set up PaySwitcher from scratch in your local system, please goto this tutorial - [Setup PaySwitcher from scratch](broken-reference)&#x20;
 
 ## Run web client
 
 {% hint style="info" %}
-In this section, you will run the Hyperswitch web client SDK on your machine.&#x20;
+In this section, you will run the PaySwitcher web client SDK on your machine.&#x20;
 {% endhint %}
 
-#### [Clone the repository](https://github.com/hyperswitchpay/hyperswitch-web/tree/main#clone-the-repository) <a href="#user-content-clone-the-repository" id="user-content-clone-the-repository"></a>
+#### [Clone the repository](https://github.com/payswitcherpay/payswitcher-web/tree/main#clone-the-repository) <a href="#user-content-clone-the-repository" id="user-content-clone-the-repository"></a>
 
 Clone the repository from Bitbucket and save in your folder.
 
 ```bash
-git clone https://github.com/hyperswitchpay/hyperswitch-web.git
-cd hyperswitch-web
+git clone https://github.com/payswitcherpay/payswitcher-web.git
+cd payswitcher-web
 ```
 
 Once the repository is cloned, switch to the project directory.
 
-#### [Setup the repository](https://github.com/hyperswitchpay/hyperswitch-web/tree/main#setup-the-repository) <a href="#user-content-setup-the-repository" id="user-content-setup-the-repository"></a>
+#### [Setup the repository](https://github.com/payswitcherpay/payswitcher-web/tree/main#setup-the-repository) <a href="#user-content-setup-the-repository" id="user-content-setup-the-repository"></a>
 
 First install all the node modules by running the following command
 

@@ -7,7 +7,7 @@ description: >-
 # Default Fallback Routing
 
 {% hint style="info" %}
-This section will guide you on how to manage Default fallback routing using the Hyperswitch Control Center by drag and drop
+This section will guide you on how to manage Default fallback routing using the PaySwitcher Control Center by drag and drop
 {% endhint %}
 
 ## Get started with Default Fallback Routing

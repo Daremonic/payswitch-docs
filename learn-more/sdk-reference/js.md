@@ -5,10 +5,10 @@ description: To customize your payments experience
 # JS
 
 {% hint style="info" %}
-This section covers different methods and their params of the Hyperswitch JS SDK
+This section covers different methods and their params of the PaySwitcher JS SDK
 {% endhint %}
 
-Hyperswitch's JS SDK come with many methods which you can use to customize your payments experience. You can use the props to change the appearance, reorder payment methods and much more to suit your business needs.
+PaySwitcher's JS SDK come with many methods which you can use to customize your payments experience. You can use the props to change the appearance, reorder payment methods and much more to suit your business needs.
 
 ### Hyper()
 
@@ -43,10 +43,10 @@ This method creates an Elements instance, which manages a group of elements.
 | options (Required)      | Description                                                                                                                                                                                                                |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `font (array)`          | An array of custom fonts, which elements created from the Elements object can use. Fonts can be specified as CssFontSource or CustomFontSource objects.                                                                    |
-| `locale (string)`       | A locale to display placeholders and error strings in. Default is auto (HyperSwitch detects the locale of the browser).                                                                                                    |
+| `locale (string)`       | A locale to display placeholders and error strings in. Default is auto (PaySwitcher detects the locale of the browser).                                                                                                    |
 | `clientSecret (string)` | **Required** Required to use with the Unified Checkout and Hyper Widgets.                                                                                                                                                  |
 | `appearance (object)`   | Match the design of your site with the appearance option. The layout of each Element stays consistent, but you can modify colors, fonts, borders, padding, and more.                                                       |
-| `loader (variants)`     | **Can be either 'auto', 'always' or 'never'** Display skeleton loader UI while waiting for Elements to be fully loaded, after they are mounted. Default is 'auto' (HyperSwitch determines if a loader UI should be shown). |
+| `loader (variants)`     | **Can be either 'auto', 'always' or 'never'** Display skeleton loader UI while waiting for Elements to be fully loaded, after they are mounted. Default is 'auto' (PaySwitcher determines if a loader UI should be shown). |
 
 #### 3.`hyper.confirmCardPayment(clientSecret,data?,options?)`
 
@@ -85,7 +85,7 @@ Use `hyper.paymentRequest` to create a PaymentRequest object. Creating a Payment
 
 | options (Required)            | Description                                                                                                                                                                                                                                         |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `country (string)`            | **Required**. The two-letter country code of your HyperSwitch account (e.g., US).                                                                                                                                                                   |
+| `country (string)`            | **Required**. The two-letter country code of your PaySwitcher account (e.g., US).                                                                                                                                                                   |
 | `currency (string)`           | **Required**. Three character currency code (e.g., USD).                                                                                                                                                                                            |
 | `total (object)`              | **Required**. A PaymentItem object. This PaymentItem is shown to the customer in the browser’s payment interface.                                                                                                                                   |
 | `displayItems (array)`        | An array of PaymentItem objects. These objects are shown as line items in the browser’s payment interface. Note that the sum of the line item amounts does not need to add up to the total amount above.                                            |
@@ -140,7 +140,7 @@ The type can be ‘payment’ for UnifiedCheckout.
 | layout                                | Description                                                                                                                                                                                                                                                                                                |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `type (accordion/tabs)`               | Defines the layout to render the Payment Element.                                                                                                                                                                                                                                                          |
-| `defaultCollapsed (boolean)`          | Controls if the Payment Element renders in a collapsed state (where no payment method is selected by default). When you leave this undefined, Hyperswitch renders the experience that it determines will have the best conversion.                                                                         |
+| `defaultCollapsed (boolean)`          | Controls if the Payment Element renders in a collapsed state (where no payment method is selected by default). When you leave this undefined, PaySwitcher renders the experience that it determines will have the best conversion.                                                                         |
 | `radios (boolean)`                    | <p>Renders each Payment Method with a radio input next to its logo. The radios visually indicate the current selection of the Payment Element.</p><p><em>This property is only applicable to the accordion layout.</em></p>                                                                                |
 | `spacedAccordionItems (boolean)`      | <p>When true, the Payment Methods render as standalone buttons with space in between them.</p><p><em>This property is only applicable to the accordion layout.</em></p>                                                                                                                                    |
 | `visibleAccordionItemsCount (number)` | <p>Sets the max number of Payment Methods visible before using the "More" button to hide additional Payment Methods. Set this value to 0 to disable the "More" button and render all available Payment Methods. Default is 5.</p><p><em>This property is only applicable to the accordion layout.</em></p> |
@@ -208,7 +208,7 @@ The styles of an Element can be dynamically changed using element.update. This m
 
 | options                 | Description                                                                                                                                                                                                                                                                 |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `locale (string)`       | A locale to display placeholders and error strings in. Default is auto (Hyperswitch detects the locale of the browser).Setting the locale does not affect the behavior of postal code validation—a valid postal code for the billing country of the card is still required. |
+| `locale (string)`       | A locale to display placeholders and error strings in. Default is auto (PaySwitcher detects the locale of the browser).Setting the locale does not affect the behavior of postal code validation—a valid postal code for the billing country of the card is still required. |
 | `appearance (object)`   | Supported for the Unified CheckoutMatch the design of your site with the appearance option. The layout of each Element stays consistent, but you can modify colors, fonts, borders, padding, and more.                                                                      |
 | `clientSecret (string)` | Required to use with the Unified Checkout and the Hyper WidgetsThe client secret for a PaymentIntent                                                                                                                                                                        |
 

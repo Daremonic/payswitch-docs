@@ -1,11 +1,11 @@
 ---
-description: Make test payments through preferred connector via Hyperswitch
+description: Make test payments through preferred connector via PaySwitcher
 ---
 
 # Test a Payment with connector
 
 {% hint style="info" %}
-This section gives you an overview of how to make test payments via Hyperswitch.
+This section gives you an overview of how to make test payments via PaySwitcher.
 {% endhint %}
 
 ## Test the Configuration using Dashboard
@@ -16,8 +16,8 @@ This section gives you an overview of how to make test payments via Hyperswitch.
 4. Click on Show Preview, Your demo checkout page will be visible at preview section
 5. Choose the desired payment method in the demo page, Please find the test payment instrument data [here](test-a-payment-with-connector.md#test-credentials)
 6. Click on Pay and you will get a Success message&#x20;
-7. Validate transaction on Hyperswitch dashboard. \
-   \- Goto the left pane on the Hyperswitch dashboard \
+7. Validate transaction on PaySwitcher dashboard. \
+   \- Goto the left pane on the PaySwitcher dashboard \
    \- Click on Operations -> Payments \
    \- Your transactions should be visible under the order management tab
 

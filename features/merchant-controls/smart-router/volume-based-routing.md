@@ -5,7 +5,7 @@ description: Route transactions through processors based on volume distribution
 # Volume Based Routing
 
 {% hint style="info" %}
-This section will guide you on how to setup Volume based routing using the Hyperswitch Control Center
+This section will guide you on how to setup Volume based routing using the PaySwitcher Control Center
 {% endhint %}
 
 ## Steps to configure Volume Based Configuration in Smart Router:
@@ -26,6 +26,6 @@ _**Step 4:**_ In the popup, select the appropriate action based on whether you w
 
 <figure><img src="../../../.gitbook/assets/Bstep4-smartrouter (1).png" alt=""><figcaption></figcaption></figure>
 
-_**Step 5:**_ You can view your active routing algorithm as well as all previously configured algorithms on the [Hyperswitch Dashboard](https://app.payswitcher.com/routing)
+_**Step 5:**_ You can view your active routing algorithm as well as all previously configured algorithms on the [PaySwitcher Dashboard](https://app.payswitcher.com/routing)
 
 <figure><img src="../../../.gitbook/assets/smartrouter-B-step5.png" alt=""><figcaption></figcaption></figure>

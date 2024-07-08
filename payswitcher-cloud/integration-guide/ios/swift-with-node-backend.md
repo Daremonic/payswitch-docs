@@ -1,11 +1,11 @@
 ---
-description: Integrate hyper SDK to your Swift App using hyperswitch-node
+description: Integrate hyper SDK to your Swift App using payswitcher-node
 ---
 
 # Swift with Node Backend
 
 {% hint style="info" %}
-Use this guide to integrate Hyperswitch SDK to your iOS app. You can use the following app as a reference with your Hyperswitch credentials to test the setup. You can also checkout the [app on Apple Testflight](https://testflight.apple.com/join/WhPLmrT6) to test the payment flow.
+Use this guide to integrate PaySwitcher SDK to your iOS app. You can use the following app as a reference with your PaySwitcher credentials to test the setup. You can also checkout the [app on Apple Testflight](https://testflight.apple.com/join/WhPLmrT6) to test the payment flow.
 {% endhint %}
 
 ## Requirements
@@ -16,20 +16,20 @@ Use this guide to integrate Hyperswitch SDK to your iOS app. You can use the fol
 
 ## 1. Setup the server
 
-### 1.1 Install the `hyperswitch-node` library
+### 1.1 Install the `payswitcher-node` library
 
 Install the package and import it in your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-node
+$ npm install @payswitcherpay-tech/payswitcher-node
 ```
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the `hyperswitch-node` dependencies and initialize it with your API key.
+Before creating a payment, import the `payswitcher-node` dependencies and initialize it with your API key.
 
 ```js
-const hyper = require("@hyperswitchpay-tech/hyperwitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcherpay-tech/hyperwitch-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the `client_secret` obtained in the response to securely complete the payment on the client.
@@ -58,7 +58,7 @@ app.post("/create-payment", async (req, res) => {
 
 ## 2. Build checkout page on your app
 
-### 2.1 Configure your repository with Hyperswitch dependency
+### 2.1 Configure your repository with PaySwitcher dependency
 
 CocoaPods Setup (only required if not already done)
 
@@ -76,7 +76,7 @@ Add these lines to your Podfile:
 ```ruby
 #use_frameworks!
 #target 'YourAPP' do
-  pod 'HyperswitchCore'
+  pod 'PaySwitcherCore'
 #end
 
 ```

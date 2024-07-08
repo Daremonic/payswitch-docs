@@ -11,11 +11,11 @@ Add these lines to your Podfile:
 ```ruby
 #use_frameworks!
 #target 'YourAPP' do
-  pod 'Hyperswitch/ScanCard'
+  pod 'PaySwitcher/ScanCard'
 #end
 ```
 
-Note: Above subspec installs both Hyperswitch SDK and Scan Card dependencies to your app
+Note: Above subspec installs both PaySwitcher SDK and Scan Card dependencies to your app
 
 Run the following command:
 

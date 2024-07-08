@@ -1,14 +1,14 @@
 ---
-description: Deploy the Hyperswitch Card Vault on the cloud
+description: Deploy the PaySwitcher Card Vault on the cloud
 ---
 
 # 🔐 Deploy card vault
 
 {% hint style="info" %}
-This section aims at installing the Card vault and using it with the Hyperswitch application to make successful saved card payments
+This section aims at installing the Card vault and using it with the PaySwitcher application to make successful saved card payments
 {% endhint %}
 
-The Hyperswitch Card Vault [(Repo Link)](https://github.com/hyperswitchpay/tartarus), is a highly performant and a secure locker to save sensitive data such as payment card details, bank account details etc.&#x20;
+The PaySwitcher Card Vault [(Repo Link)](https://github.com/payswitcherpay/tartarus), is a highly performant and a secure locker to save sensitive data such as payment card details, bank account details etc.&#x20;
 
 It is designed in an polymorphic manner to handle and store any type of sensitive information making it highly scalable with extensive coverage of payment methods and processors.
 
@@ -18,7 +18,7 @@ Tartarus is built with a GDPR compliant personal identifiable information (PII) 
 
 <figure><img src="../../../.gitbook/assets/general-block-diagram.png" alt=""><figcaption><p>Locker usage flow</p></figcaption></figure>
 
-* The Hyperswitch application communicates with Tartarus via a middleware.&#x20;
+* The PaySwitcher application communicates with Tartarus via a middleware.&#x20;
 * All requests and responses to and from the middleware are signed and encrypted with the JWS and JWE algorithms.&#x20;
 * The locker supports CRD APIs on the /data and /cards endpoints - [API Reference](https://api-reference.payswitcher.com/api-reference/cards/add-data-in-locker)
 * Cards are stored against the combination of merchant and customer identifiers.&#x20;

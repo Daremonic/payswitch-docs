@@ -1,5 +1,5 @@
 ---
-description: Node to access the Hyperswitch API
+description: Node to access the PaySwitcher API
 ---
 
 # Node
@@ -19,26 +19,26 @@ Node 12 or higher.
 Install the package with:
 
 ```sh
-npm install @hyperswitchpay-tech/hyperswitch-node --save
+npm install @payswitcherpay-tech/payswitcher-node --save
 # or
-yarn add @hyperswitchpay-tech/hyperswitch-node
+yarn add @payswitcherpay-tech/payswitcher-node
 ```
 
 ## Usage
 
-The package needs to be configured with your account's secret key, which is available in the Hyperswitch Dashboard. Require it with the key's value:
+The package needs to be configured with your account's secret key, which is available in the PaySwitcher Dashboard. Require it with the key's value:
 
 ```js
-const hyperswitch = require('hyperswitch')('snd_efe...');
+const payswitcher = require('payswitcher')('snd_efe...');
 
-hyperswitch.paymentIntents.create(
+payswitcher.paymentIntents.create(
   {
-    // Refer the request body of payments from this API https://app.swaggerhub.com/apis-docs/bernard-eugine/HyperswitchAPI/0.0.1#/Payments/Create%20a%20Payment
+    // Refer the request body of payments from this API https://app.swaggerhub.com/apis-docs/bernard-eugine/PaySwitcherAPI/0.0.1#/Payments/Create%20a%20Payment
     amount: 10000,
     currency: "USD",
     capture_method: "automatic",
     amount_to_capture: 10000,
-    customer_id: "hyperswitchCustomer",
+    customer_id: "payswitcherCustomer",
     email: "guest@example.com",
     name: "John Doe",
     phone: "999999999",
@@ -95,17 +95,17 @@ hyperswitch.paymentIntents.create(
 If you are using ES modules and `async`/`await`,
 
 ```js
-import Hyperswitch from 'hyperswitch';
-const hyperswitch = new Hyperswitch('snd_efe...');
+import PaySwitcher from 'payswitcher';
+const payswitcher = new PaySwitcher('snd_efe...');
 
-const payments_response = await hyperswitch.paymentIntents.create(
+const payments_response = await payswitcher.paymentIntents.create(
   {
-    // Refer the request body of payments from this API https://app.swaggerhub.com/apis-docs/bernard-eugine/HyperswitchAPI/0.0.1#/Payments/Create%20a%20Payment
+    // Refer the request body of payments from this API https://app.swaggerhub.com/apis-docs/bernard-eugine/PaySwitcherAPI/0.0.1#/Payments/Create%20a%20Payment
     amount: 10000,
     currency: "USD",
     capture_method: "automatic",
     amount_to_capture: 10000,
-    customer_id: "hyperswitchCustomer",
+    customer_id: "payswitcherCustomer",
     email: "guest@example.com",
     name: "John Doe",
     phone: "999999999",
@@ -158,7 +158,7 @@ const payments_response = await hyperswitch.paymentIntents.create(
 console.log(customer.id);
 ```
 
-## Sample server code using Hyperswitch Node SDK
+## Sample server code using PaySwitcher Node SDK
 
 There is a sample server code that uses the node sdk. Below are the available functions that work with the current latest node sdk version.
 
@@ -168,7 +168,7 @@ There is a sample server code that uses the node sdk. Below are the available fu
 | Customers       | <p></p><ul><li>Create a customer</li></ul><ul><li>Retrieve a customer</li></ul><ul><li>Delete a customer</li></ul>                                                                    |
 | Payment Methods | <p></p><ul><li>Create a payment method</li></ul><ul><li>List customer's payment methods</li></ul><ul><li>List merchant's payment methods</li></ul>                                    |
 
-The request body(req.body) for all API's below can be referred from [API reference](https://app.swaggerhub.com/apis-docs/bernard-eugine/HyperswitchAPI/0.0.1)
+The request body(req.body) for all API's below can be referred from [API reference](https://app.swaggerhub.com/apis-docs/bernard-eugine/PaySwitcherAPI/0.0.1)
 
 ```js
 const express = require("express");
@@ -177,18 +177,18 @@ const app = express();
 // Don't submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
 
-const hyperswitch = require('@hyperswitchpay-tech/hyperswitch-node')('snd_b8df3xxx......');
+const payswitcher = require('@payswitcherpay-tech/payswitcher-node')('snd_b8df3xxx......');
 
 app.use(express.static("public"));
 app.use(express.json());
 
-// The request body(req.body) for all API's below can be referred from https://app.swaggerhub.com/apis-docs/bernard-eugine/HyperswitchAPI/0.0.1
+// The request body(req.body) for all API's below can be referred from https://app.swaggerhub.com/apis-docs/bernard-eugine/PaySwitcherAPI/0.0.1
 
 // Customer API
 
 app.get("/customer_create", async (req, res) => { // Api Endpoint that the merchant has 
   try {
-    const resp = await hyperswitch.customers.create(
+    const resp = await payswitcher.customers.create(
       req.body // send the customer request body as it is in openapi spec
     );
     res.send(resp);
@@ -200,7 +200,7 @@ app.get("/customer_create", async (req, res) => { // Api Endpoint that the merch
 
 app.get("/customer_retrieve/:customer_id", async (req, res) => { // Api endpoint that customer has
   try {
-    const resp = await hyperswitch.customers.retrieve(
+    const resp = await payswitcher.customers.retrieve(
       req.params.customer_id,
     );
     res.send(resp);
@@ -212,7 +212,7 @@ app.get("/customer_retrieve/:customer_id", async (req, res) => { // Api endpoint
 
 app.get("/customer_delete/:customer_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.customers.del(
+    const resp = await payswitcher.customers.del(
       req.params.customer_id,
     );
     res.send(resp);
@@ -227,7 +227,7 @@ app.get("/customer_delete/:customer_id", async (req, res) => {
 
 app.get("/payment_create", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentIntents.create(
+    const resp = await payswitcher.paymentIntents.create(
       req.body
     );
     res.send(resp);
@@ -239,7 +239,7 @@ app.get("/payment_create", async (req, res) => {
 
 app.get("/payment_confirm/:payment_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentIntents.confirm(
+    const resp = await payswitcher.paymentIntents.confirm(
       req.params.payment_id,
       req.body
     );
@@ -252,7 +252,7 @@ app.get("/payment_confirm/:payment_id", async (req, res) => {
 
 app.get("/payment_retrieve/:payment_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentIntents.retrieve(
+    const resp = await payswitcher.paymentIntents.retrieve(
       req.params.payment_id,
     );
     res.send(resp);
@@ -264,7 +264,7 @@ app.get("/payment_retrieve/:payment_id", async (req, res) => {
 
 app.get("/payment_capture/:payment_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentIntents.capture(
+    const resp = await payswitcher.paymentIntents.capture(
       req.params.payid,
       req.body
     );
@@ -277,7 +277,7 @@ app.get("/payment_capture/:payment_id", async (req, res) => {
 
 app.get("/payment_cancel/:payment_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentIntents.cancel(
+    const resp = await payswitcher.paymentIntents.cancel(
       req.params.payment_id,
       req.body
     );
@@ -293,7 +293,7 @@ app.get("/payment_cancel/:payment_id", async (req, res) => {
 
 app.get("/refunds_create", async (req, res) => {
   try {
-    const resp = await hyperswitch.refunds.create(
+    const resp = await payswitcher.refunds.create(
       req.body
     );
     res.send(resp);
@@ -305,7 +305,7 @@ app.get("/refunds_create", async (req, res) => {
 
 app.get("/refunds_retrieve/:refund_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.refunds.retrieve(
+    const resp = await payswitcher.refunds.retrieve(
       req.params.refund_id,
       req.body
     );
@@ -320,7 +320,7 @@ app.get("/refunds_retrieve/:refund_id", async (req, res) => {
 
 app.get("/payment_method_create", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentMethods.create(
+    const resp = await payswitcher.paymentMethods.create(
       req.body
     );
     res.send(resp);
@@ -332,7 +332,7 @@ app.get("/payment_method_create", async (req, res) => {
 
 app.get("/payment_method_list", async (req, res) => {
   try {
-    const resp = await hyperswitch.paymentMethods.list(
+    const resp = await payswitcher.paymentMethods.list(
     );
     res.send(resp);
   } catch (e) {
@@ -343,7 +343,7 @@ app.get("/payment_method_list", async (req, res) => {
 
 app.get("/payment_method_list_by_customer/:customer_id", async (req, res) => {
   try {
-    const resp = await hyperswitch.customers.listPaymentMethods(
+    const resp = await payswitcher.customers.listPaymentMethods(
       req.params.customer_id,
     );
     res.send(resp);

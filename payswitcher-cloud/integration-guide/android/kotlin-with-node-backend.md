@@ -1,15 +1,15 @@
 ---
-description: Integrate hyper SDK to your Kotlin App using hyperswitch-node
+description: Integrate hyper SDK to your Kotlin App using payswitcher-node
 ---
 
 # Kotlin with Node Backend
 
 {% hint style="info" %}
-In this section, you will get detailed instructions for integrating the Hyperswitch native Android SDK for your Android app
+In this section, you will get detailed instructions for integrating the PaySwitcher native Android SDK for your Android app
 {% endhint %}
 
 {% hint style="info" %}
-Use this guide to integrate hyper SDK to your Android app. You can use this as a reference with your Hyperswitch credentials to test the setup. You can also checkout the [App on Google Play Store](https://play.google.com/store/apps/details?id=io.hyperswitch.hyperecom) to test the payment flow.
+Use this guide to integrate hyper SDK to your Android app. You can use this as a reference with your PaySwitcher credentials to test the setup. You can also checkout the [App on Google Play Store](https://play.google.com/store/apps/details?id=io.payswitcher.hyperecom) to test the payment flow.
 {% endhint %}
 
 ## Requirements
@@ -21,20 +21,20 @@ Use this guide to integrate hyper SDK to your Android app. You can use this as a
 
 ## 1. Setup the server
 
-### 1.1 Install the `hyperswitch-node` library
+### 1.1 Install the `payswitcher-node` library
 
 Install the package and import it in your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-node
+$ npm install @payswitcherpay-tech/payswitcher-node
 ```
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the `hyperswitch-node` dependencies and initialize it with your API key.
+Before creating a payment, import the `payswitcher-node` dependencies and initialize it with your API key.
 
 ```js
-const hyper = require("@hyperswitchpay-tech/hyperwitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcherpay-tech/hyperwitch-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the `client_secret` obtained in the response to securely complete the payment on the client.
@@ -63,7 +63,7 @@ app.post("/create-payment", async (req, res) => {
 
 ## 2. Build checkout page on your app
 
-### 2.1 Configure your repository with Hyperswitch dependency
+### 2.1 Configure your repository with PaySwitcher dependency
 
 Add the following maven repository to the settings.gradle file
 
@@ -80,15 +80,15 @@ dependencyResolutionManagement {
 }
 ```
 
-### 2.2 Add the Hyperswitch dependency
+### 2.2 Add the PaySwitcher dependency
 
-Add hyperswitch-android to the dependencies block of your build.gradle file to install the SDK
+Add payswitcher-android to the dependencies block of your build.gradle file to install the SDK
 
 ```groovy
 dependencies {
 
-    // Hyperswitch Android SDK
-    implementation 'io.hyperswitch:hyperswitch-android:+'
+    // PaySwitcher Android SDK
+    implementation 'io.payswitcher:payswitcher-android:+'
 }
 ```
 

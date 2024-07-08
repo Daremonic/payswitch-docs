@@ -1,5 +1,5 @@
 ---
-description: Integrate hyper SDK to your React Native App using hyperswitch-node
+description: Integrate hyper SDK to your React Native App using payswitcher-node
 ---
 
 # React Native with Node Backend (Beta)
@@ -9,7 +9,7 @@ Currently in beta please contact to get early access
 {% endhint %}
 
 {% hint style="info" %}
-Use this guide to integrate `hyper` SDK to your React Native app. You can use the following Demo App as a reference with your Hyperswitch credentials to test the setup.
+Use this guide to integrate `hyper` SDK to your React Native app. You can use the following Demo App as a reference with your PaySwitcher credentials to test the setup.
 {% endhint %}
 
 **Before following these steps, please configure your payment methods.**
@@ -26,20 +26,20 @@ Use this guide to integrate `hyper` SDK to your React Native app. You can use th
 
 ## 1. Setup the server
 
-### 1.1 Install the `hyperswitch-node` library
+### 1.1 Install the `payswitcher-node` library
 
 Install the package and import it in your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-node
+$ npm install @payswitcherpay-tech/payswitcher-node
 ```
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
+Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [PaySwitcher dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
-const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
+const hyper = require("@payswitcherpay-tech/payswitcher-node")(‘YOUR_API_KEY’);
 ```
 
 Add an endpoint on your server that creates a Payment. Creating a Payment helps to establish the intent of the customer to start a payment. It also helps to track the customer’s payment lifecycle, keeping track of failed payment attempts and ensuring the customer is only charged once. Return the client\_secret obtained in the response to securely complete the payment on the client.
@@ -68,12 +68,12 @@ app.post("/create-payment", async (req, res) => {
 
 ## 2. Build checkout page on the client
 
-### 2.1 Install the `react-native-hyperswitch` libraries
+### 2.1 Install the `react-native-payswitcher` libraries
 
 Install the packages and import it into your code
 
 ```js
-$ npm install @hyperswitchpay-tech/hyperswitch-sdk-react-native
+$ npm install @payswitcherpay-tech/payswitcher-sdk-react-native
 
 ```
 
@@ -105,7 +105,7 @@ pod install
 In the Android Folder inside strings.xml file(android/app/src/main/res/values/strings.xml) add the below line
 
 ```js
-<string name="CodePushDeploymentKey">HyperswitchRNDemo</string>
+<string name="CodePushDeploymentKey">PaySwitcherRNDemo</string>
 ```
 
 In the Android Folder inside settings.gradle file add the following line
@@ -121,18 +121,18 @@ project(":react-native-code-push").projectDir = new File(
 
 ### 2.5 Add `HyperProvider` to your React Native app
 
-Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to Hyperswitch server.
+Use `HyperProvider` to ensure that you stay PCI compliant by sending payment details directly to PaySwitcher server.
 
 ```js
-import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher";
 ```
 
 ### 2.6 Use `HyperProvider`
 
-To initialize Hyperswitch in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize Hyperswitch using the HyperProvider component.
+To initialize PaySwitcher in your React Native app, wrap your payment screen with the HyperProvider component. Only the API publishable key in publishableKey is required. The following example shows how to initialize PaySwitcher using the HyperProvider component.
 
 ```js
-import { HyperProvider } from "@hyperswitchpay-tech/react-native-hyperswitch ";
+import { HyperProvider } from "@payswitcherpay-tech/react-native-payswitcher ";
 
 function App() {
   return (
@@ -150,7 +150,7 @@ function App() {
 In the checkout of your app, import useHyper() hook
 
 ```js
-import { useHyper } from "@hyperswitchpay-tech/react-native-hyperswitch";
+import { useHyper } from "@payswitcherpay-tech/react-native-payswitcher";
 ```
 
 ### 3.2 Fetch the PaymentIntent client Secret

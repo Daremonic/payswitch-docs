@@ -1,14 +1,14 @@
 ---
-description: Configure outgoing webhooks from Hyperswitch
+description: Configure outgoing webhooks from PaySwitcher
 ---
 
 # 🪝 Webhooks
 
 {% hint style="info" %}
-This section covers how you can set up your outgoing webhooks from Hyperswitch
+This section covers how you can set up your outgoing webhooks from PaySwitcher
 {% endhint %}
 
-Webhooks are HTTP-based real-time push notifications that Hyperswitch would use for instant status communication to your server. Webhooks are vital in payments for the following reasons:
+Webhooks are HTTP-based real-time push notifications that PaySwitcher would use for instant status communication to your server. Webhooks are vital in payments for the following reasons:
 
 * Preventing merchants from losing business due to delayed status communication (say, in case of flight or movie reservations where there is a need for instant payment confirmation).
 * Prevent payment reconciliation issues where payments change from "Failed" to "Succeeded".
@@ -18,17 +18,17 @@ Webhooks are HTTP-based real-time push notifications that Hyperswitch would use 
 
 #### Create an endpoint on your server
 
-You would need to set up a dedicated HTTPS or HTTP endpoint on your server with a URL as a webhook listener that will receive push notifications in the form of a POST request with JSON payload from the Hyperswitch server.
+You would need to set up a dedicated HTTPS or HTTP endpoint on your server with a URL as a webhook listener that will receive push notifications in the form of a POST request with JSON payload from the PaySwitcher server.
 
-#### Configure your webhook endpoint on Hyperswitch Dashboard
+#### Configure your webhook endpoint on PaySwitcher Dashboard
 
-Configure the above endpoint on your Hyperswitch dashboard under Settings -> Webhooks.
+Configure the above endpoint on your PaySwitcher dashboard under Settings -> Webhooks.
 
-#### Update Hyperswitch’s webhook endpoints on your connector Dashboard
+#### Update PaySwitcher’s webhook endpoints on your connector Dashboard
 
-In order for Hyperswitch to receive updates from the connectors you have selected, you would need to update Hyperswitch’s corresponding endpoints on your respective connector dashboard instead of your webhook endpoints.
+In order for PaySwitcher to receive updates from the connectors you have selected, you would need to update PaySwitcher’s corresponding endpoints on your respective connector dashboard instead of your webhook endpoints.
 
-Hyperswitch's webhook endpoint format is as specified below, or you can obtain the endpoint from the control center under the Processors tab.
+PaySwitcher's webhook endpoint format is as specified below, or you can obtain the endpoint from the control center under the Processors tab.
 
 | Environment | Webhook Endpoint                                                          |
 | ----------- | ------------------------------------------------------------------------- |
@@ -81,9 +81,9 @@ To validate the webhook’s authenticity:
 
 #### Troubleshooting Signature Verification Failures
 
-If you are sure that the payload is from Hyperswitch but the signature verification fails:
+If you are sure that the payload is from PaySwitcher but the signature verification fails:
 
-* Make sure you are using the correct header. Hyperswitch recommends that you use the `x-webhook-signature-512` header, which uses the HMAC-SHA512 algorithm. If your machine does't support HMAC-SHA256,  you can use `x-webhook-signature-256` header, which uses the HMAC-SHA256 algorithm.
+* Make sure you are using the correct header. PaySwitcher recommends that you use the `x-webhook-signature-512` header, which uses the HMAC-SHA512 algorithm. If your machine does't support HMAC-SHA256,  you can use `x-webhook-signature-256` header, which uses the HMAC-SHA256 algorithm.
 * Make sure you are using the correct algorithm. If you are using the `x-webhook-signature-256` header , you should use the HMAC-SHA256 algorithm.
 
 <details>
@@ -96,8 +96,8 @@ SHA-512 is a robust cryptographic hash function designed for security. It genera
 
 ### Webhook Delivery Behavior
 
-To consider a webhook delivery as successful, Hyperswitch expects the HTTP status code to be `2XX` from your server.
-If Hyperswitch doesn't receive a `2XX` status code, the delivery of the webhook is retried with an increasing delay over the next 24 hours.
+To consider a webhook delivery as successful, PaySwitcher expects the HTTP status code to be `2XX` from your server.
+If PaySwitcher doesn't receive a `2XX` status code, the delivery of the webhook is retried with an increasing delay over the next 24 hours.
 
 The intervals at which webhooks will be retried are:
 
@@ -125,12 +125,12 @@ For example, your application could do the following for each webhook received:
 
 #### Handling Out-of-order Deliveries
 
-Hyperswitch may deliver webhooks to your application in any order.
+PaySwitcher may deliver webhooks to your application in any order.
 This could be due to network delays or webhook delivery failures.
 However, you can handle this by examining the `updated` field of the resource sent in the webhook request body.
 For every change made to a specific resource, the `updated` field for the resource will be updated with the timestamp at which the update happened, and thus, the time at which the original webhook was triggered.
 
-For example, if you wish to sync resource changes from Hyperswitch to your application, you could:
+For example, if you wish to sync resource changes from PaySwitcher to your application, you could:
 
 1. Obtain the value (`timestamp1`) of the `updated` field of the resource in the webhook request body.
 2. Obtain the value (`timestamp2`) of the `updated` field of the resource stored on your side.
