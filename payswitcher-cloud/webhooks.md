@@ -32,8 +32,8 @@ Hyperswitch's webhook endpoint format is as specified below, or you can obtain t
 
 | Environment | Webhook Endpoint                                                          |
 | ----------- | ------------------------------------------------------------------------- |
-| Sandbox     | sandbox.hyperswitchpay.com/webhooks/`{merchant_id}`/`{merchant_connector_id}` |
-| Production  | api.hyperswitchpay.com/webhooks/`{merchant_id}`/`{merchant_connector_id}`     |
+| Sandbox     | sandbox.payswitcher.com/webhooks/`{merchant_id}`/`{merchant_connector_id}` |
+| Production  | api.payswitcher.com/webhooks/`{merchant_id}`/`{merchant_connector_id}`     |
 
 ### Handling Webhooks
 
@@ -57,7 +57,7 @@ Hyperswitch's webhook endpoint format is as specified below, or you can obtain t
   17. `mandate_active`
   18. `mandate_revoked`
 
-Click [**here**](https://api-reference.hyperswitchpay.com/api-reference/schemas/outgoing--webhook) to see the webhook payload your endpoint would need to parse for each of the above events
+Click [**here**](https://api-reference.payswitcher.com/api-reference/schemas/outgoing--webhook) to see the webhook payload your endpoint would need to parse for each of the above events
 
 ### Webhook Signature Verification
 

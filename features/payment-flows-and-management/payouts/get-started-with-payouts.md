@@ -8,22 +8,22 @@ For getting started with payouts, make sure you have signed up for the underlyin
 
 ## How to get started?
 
-We will be using HyperSwitch's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.hyperswitchpay.com/api-reference/payouts/payouts--create).
+We will be using HyperSwitch's hosted dashboard and Postman API collection for configuring connectors and processing payouts. You can find API reference [here](https://api-reference.payswitcher.com/api-reference/payouts/payouts--create).
 
-Backend API endpoint - https://sandbox.hyperswitchpay.com
+Backend API endpoint - https://sandbox.payswitcher.com
 
-Dashboard - [https://app.hyperswitchpay.com](https://app.hyperswitchpay.com)
+Dashboard - [https://app.payswitcher.com](https://app.payswitcher.com)
 
 #### Pre-requisites
 
-* Make sure you have an account by signing up at the [dashboard](https://app.hyperswitchpay.com).
+* Make sure you have an account by signing up at the [dashboard](https://app.payswitcher.com).
 * Log in to the dashboard
 * Make sure you have an API key by navigating to _**Developers**_ section
 * Note down your `merchant_id` from the home page.
 
 #### Steps for configuring payout processors
 
-**Step 1 -** Login to your [HyperSwitch account](https://app.hyperswitchpay.com).
+**Step 1 -** Login to your [HyperSwitch account](https://app.payswitcher.com).
 
 **Step 2** - Navigate to _**Payout Processors**_ tab.
 

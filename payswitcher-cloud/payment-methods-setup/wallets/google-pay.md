@@ -19,7 +19,7 @@ There are few prerequisites that need to be fulfilled before integrating Google 
 
 To configure Google Pay on Hyperswitch follow the steps given below -
 
-1. Login to [Hyperswitch dashboard](https://app.hyperswitchpay.com/)
+1. Login to [Hyperswitch dashboard](https://app.payswitcher.com/)
 2. In the Connectors tab, select your processor
 3. While selecting Payment Methods, click on Google Pay in the Wallet section
 4. Use this [link](https://developers.google.com/pay/api/web/guides/tutorial#tokenization) to search for your processor's input parameters. Get those parameters from the processor dashboard and configure them in Google Pay Merchant Key

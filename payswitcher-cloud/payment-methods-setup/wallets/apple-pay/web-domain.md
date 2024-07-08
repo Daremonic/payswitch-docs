@@ -6,7 +6,7 @@ description: Enable Apple pay on your web domains
 
 ## **Steps to configure Apple Pay on Hyperswitch**
 
-* Login to [Hyperswitch control center](https://app.hyperswitchpay.com/)
+* Login to [Hyperswitch control center](https://app.payswitcher.com/)
 * In the Processor tab, select desired connector
 * While selecting Payment Methods, click on Apple Pay in the Wallet section
 * Select the Web Domain option

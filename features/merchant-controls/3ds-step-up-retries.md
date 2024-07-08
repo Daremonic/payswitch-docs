@@ -31,7 +31,7 @@ In case you wish more processors to be covered for 3DS Step-up retry, please sub
 
 ## How to enable 3DS Step-up retries?
 
-Drop a request to biz@hyperswitchpay.com with confirmation to enable 3DS Step-up retry
+Drop a request to biz@payswitcher.com with confirmation to enable 3DS Step-up retry
 
 ## FAQs
 

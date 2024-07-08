@@ -24,11 +24,11 @@ Payouts can be created and processed using the `payment_token` for a given custo
 
 ### How to get started?
 
-We will be using HyperSwitch's hosted dashboard and Postman API collection and will be working only with the payout transactions for this bit. You can find API reference [here](https://api-reference.hyperswitchpay.com/api-reference/payouts/payouts--create).
+We will be using HyperSwitch's hosted dashboard and Postman API collection and will be working only with the payout transactions for this bit. You can find API reference [here](https://api-reference.payswitcher.com/api-reference/payouts/payouts--create).
 
-Backend API endpoint - https://sandbox.hyperswitchpay.com
+Backend API endpoint - https://sandbox.payswitcher.com
 
-Dashboard - [https://app.hyperswitchpay.com](https://app.hyperswitchpay.com)
+Dashboard - [https://app.payswitcher.com](https://app.payswitcher.com)
 
 #### Pre-requisites
 

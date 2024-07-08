@@ -98,7 +98,7 @@ To create more merchant accounts, click the merchant account dropdown from the r
 
 **How to route a payment to a particular merchant account and a particular profile?**
 
-In order to route a payment to a specific merchant account, the [payment create API](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--create) call has to be made from the merchant server using the correct API key attached to the required merchant account. To route the payment to a particular profile, the `profile_id` parameter of the required profile is to be passed.
+In order to route a payment to a specific merchant account, the [payment create API](https://api-reference.payswitcher.com/api-reference/payments/payments--create) call has to be made from the merchant server using the correct API key attached to the required merchant account. To route the payment to a particular profile, the `profile_id` parameter of the required profile is to be passed.
 
 <div align="left" data-full-width="true">
 

@@ -49,7 +49,7 @@ The flow looks like below.
 
 <figure><img src="../.gitbook/assets/smartretry-1 (2).png" alt=""><figcaption></figcaption></figure>
 
-**Step 2:** Drop a request to biz@hyperswitchpay.com with the below information.
+**Step 2:** Drop a request to biz@payswitcher.com with the below information.
 
 * Confirmation to enable automatic retry
 * Maximum number of payment retry attempts (It is recommended to start with 1 retry attempt. However we can support more retry attempts based on the number of processors)

@@ -8,16 +8,16 @@ description: Accept payments through Stripe via Hyperswitch
 This section gives you an overview of how to make payments via Stripe through Hyperswitch
 {% endhint %}
 
-![Stripe Logo](https://hyperswitchpay.com/icons/homePageIcons/logos/stripeLogo.svg)
+![Stripe Logo](https://payswitcher.com/icons/homePageIcons/logos/stripeLogo.svg)
 
-Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. It allows businesses to accept payments and scale faster. To know about more about payment methods supported by stripe via hyperswitch visit [here](https://hyperswitchpay.com/pm-list).
+Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. It allows businesses to accept payments and scale faster. To know about more about payment methods supported by stripe via hyperswitch visit [here](https://payswitcher.com/pm-list).
 
 ### Activating Stripe via Hyperswitch
 
 #### Prerequisites
 
 1. You need to be registered with Stripe in order to proceed. In case you aren't, you can quickly setup your Stripe account [here](https://dashboard.stripe.com/register)
-2. You should have a registered Hyperswitch account. You can access your account from the [Hyperswitch control center](https://app.hyperswitchpay.com/).
+2. You should have a registered Hyperswitch account. You can access your account from the [Hyperswitch control center](https://app.payswitcher.com/).
 3. Enable handling raw card data for your Stripe account by enabling the 'Handling card information directly' toggle from the [Settings > Integrations](https://dashboard.stripe.com/settings/integration) tab on your Stripe dashboard. This will enable Hyperswitch to securely handle your customer's payment details in a PCI compliant manner.
 4. Enter your Country, Business Label and Stripe API Key. The Stripe API key can be found in your Stripe dashboard under \[Developers -> API keys]\(https://dashboard.stripe.com/test/apikeys) as \*\*Secret Key\*\*\
    Note: Ensure to use the Secret Key -> Starts with \`sk\`
@@ -39,4 +39,4 @@ This will ensure that if your Stripe transaction was sent through Hyperswitch,
 * Stripe sends webhooks to Hyperswitch endpoint in Step 2
 * Hyperswitch sends these corresponding webhooks to your endpoint in Step 1
 
-&#x20;[Steps](https://docs.hyperswitchpay.com/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Stripe on Hyperswitch control center.
+&#x20;[Steps](https://docs.payswitcher.com/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Stripe on Hyperswitch control center.

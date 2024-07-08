@@ -17,9 +17,9 @@ Volt-io is a payment platform that intends to build a global infrastructure and 
 #### Prerequisites
 
 1. You need to be registered with Volt for account creation, you can register your Volt account [here](https://www.clubprophet.com/products---prophetpay).
-2. You should have a registered Hyperswitch account. You can access your account from the [Hyperswitch dashboard](https://app.hyperswitchpay.com/).
+2. You should have a registered Hyperswitch account. You can access your account from the [Hyperswitch dashboard](https://app.payswitcher.com/).
 3. On your dashboard, visit Configuration->Application and create an application. In your application, under the Credentials section you will find the **Client Id** and **Client Secret**.
 4. On your dashboard, visit Configuration->Customers and click on the merchant's name. Scroll down to the Credentials section to get the **Username** and an option to regenerate the **Password**.
 5. Select all the payment methods you wish to use Volt for. Ensure that this is the same as the ones configured on your Volt dashboard.
 
-[Steps](https://docs.hyperswitchpay.com/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Volt on Hyperswitch control center.
+[Steps](https://docs.payswitcher.com/hyperswitch-cloud/connectors/activate-connector-on-hyperswitch) to activate Volt on Hyperswitch control center.

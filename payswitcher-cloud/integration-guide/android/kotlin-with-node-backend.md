@@ -74,7 +74,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
            maven {
-            url "https://maven.hyperswitchpay.com/release/production/android/maven/1.2.7"
+            url "https://maven.payswitcher.com/release/production/android/maven/1.2.7"
         }
     }
 }

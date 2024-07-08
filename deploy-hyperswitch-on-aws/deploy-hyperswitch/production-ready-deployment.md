@@ -132,7 +132,7 @@ Verify the health of the application by hitting `http://<host>/health`. The expe
 12. **Is there a recommended backup and disaster recovery strategy for Hyperswitch and associated AWS resources?** Yes, it's essential to implement regular backups for RDS and have a disaster recovery plan in place. AWS provides tools and services for this purpose.
 13. **Are there any specific security considerations when deploying Hyperswitch on AWS EKS?** You should follow our [best practices](../../going-live/security.md) for securing your EKS cluster and your Hyperswitch application, including network policies, IAM roles, and encryption.
 14. **How do I upgrade Hyperswitch and its dependencies on EKS?** We will be providing an update CDK script soon
-15. **What do I do if I encounter issues during the deployment process?** If you encounter issues, consult the troubleshooting section of the documentation or [reach out to our support team](https://hyperswitchpay.com/contact) for assistance.
+15. **What do I do if I encounter issues during the deployment process?** If you encounter issues, consult the troubleshooting section of the documentation or [reach out to our support team](https://payswitcher.com/contact) for assistance.
 16. **Where can I find further documentation on Hyperswitch?** You can find additional documentation, tutorials, and support resources on our website and in our api docs.
 
 </details>

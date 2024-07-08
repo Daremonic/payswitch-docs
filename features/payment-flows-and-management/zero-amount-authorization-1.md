@@ -17,7 +17,7 @@ The following API cURLs demonstrate the usage of the zero-auth flow. The example
 1. Creating a 0 amount payment along with `setup_future_usage= off_session` to set up a mandate to store and charge the customer's payment method later **( Called as 'CIT' : Customer initiated transaction)**
 
 ```shell
-curl --location 'http://sandbox.hyperswitchpay.com/payments' \
+curl --location 'http://sandbox.payswitcher.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: <enter your Hyperswitch API key here>' \
@@ -39,7 +39,7 @@ curl --location 'http://sandbox.hyperswitchpay.com/payments' \
 
 2. Confirm the payment after collecting payment information from the user **\[You can skip this step if you are using the Hyperswitch Unified Checkout]**
 
-<pre class="language-bash"><code class="lang-bash"><strong>curl --location 'http://http://sandbox.hyperswitchpay.com/payments/{{payment_id}}/confirm' \
+<pre class="language-bash"><code class="lang-bash"><strong>curl --location 'http://http://sandbox.payswitcher.com/payments/{{payment_id}}/confirm' \
 </strong>--header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 <strong>--header 'api-key: &#x3C;enter your Hyperswitch API key here>' \
@@ -93,7 +93,7 @@ curl --location 'http://sandbox.hyperswitchpay.com/payments' \
 3. Retrieve the `payment_method_id` that was created against the above payment by retrieving the payment. You will get the payment\_method\_id in the response
 
 ```bash
-curl --location 'https://sandbox.hyperswitchpay.com/payments/<pass the payment_id>' \
+curl --location 'https://sandbox.payswitcher.com/payments/<pass the payment_id>' \
 --header 'Accept: application/json' \
 --header 'api-key: <enter your Hyperswitch API key here>' \
 ```
@@ -103,7 +103,7 @@ curl --location 'https://sandbox.hyperswitchpay.com/payments/<pass the payment_i
 Pass the above `payment_method_id` under the `recurring_details` object along with `off_session=true` in the payments request and confirm the payment. Make sure you are using the same `customer_id` and `profile_id` from the CIT.
 
 ```bash
-curl --location 'http://sandbox.hyperswitchpay.com/payments' \
+curl --location 'http://sandbox.payswitcher.com/payments' \
 --header 'Content-Type: application/json' \
 --header 'Accept: application/json' \
 --header 'api-key: use your Hyperswitch API key' \

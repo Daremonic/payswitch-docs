@@ -24,7 +24,7 @@ $ npm install @hyperswitchpay-tech/hyperswitch-node
 
 #### 1.2 Create a payment
 
-Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.hyperswitchpay.com/developers?tabIndex=1).
+Before creating a payment, import the hyper dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
 const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
@@ -55,7 +55,7 @@ app.post("/create-payment", async (req, res) => {
 ```
 
 {% hint style="info" %}
-In case your integrating the ExpressCheckout (mentioned later below), instead of creating multiple paymentIntents for the same customer session, you can also use [paymentsUpdate API](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--update) for better analytics.
+In case your integrating the ExpressCheckout (mentioned later below), instead of creating multiple paymentIntents for the same customer session, you can also use [paymentsUpdate API](https://api-reference.payswitcher.com/api-reference/payments/payments--update) for better analytics.
 {% endhint %}
 
 ### 2. Build checkout page on the client
@@ -81,7 +81,7 @@ import { hyperElements } from "@hyperswitchpay-tech/react-hyper-js";
 
 #### 2.3 Load `hyper-js`
 
-Call `loadHyper` with your publishable API keys to configure the library. To get an publishable Key please find it [here](https://app.hyperswitchpay.com/developers).
+Call `loadHyper` with your publishable API keys to configure the library. To get an publishable Key please find it [here](https://app.payswitcher.com/developers).
 
 ```js
 const hyperPromise = loadHyper("YOUR_PUBLISHABLE_KEY");
@@ -106,7 +106,7 @@ useEffect(() => {
 
 #### 2.5 Initialise `HyperElements`
 
-Pass the promise from `loadHyper` to the `HyperElements` component. This allows the child components to access the Hyper service via the `HyperElements` parent component. Additionally, pass the client secret as an [options](https://hyperswitchpay.com/docs/sdkIntegrations/unifiedCheckoutWeb/customization) to the `HyperElements` component.
+Pass the promise from `loadHyper` to the `HyperElements` component. This allows the child components to access the Hyper service via the `HyperElements` parent component. Additionally, pass the client secret as an [options](https://payswitcher.com/docs/sdkIntegrations/unifiedCheckoutWeb/customization) to the `HyperElements` component.
 
 ```js
 <div className="App">
@@ -228,7 +228,7 @@ var unifiedCheckoutOptions = {
 3. **`buttonText (optional)`** - The text to display on the payment button.\
    Default value: **Pay Now**
 
-For customization, please follow the [`Customization docs`](https://docs.hyperswitchpay.com/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
+For customization, please follow the [`Customization docs`](https://docs.payswitcher.com/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
 
 </details>
 {% endtab %}

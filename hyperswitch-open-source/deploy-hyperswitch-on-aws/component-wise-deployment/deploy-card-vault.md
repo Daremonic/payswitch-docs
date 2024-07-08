@@ -20,7 +20,7 @@ Tartarus is built with a GDPR compliant personal identifiable information (PII) 
 
 * The Hyperswitch application communicates with Tartarus via a middleware.&#x20;
 * All requests and responses to and from the middleware are signed and encrypted with the JWS and JWE algorithms.&#x20;
-* The locker supports CRD APIs on the /data and /cards endpoints - [API Reference](https://api-reference.hyperswitchpay.com/api-reference/cards/add-data-in-locker)
+* The locker supports CRD APIs on the /data and /cards endpoints - [API Reference](https://api-reference.payswitcher.com/api-reference/cards/add-data-in-locker)
 * Cards are stored against the combination of merchant and customer identifiers.&#x20;
 * Internal hashing checks are in place to avoid data duplication.&#x20;
 

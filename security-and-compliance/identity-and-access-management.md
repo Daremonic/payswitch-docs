@@ -15,7 +15,7 @@ Administrative services, crucial for managing the back end of Hyperswitch, are p
 
 ### Merchant Authentication:
 
-For merchants accessing Hyperswitch, we have a strong authentication mechanism to ensure the confidentiality and integrity of their accounts. Further details can be found [here](https://api-reference.hyperswitchpay.com/introduction#authentication-and-api-keys).
+For merchants accessing Hyperswitch, we have a strong authentication mechanism to ensure the confidentiality and integrity of their accounts. Further details can be found [here](https://api-reference.payswitcher.com/introduction#authentication-and-api-keys).
 
 ### Vault Authentication:
 

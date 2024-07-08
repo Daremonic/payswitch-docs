@@ -8,7 +8,7 @@ description: Integrate hyper SDK to your HTML Web App using Hyperswitch-node
 In this section, you will get details to Integrate Hyperswitch SDK using Node Backend and HTML Frontend
 {% endhint %}
 
-**Before following these steps, please configure your payment methods** [here](https://hyperswitchpay.com/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to your HTML app. You can also use this demo app as a reference with your Hyperswitch credentials to test the setup.
+**Before following these steps, please configure your payment methods** [here](https://payswitcher.com/docs/paymentMethods/cards). Use this guide to integrate `hyperswitch` SDK to your HTML app. You can also use this demo app as a reference with your Hyperswitch credentials to test the setup.
 
 ## 1. Setup the server
 
@@ -22,7 +22,7 @@ $ npm install @hyperswitchpay-tech/hyperswitch-node
 
 ### 1.2 Create a payment
 
-Before creating a payment, import the `hyperswitch-node` dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.hyperswitchpay.com/developers?tabIndex=1).
+Before creating a payment, import the `hyperswitch-node` dependencies and initialize it with your API key. Get your API key from [Hyperswitch dashboard](https://app.payswitcher.com/developers?tabIndex=1).
 
 ```js
 const hyper = require("@hyperswitchpay-tech/hyperswitch-node")(‘YOUR_API_KEY’);
@@ -53,17 +53,17 @@ app.post("/create-payment", async (req, res) => {
 ```
 
 {% hint style="info" %}
-In case your integrating the ExpressCheckout (mentioned later below), instead of creating multiple paymentIntents for the same customer session, you can also use [paymentsUpdate API](https://api-reference.hyperswitchpay.com/api-reference/payments/payments--update) for better analytics.
+In case your integrating the ExpressCheckout (mentioned later below), instead of creating multiple paymentIntents for the same customer session, you can also use [paymentsUpdate API](https://api-reference.payswitcher.com/api-reference/payments/payments--update) for better analytics.
 {% endhint %}
 
 ## 2. Build checkout page on the client
 
 ### 2.1 Load HyperLoader
 
-Use `HyperLoader` to ensure PCI compliant means of accepting payment details from your customer and sending it directly to the hyperswitch server. Always load `hyperLoader` from `https://beta.hyperswitchpay.com/v1/HyperLoader.js` to ensure compliance. Please refrain from including the script in a bundle or hosting it yourself.
+Use `HyperLoader` to ensure PCI compliant means of accepting payment details from your customer and sending it directly to the hyperswitch server. Always load `hyperLoader` from `https://beta.payswitcher.com/v1/HyperLoader.js` to ensure compliance. Please refrain from including the script in a bundle or hosting it yourself.
 
 ```js
-<script src="https://beta.hyperswitchpay.com/v1/HyperLoader.js"></script>
+<script src="https://beta.payswitcher.com/v1/HyperLoader.js"></script>
 ```
 
 ### 2.2 Define the payment form
@@ -89,7 +89,7 @@ Add one empty placeholder `div` to your checkout form for each Widget that you�
 
 ### 2.3 Initialize HyperLoader
 
-Initialize `HyperLoader` onto your app with your publishable key with the `Hyper` constructor. You’ll use `HyperLoader` to create the Unified Checkout and complete the payment on the client. To get a Publishable Key please find it [here](https://app.hyperswitchpay.com/developers).
+Initialize `HyperLoader` onto your app with your publishable key with the `Hyper` constructor. You’ll use `HyperLoader` to create the Unified Checkout and complete the payment on the client. To get a Publishable Key please find it [here](https://app.payswitcher.com/developers).
 
 ```js
 const hyper = Hyper("YOUR_PUBLISHABLE_KEY");
@@ -108,7 +108,7 @@ Immediately make a request to the endpoint on your server to create a new Paymen
 Following this, create a `unifiedCheckout` and mount it to the placeholder `div` in your payment form. This embeds an iframe with a dynamic form that displays configured payment method types available from the `Payment`, allowing your customer to select a payment method. The form automatically collects the associated payment details for the selected payment method type.
 
 ```js
-<script src="https://beta.hyperswitchpay.com/v1/HyperLoader.js"></script>;
+<script src="https://beta.payswitcher.com/v1/HyperLoader.js"></script>;
 // Fetches a payment intent and captures the client secret
 async function initialize() {
   const response = await fetch("/create-payment", {
@@ -152,7 +152,7 @@ Make a request to the endpoint on your server to create a new Payment. The `clie
 Create an `expressCheckout` and mount it to the placeholder `div` in your payment form. This embeds an iframe that displays configured payment method types supported by the browser available for the payment, allowing your customer to select a payment method. The payment methods automatically collects the associated payment details for the selected payment method type.
 
 ```js
-<script src="https://beta.hyperswitchpay.com/v1/HyperLoader.js"></script>;
+<script src="https://beta.payswitcher.com/v1/HyperLoader.js"></script>;
 // Fetches a payment intent and captures the client secret
 async function initialize() {
   const response = await fetch("/create-payment", {
@@ -255,7 +255,7 @@ const unifiedCheckoutOptions = {
 3. **`buttonText (optional)`** - The text to display on the payment button.\
    Default value: **Pay Now**
 
-For customization, please follow the [`Customization docs`](https://docs.hyperswitchpay.com/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
+For customization, please follow the [`Customization docs`](https://docs.payswitcher.com/hyperswitch-cloud/integration-guide/web/customization#id-5.-confirm-button).
 
 </details>
 

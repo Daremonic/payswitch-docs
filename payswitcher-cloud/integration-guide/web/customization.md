@@ -98,7 +98,7 @@ Each class name used in a selector supports an allowlist of CSS properties that 
 
 ### Tabs
 
-<figure><img src="https://hyperswitchpay.com/img/site/rulesTabs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://payswitcher.com/img/site/rulesTabs.png" alt=""><figcaption></figcaption></figure>
 
 | Class Name   | States     | Pseudo-Classes                     | Pseudo-Elements |
 | ------------ | ---------- | ---------------------------------- | --------------- |

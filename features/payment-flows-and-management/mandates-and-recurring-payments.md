@@ -45,7 +45,7 @@ For saving a customer's payment method used in a successful transaction:
 {% hint style="info" %}
 If you are using the Hyperswitch SDK, the `customer_acceptance` is sent in the `/payments/:id:/confirm` request on the basis of customer clicking the save card radio button
 
-**Note:** Ensure to enable this functionality using the [_displaySavedPaymentMethodsCheckbox_](https://docs.hyperswitchpay.com/hyperswitch-cloud/integration-guide/web/customization#id-6.-handle-saved-payment-methods) property during SDK integration
+**Note:** Ensure to enable this functionality using the [_displaySavedPaymentMethodsCheckbox_](https://docs.payswitcher.com/hyperswitch-cloud/integration-guide/web/customization#id-6.-handle-saved-payment-methods) property during SDK integration
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-04-18 at 12.49.35 PM.png" alt="" width="375"><figcaption><p>The customer's consent to save their card is expressed through this checkbox</p></figcaption></figure>
@@ -82,13 +82,13 @@ Based on the payment processors support, this functionality is also available fo
 {% hint style="info" %}
 If you are using the Hyperswitch SDK, the `customer_acceptance` is sent in the `/payments/:id:/confirm` request on the basis of customer clicking the save card radio button
 
-**Note:** Ensure to enable this functionality using the [_displaySavedPaymentMethodsCheckbox_](https://docs.hyperswitchpay.com/hyperswitch-cloud/integration-guide/web/customization#id-6.-handle-saved-payment-methods) property during SDK integration
+**Note:** Ensure to enable this functionality using the [_displaySavedPaymentMethodsCheckbox_](https://docs.payswitcher.com/hyperswitch-cloud/integration-guide/web/customization#id-6.-handle-saved-payment-methods) property during SDK integration
 {% endhint %}
 
 Retrieve the `payment_method_id` that was created against the above payment by retrieving the payment. You will get the payment\_method\_id in the response. Store this ID for making subsequent MIT payments.
 
 ```bash
-curl --location 'https://sandbox.hyperswitchpay.com/payments/<pass the payment_id>' \
+curl --location 'https://sandbox.payswitcher.com/payments/<pass the payment_id>' \
 --header 'Accept: application/json' \
 --header 'api-key: <enter your Hyperswitch API key here>' \
 ```
@@ -108,11 +108,11 @@ Once a customer's payment method is saved for MIT payments you can start chargin
 
 You would be using the same `payment_method_id` that was returned in the `/payments/:id:/retrieve` response for the initial transaction where the customer authorized saving for future use.
 
-To get all the payment methods saved for a customer use the[ List Customer Payment Methods](https://api-reference.hyperswitchpay.com/api-reference/payment-methods/list-payment-methods-for-a-customer) API.
+To get all the payment methods saved for a customer use the[ List Customer Payment Methods](https://api-reference.payswitcher.com/api-reference/payment-methods/list-payment-methods-for-a-customer) API.
 
 ```bash
 curl --request GET \
-  --url https://sandbox.hyperswitchpay.com/customers/{customer_id}/payment_methods \
+  --url https://sandbox.payswitcher.com/customers/{customer_id}/payment_methods \
   --header 'api-key: <api-key>'
 ```
 
