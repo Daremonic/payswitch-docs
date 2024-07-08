@@ -19,7 +19,7 @@ While you are using PaySwitcher, your customers' cards will be securely tokenize
 However this will require the payment processors to enable raw card acceptance at their end (which most payment processor do not offer as default setting). You will have to send PaySwitcher PCI AOC to your payment processor's support team and request to enable the setting against your merchant account.
 
 {% hint style="info" %}
-Please drop a note to `biz@payswitcher/.com` to get access to the PaySwitcher PCI AOC (applicable only for PaySwitcher Cloud users
+Please drop a note to `biz@payswitcher.com` to get access to the PaySwitcher PCI AOC (applicable only for PaySwitcher Cloud users
 {% endhint %}
 
-If you are planning to use PaySwitcher Open Source, please [refer here](broken-reference) for more notes about ensuring PCI compliance when you self deploy PaySwitcher
+If you are planning to use PaySwitcher Open Source, please [refer here](broken-reference/) for more notes about ensuring PCI compliance when you self deploy PaySwitcher
