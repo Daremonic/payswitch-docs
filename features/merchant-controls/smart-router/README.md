@@ -10,7 +10,7 @@ With this section, understand how the Hyperswitch Smart Router works to improve 
 
 ## Prerequisites
 
-To get started with Smart Router, ensure to have one or more payment processors integrated. You can integrate the payment processor of your choice on the Control Center by following the [Connector Integration](../../../hyperswitch-cloud/connectors/) guide.
+To get started with Smart Router, ensure to have one or more payment processors integrated. You can integrate the payment processor of your choice on the Control Center by following the [Connector Integration](../../../payswitcher-cloud/connectors/) guide.
 
 ## What is smart payment routing?
 
